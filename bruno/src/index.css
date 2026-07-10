@@ -8,6 +8,22 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.black-square {
+  position: absolute;
+  width: 0%;
+  height: 200px;
+  min-width: 0;
+  min-height: 0;
+  background: black;
+  animation-name: door-opening-animation;
+  animation-duration: 2.5s;
+}
+
+@keyframes door-opening-animation {
+  from {width: 100%; left: 0%;}
+  to {width: 0%; left: 100%;}
+}
+
 .titlearea {
   color: white;
   margin-bottom: 50px;
@@ -113,7 +129,7 @@ footer {
 
 .footer-feedback-form {
   display: flex;
-  flex-direction: columnn;
+  flex-direction: column;
   gap: 8px;
 }
 
@@ -123,7 +139,7 @@ footer {
   color: black;
   font-size: 13px;
   outline: none;
-  padding: 0px;
+  padding: 10px;
 }
 
 .footer-feedback-form-submit {
@@ -133,7 +149,7 @@ footer {
   font-size: 13px;
   font-weight: 700;
   cursor: pointer;
-  padding: 50px;
+  padding: 10px;
 }
 
 @keyframes introduction-shift {

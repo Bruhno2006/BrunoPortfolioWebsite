@@ -10,6 +10,7 @@ function App() {
 
   return (
     <>
+      <div className="black-square" />
       <section className="titlearea">
         <h1 className="website-title">Bruno Amadi</h1>
         <p className="website-subtitle" >Future Software Developer</p>
