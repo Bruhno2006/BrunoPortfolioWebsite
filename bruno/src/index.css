@@ -6,6 +6,7 @@ body {
   box-sizing: border-box;
   background-color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
 }
 
 .black-square {
@@ -20,8 +21,15 @@ body {
 }
 
 @keyframes door-opening-animation {
-  from {width: 100%; left: 0%;}
-  to {width: 0%; left: 100%;}
+  from {
+    width: 100%;
+    left: 0%;
+  }
+
+  to {
+    width: 0%;
+    left: 100%;
+  }
 }
 
 .titlearea {
@@ -37,10 +45,44 @@ body {
   background-repeat: no-repeat;
 }
 
+.site-header {
+  display: flex;
+  height: 64px;
+  gap: 100px;
+  background: #f5f5f5
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand-text {
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  padding: 20px 60px;
+  margin: 0 auto;
+  justify-content: center;
+  flex-grow: 2;
+  gap: 50px;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
 .website-title {
   text-align: start;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Frijole", system-ui;
   font-weight: 400;
+  line-height: 1.5em;
   font-size: 5em;
   margin: 10px 50px 10px 50px;
 }
@@ -49,6 +91,7 @@ body {
   font-size: 1em;
   font-family: "Geist Pixel", sans-serif;
   text-align: start;
+  line-height: 0.5em;
   margin: 10px 50px 50px 50px;
 }
 
@@ -152,7 +195,7 @@ footer {
   padding: 10px;
 }
 
-@keyframes introduction-shift {
+@keyframes content-shift-left {
   from {
     left: 200px;
   }
@@ -162,7 +205,7 @@ footer {
   }
 }
 
-@keyframes photo-shift {
+@keyframes content-shift-right {
   from {
     right: 200px;
   }
@@ -172,28 +215,88 @@ footer {
   }
 }
 
-.story {
+.main-content {
   display: flex;
   gap: 40px;
   margin-left: 50px;
-  flex-direction: row;
+  margin-right: 50px;
+  flex-direction: column;
 }
 
-.person-description {
-  color: white;
+.image-with-text {
   display: flex;
-  flex-wrap: wrap;
-  width: 30%;
-  position: relative;
-  animation-name: introduction-shift;
-  animation-duration: 2s;
-  font-size: 20px;
-  left: 0px;
+  gap: 40px;
+  flex-direction: row;
+  padding: 5px;
 }
 
-.person-photo {
+.introduction-content {
+  color: white;
+  flex-wrap: wrap;
+  flex-shrink: 20;
+}
+
+.introduction-description {
   position: relative;
-  animation-name: photo-shift;
+  text-align: left;
+  text-align-last: left;
+  animation-name: content-shift-left;
   animation-duration: 2s;
-  right: 0px;
+  font-size: 25px;
+}
+
+.introduction-photo {
+  position: relative;
+  animation-name: content-shift-right;
+  animation-duration: 2s;
+}
+
+.introduction-header {
+  text-transform: uppercase;
+  position: relative;
+  text-align: left;
+  text-align-last: left;
+  height: 10%;
+  padding: 0px;
+  animation-name: content-shift-left;
+  animation-duration: 1.75s;
+}
+
+.image-with-text-reverse {
+  display: flex;
+  gap: 40px;
+  flex-direction: row-reverse;
+  padding: 5px;
+}
+
+.about-me-content {
+  color: white;
+  flex-wrap: wrap;
+  flex-shrink: 20;
+}
+
+.about-me-header {
+  position: relative;
+  text-align: right;
+  text-align-last: right;
+  height: 10%;
+  padding: 0px;
+  animation-name: content-shift-right;
+  animation-duration: 1.75s;
+  text-transform: uppercase;
+}
+
+.about-me-description {
+  position: relative;
+  text-align: right;
+  text-align-last: right;
+  font-size: 25px;
+  animation-name: content-shift-right;
+  animation-duration: 2s;
+}
+
+.about-me-photo {
+  position: relative;
+  animation-name: content-shift-left;
+  animation-duration: 2s;
 }
