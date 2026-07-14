@@ -1,17 +1,20 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
 import './App.css'
-import AppFooter from './AppFooter.jsx'
-import AppNavbar from './AppNavbar.jsx'
+import AppFooter from './components/AppFooter.jsx'
+import ImageSlider from './ProjectSlider.jsx'
+import Carousel from './components/Carousel.jsx'
+import { slides } from "./data/carouselData.json"
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [query, setQuery] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(query);
+  };
 
   return (
     <>
-      <AppNavbar />
       <div className="black-square" />
       <section className="titlearea">
         <h1 className="website-title">Bruno Amadi</h1>
@@ -20,7 +23,7 @@ function App() {
       <div className="main-content">
         <section className="image-with-text" id='introduction'>
           <div className="introduction-photo">
-            <img src="src/assets/dices.jpg" width="700" height="500" />
+            <img src="https://picsum.photos/700/500?random=1"/>
           </div>
           <div className="introduction-content">
             <h2 className="introduction-header">Introduction</h2>
@@ -33,7 +36,7 @@ function App() {
         </section>
         <section className="image-with-text-reverse" id='about-us'>
           <div className="about-me-photo">
-            <img src="src/assets/silly-people.jpg" width="700" height="500" />
+            <img src="https://picsum.photos/700/500?random=2" />
           </div>
           <div className="about-me-content">
             <h2 className="about-me-header">About Me</h2>
@@ -43,7 +46,8 @@ function App() {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </section>
-        <section className="projects">
+        <section>
+          <Carousel data={slides}/>
         </section>
       </div>
       <AppFooter />

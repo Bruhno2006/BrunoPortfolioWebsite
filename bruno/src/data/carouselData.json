@@ -1,0 +1,28 @@
+{
+    "slides": [
+        {
+            "src": "https://picsum.photos/600?random=3",
+            "alt": "Picture 1"
+        },
+
+        {
+            "src":"https://picsum.photos/600?random=4",
+            "alt":"Picture 2"
+        },
+
+        {
+            "src":"https://picsum.photos/600?random=5",
+            "alt":"Picture 3"
+        },
+
+        {
+            "src":"https://picsum.photos/600?random=6",
+            "alt":"Picture 4"
+        },
+
+        {
+            "src":"https://picsum.photos/600?random=7",
+            "alt":"Picture 5"
+        }
+    ]
+}
