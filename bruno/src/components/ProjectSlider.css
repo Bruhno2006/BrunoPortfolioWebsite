@@ -19,7 +19,7 @@ body {
 
 .carousel img {
   position: absolute;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in;
   object-fit: cover;
   border-radius: 0.5rem;
 }

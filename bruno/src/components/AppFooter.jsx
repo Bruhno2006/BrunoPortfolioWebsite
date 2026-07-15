@@ -1,4 +1,5 @@
 import { Bold, Mail, MapPin, Phone } from 'lucide-react';
+import '../components/AppFooter.css'
 
 function AppFooter() {
   return (

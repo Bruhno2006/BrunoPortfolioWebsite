@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Carousel.css";
+import "./ProjectSlider.css";
 import { ArrowBigLeftDash, ArrowBigRightDash } from "lucide-react";
 
-function Carousel({ data }) {
+function ProjectSlider({ data }) {
   const [slide, setSlide] = useState(0);
 
   const nextSlide = () => {
@@ -57,4 +57,4 @@ function Carousel({ data }) {
   );
 }
 
-export default Carousel;
+export default ProjectSlider;

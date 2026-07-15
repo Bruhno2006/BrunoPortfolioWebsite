@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import AppFooter from './components/AppFooter.jsx'
-import ImageSlider from './ProjectSlider.jsx'
-import Carousel from './components/Carousel.jsx'
+import ProjectSlider from './components/ProjectSlider.jsx'
 import { slides } from "./data/carouselData.json"
 
 function App() {
@@ -46,8 +45,9 @@ function App() {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </section>
-        <section>
-          <Carousel data={slides}/>
+        <section id="projects">
+          <h2 className="projects-header">Current Projects</h2>
+          <ProjectSlider data={slides}/>
         </section>
       </div>
       <AppFooter />
