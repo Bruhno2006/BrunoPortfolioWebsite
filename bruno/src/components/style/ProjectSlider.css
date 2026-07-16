@@ -4,6 +4,24 @@ body {
   background-color: #111;
 }
 
+@media (max-width: 768px) {
+  .slide-left2 {
+    display: none;
+  }
+
+  .slide-right2 {
+    display: none;
+  }
+
+  .slide-left {
+    display: none;
+  }
+
+  .slide-right {
+    display: none;
+  }
+}
+
 .carousel {
   position: relative;
   display: flex;
@@ -81,11 +99,11 @@ body {
 
 .slide-description {
   text-align: center;
-  color: white; 
+  color: white;
 }
 
 .slide-container:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .arrow {

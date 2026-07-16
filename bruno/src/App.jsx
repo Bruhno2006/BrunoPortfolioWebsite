@@ -3,6 +3,7 @@ import './style/App.css'
 import AppFooter from './components/AppFooter.jsx'
 import ProjectSlider from './components/ProjectSlider.jsx'
 import { slides } from "./data/carouselData.json"
+import AppNavbar from './components/AppNavbar.jsx'
 
 function App() {
   const [query, setQuery] = useState("");
@@ -14,11 +15,7 @@ function App() {
 
   return (
     <>
-      <div className="black-square" />
-      <section className="titlearea">
-        <h1 className="website-title">Bruno Amadi</h1>
-        <p className="website-subtitle" >Future Software Developer</p>
-      </section>
+      <AppNavbar/>
       <div className="main-content">
         <section className="image-with-text" id='introduction'>
           <div className="introduction-photo">

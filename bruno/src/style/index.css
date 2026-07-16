@@ -9,59 +9,11 @@ body {
   scroll-behavior: smooth;
 }
 
-.black-square {
-  position: absolute;
-  width: 0%;
-  height: 200px;
-  min-width: 0;
-  min-height: 0;
-  background: black;
-  animation-name: door-opening-animation;
-  animation-duration: 2.5s;
-}
-
-@keyframes door-opening-animation {
-  from {
-    width: 100%;
-    left: 0%;
-  }
-
-  to {
-    width: 0%;
-    left: 100%;
-  }
-}
-
-.titlearea {
-  color: white;
-  margin-bottom: 50px;
-  padding: 0px 0px 0px 0px;
-  width: 100%;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
-  background-image: url("src/assets/space-background.jpg");
-  background-size: 2000px 550px;
-  background-repeat: no-repeat;
-}
-
 .site-header {
   display: flex;
   height: 64px;
   gap: 100px;
   background: #f5f5f5
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.brand-text {
-  font-weight: 700;
-  font-size: 20px;
-  color: white;
 }
 
 .nav-links {
@@ -73,26 +25,51 @@ body {
   gap: 50px;
 }
 
-.nav-items {
-  display: flex;
-  align-items: center;
-}
 
-.website-title {
-  text-align: start;
-  font-family: "Frijole", system-ui;
-  font-weight: 400;
-  line-height: 1.5em;
-  font-size: 5em;
-  margin: 10px 50px 10px 50px;
-}
+@media (max-width: 800px) {
+  .main-content {
+    flex-direction: column;
+  }
 
-.website-subtitle {
-  font-size: 1em;
-  font-family: "Geist Pixel", sans-serif;
-  text-align: start;
-  line-height: 0.5em;
-  margin: 10px 50px 50px 50px;
+  .image-with-text {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .image-with-text-reverse {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .about-me-photo img {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introduction-photo img {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .introduction-header {
+    text-align: center !important;
+    text-align-last: center !important;
+  }
+
+  .introduction-description {
+    text-align: center !important;
+    text-align-last: center !important;
+  }
+
+  .about-me-header {
+    text-align: center !important;
+    text-align-last: center !important;
+  }
+
+  .about-me-description {
+    text-align: center !important;
+    text-align-last: center !important;
+  }
 }
 
 @keyframes content-shift-left {
@@ -163,6 +140,11 @@ body {
   animation-duration: 2s;
 }
 
+.introduction-photo img {
+  width: 100%;
+  height: auto;
+}
+
 .introduction-header {
   text-transform: uppercase;
   position: relative;
@@ -211,6 +193,11 @@ body {
   position: relative;
   animation-name: content-shift-left;
   animation-duration: 2s;
+}
+
+.about-me-photo img {
+  width: 100%;
+  height: auto;
 }
 
 .projects-header {

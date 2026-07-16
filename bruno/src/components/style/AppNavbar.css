@@ -1,0 +1,107 @@
+@media (max-width: 800px) {
+  .website-title {
+    text-align: center !important;
+  }
+
+  .website-subtitle {
+    text-align: center !important;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+
+  .titlearea {
+    margin-bottom: 50px;
+  }
+}
+
+@keyframes door-opening-animation {
+  from {
+    width: 100%;
+    left: 0%;
+  }
+
+  to {
+    width: 0%;
+    left: 100%;
+  }
+}
+
+.black-square {
+  position: absolute;
+  width: 0%;
+  height: 450px;
+  min-width: 0;
+  min-height: 0;
+  background: black;
+  animation-name: door-opening-animation;
+  animation-duration: 2.5s;
+}
+
+.titlearea {
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-image: url("src/assets/space-background.jpg");
+  background-size: 2000px 550px;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+
+.website-title {
+  text-align: start;
+  font-family: "Frijole", system-ui;
+  font-weight: 400;
+  line-height: 1.5em;
+  font-size: 5em;
+  margin: 10px 50px 10px 50px;
+}
+
+.website-subtitle {
+  font-size: 1em;
+  font-family: "Geist Pixel", sans-serif;
+  text-align: start;
+  line-height: 0.5em;
+  margin: 10px 50px 50px 50px;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: red;
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.navbar-center {
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+
+.nav-links {
+  font-family: fantasy;
+}
+
+.navbar-center .nav-links {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-center .nav-links li {
+  margin-right: 6rem;
+}
+
+.navbar-center .nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: font-size 5s linear;
+}

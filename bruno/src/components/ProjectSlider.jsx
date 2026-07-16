@@ -58,8 +58,8 @@ function ProjectSlider({ data }) {
       <ArrowBigLeftDash fill="white" stroke="white" size={30} className="arrow arrow-left" onClick={prevSlide} />
       {data.map((item, idx) => {
         return (
-          <div className={getSlidePosition(idx)}>
-            <img src={item.src} alt={item.alt} key={idx} />
+          <div className={getSlidePosition(idx)} key={idx}>
+            <img src={item.src} alt={item.alt} />
             <div className={getContainerVisibility(getSlidePosition(idx))}>
               <h4 className="slide-title">{item.title}</h4>
               <p className="slide-description">Insert Text Here</p>
@@ -70,9 +70,7 @@ function ProjectSlider({ data }) {
       <ArrowBigRightDash fill="white" stroke="white" size={30} className="arrow arrow-right" onClick={nextSlide} />
       <span className="indicators">
         {data.map((_, idx) => {
-          return <button keys={idx} onClick={() => setSlide(idx)} className={slide === idx ? "indicator" : "indicator-inactive"}>
-
-          </button>
+          return <button key={idx} onClick={() => setSlide(idx)} className={slide === idx ? "indicator" : "indicator-inactive"}></button>
         })}
       </span>
     </div >
