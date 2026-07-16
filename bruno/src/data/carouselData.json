@@ -2,27 +2,50 @@
     "slides": [
         {
             "src": "https://picsum.photos/1000/500?random=3",
+            "title": "Project 1",
             "alt": "Picture 1"
         },
 
         {
             "src":"https://picsum.photos/1000/500?random=4",
+            "title": "Project 2",
             "alt":"Picture 2"
         },
 
         {
             "src":"https://picsum.photos/1000/500?random=5",
+            "title": "Project 3",
             "alt":"Picture 3"
         },
 
         {
             "src":"https://picsum.photos/1000/500?random=6",
+            "title": "Project 4",
             "alt":"Picture 4"
         },
 
         {
-            "src":"https://picsum.photos/1000/500?random=7",
+            "src":"https://picsum.photos/1000/500?random=8",
+            "title": "Project 5",
             "alt":"Picture 5"
+        },
+
+        {
+            "src":"https://picsum.photos/1000/500?random=9",
+            "title": "Project 6",
+            "alt":"Picture 6"
+        },
+
+        {
+            "src":"https://picsum.photos/1000/500?random=10",
+            "title": "Project 7",
+            "alt":"Picture 7"
+        },
+
+        {
+            "src":"https://picsum.photos/1000/500?random=11",
+            "title": "Project 8",
+            "alt":"Picture 8"
         }
     ]
 }

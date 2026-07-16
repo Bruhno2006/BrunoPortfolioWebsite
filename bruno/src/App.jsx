@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import './style/App.css'
 import AppFooter from './components/AppFooter.jsx'
 import ProjectSlider from './components/ProjectSlider.jsx'
 import { slides } from "./data/carouselData.json"

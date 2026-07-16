@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ProjectSlider.css";
+import './style/ProjectSlider.css'
 import { ArrowBigLeftDash, ArrowBigRightDash } from "lucide-react";
 
 function ProjectSlider({ data }) {
@@ -17,33 +17,45 @@ function ProjectSlider({ data }) {
 
   const getSlidePosition = (idx) => {
     if (slide === idx) {
-      console.log(idx + " " + "slide-active");
       return "slide-active";
     }
 
     const leftIdx = (slide - 1 + totalSlides) % totalSlides;
-    
+
     if (idx == leftIdx) {
-      console.log(idx + " " + "slide-left");
       return "slide-left";
     }
 
     const rightIdx = (slide + 1) % totalSlides;
 
     if (idx == rightIdx) {
-      console.log(idx + " " + "slide-right");
       return "slide-right";
     }
-    
-    console.log(idx + " " + "slide-hidden");
+
     return "slide-hidden";
-}
+  }
+
+  const getContainerVisibility = (state) => {
+    if (state === "slide-active") {
+      return "slide-container-active";
+    } else {
+      return "slide-container-hidden";
+    }
+  }
 
   return (
     <div className="carousel">
       <ArrowBigLeftDash fill="white" stroke="white" size={30} className="arrow arrow-left" onClick={prevSlide} />
       {data.map((item, idx) => {
-        return <img src={item.src} alt={item.alt} key={idx} className={getSlidePosition(idx)} />
+        return (
+          <div className={getSlidePosition(idx)}>
+            <img src={item.src} alt={item.alt} key={idx} />
+            <div className={getContainerVisibility(getSlidePosition(idx))}>
+              <h4 className="slide-title">{item.title}</h4>
+              <p className="slide-description">Insert Text Here</p>
+            </div>
+          </div>
+        );
       })}
       <ArrowBigRightDash fill="white" stroke="white" size={30} className="arrow arrow-right" onClick={nextSlide} />
       <span className="indicators">
@@ -53,7 +65,7 @@ function ProjectSlider({ data }) {
           </button>
         })}
       </span>
-    </div>
+    </div >
   );
 }
 

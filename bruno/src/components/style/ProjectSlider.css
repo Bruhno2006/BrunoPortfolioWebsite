@@ -15,13 +15,16 @@ body {
   height: 400px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 100px;
 }
 
-.carousel img {
+.carousel div {
   position: absolute;
   transition: all 0.5s ease-in;
   object-fit: cover;
   border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide-active {
@@ -46,6 +49,35 @@ body {
   z-index: 1;
   right: 0;
   opacity: 0.5;
+}
+
+.slide-container-active {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2px 16px;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in;
+}
+
+.slide-container-hidden {
+  display: none;
+  transition: all 0.5s ease-in;
+}
+
+.slide-title {
+  text-align: center;
+  color: white;
+}
+
+.slide-description {
+  text-align: center;
+  color: white; 
+}
+
+.slide-container:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .arrow {
