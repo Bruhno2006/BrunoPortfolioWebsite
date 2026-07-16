@@ -21,15 +21,25 @@ function ProjectSlider({ data }) {
     }
 
     const leftIdx = (slide - 1 + totalSlides) % totalSlides;
+    const leftIdx2 = (slide - 2 + totalSlides) % totalSlides;
 
     if (idx == leftIdx) {
       return "slide-left";
     }
 
+    if (idx == leftIdx2) {
+      return "slide-left2";
+    }
+
     const rightIdx = (slide + 1) % totalSlides;
+    const rightIdx2 = (slide + 2) % totalSlides;
 
     if (idx == rightIdx) {
       return "slide-right";
+    }
+
+    if (idx == rightIdx2) {
+      return "slide-right2";
     }
 
     return "slide-hidden";

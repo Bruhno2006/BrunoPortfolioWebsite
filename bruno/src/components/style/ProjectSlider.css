@@ -9,7 +9,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
   width: 100%;
   max-width: 2000px;
   height: 400px;
@@ -41,21 +40,30 @@ body {
 
 .slide-left {
   z-index: 1;
+  left: 375px;
+  opacity: 0.5;
+}
+
+.slide-left2 {
+  z-index: 1;
   left: 0;
   opacity: 0.5;
 }
 
 .slide-right {
   z-index: 1;
+  right: 375px;
+  opacity: 0.5;
+}
+
+.slide-right2 {
+  z-index: 1;
   right: 0;
   opacity: 0.5;
 }
 
 .slide-container-active {
-  display: flex;
-  flex-direction: column;
   width: 100%;
-  padding: 2px 16px;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease-in;
@@ -100,7 +108,7 @@ body {
 .indicators {
   display: flex;
   position: absolute;
-  bottom: -2rem;
+  top: 3.5rem;
   z-index: 3;
 }
 
