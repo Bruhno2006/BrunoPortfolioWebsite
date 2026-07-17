@@ -28,10 +28,18 @@
   }
 }
 
+.top {
+  margin: 0;
+  background-image: url("src/assets/space-background.jpg");
+  background-size: 2000px 550px;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+
 .black-square {
   position: absolute;
   width: 0%;
-  height: 450px;
+  height: 260px;
   min-width: 0;
   min-height: 0;
   background: black;
@@ -46,10 +54,6 @@
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-image: url("src/assets/space-background.jpg");
-  background-size: 2000px 550px;
-  background-repeat: no-repeat;
-  margin-bottom: 50px;
 }
 
 .website-title {
@@ -59,6 +63,7 @@
   line-height: 1.5em;
   font-size: 5em;
   margin: 10px 50px 10px 50px;
+  background-repeat: no-repeat;
 }
 
 .website-subtitle {
@@ -76,7 +81,7 @@
   align-items: center;
   color: red;
   padding-bottom: 30px;
-  margin-bottom: 50px;
+  background: transparent;
 }
 
 .navbar-center {
