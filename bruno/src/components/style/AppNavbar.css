@@ -1,12 +1,20 @@
 @media (max-width: 800px) {
   .website-title {
     text-align: center !important;
+<<<<<<< HEAD
     font-size: 20vm;
+=======
+    font-size: 3em !important;
+>>>>>>> accessibility
   }
 
   .website-subtitle {
     text-align: center !important;
+<<<<<<< HEAD
     font-size: 50px;
+=======
+    font-size: 1em !important;
+>>>>>>> accessibility
   }
 
   .navbar {
@@ -139,7 +147,7 @@
 }
 
 .website-subtitle {
-  font-size: 1em;
+  font-size: 1vw;
   font-family: "Geist Pixel", sans-serif;
   text-align: start;
   line-height: 0.5em;

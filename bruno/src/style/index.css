@@ -16,17 +16,33 @@ body {
   background: #f5f5f5
 }
 
+<<<<<<< HEAD
 @media (max-width: 800px) {
+=======
+.nav-links {
+  display: flex;
+  padding: 20px 60px;
+  margin: 0 auto;
+  justify-content: center;
+  flex-grow: 2;
+  gap: 50px;
+}
+
+
+@media (max-width: 900px) {
+>>>>>>> accessibility
   .main-content {
     flex-direction: column;
   }
 
   .image-with-text {
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
   .image-with-text-reverse {
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
   }
