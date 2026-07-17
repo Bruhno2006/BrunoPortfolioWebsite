@@ -26,17 +26,19 @@ body {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .main-content {
     flex-direction: column;
   }
 
   .image-with-text {
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
   }
 
   .image-with-text-reverse {
+    align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
   }

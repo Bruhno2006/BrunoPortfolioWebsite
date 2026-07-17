@@ -1,10 +1,12 @@
 @media (max-width: 800px) {
   .website-title {
     text-align: center !important;
+    font-size: 3em !important;
   }
 
   .website-subtitle {
     text-align: center !important;
+    font-size: 1em !important;
   }
 
   .navbar {
@@ -57,12 +59,12 @@
   font-family: "Frijole", system-ui;
   font-weight: 400;
   line-height: 1.5em;
-  font-size: 5em;
+  font-size: 5vw;
   margin: 10px 50px 10px 50px;
 }
 
 .website-subtitle {
-  font-size: 1em;
+  font-size: 1vw;
   font-family: "Geist Pixel", sans-serif;
   text-align: start;
   line-height: 0.5em;
