@@ -6,6 +6,10 @@
   .slide-right {
     display: none;
   }
+
+  .arrow {
+    display: none;
+  }
 }
 
 @media (max-width: 1600px) {

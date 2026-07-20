@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import './style/ProjectSlider.css'
 import { ArrowBigLeftDash, ArrowBigRightDash } from "lucide-react";
 
 function ProjectSlider({ data }) {
   const [slide, setSlide] = useState(0);
+  const [counter, setCounter] = useState(0);
 
   const nextSlide = () => {
     setSlide(slide === totalSlides - 1 ? 0 : slide + 1);
@@ -14,6 +15,8 @@ function ProjectSlider({ data }) {
   };
 
   const totalSlides = data.length;
+
+  const autoScroll = true;
 
   const getSlidePosition = (idx) => {
     if (slide === idx) {
@@ -53,6 +56,22 @@ function ProjectSlider({ data }) {
     }
   }
 
+  useEffect(() => {
+    if (autoScroll === true) {
+      if (totalSlides <= 1) return;
+
+      const interval = setInterval(() => {
+        setSlide(slide === totalSlides - 1 ? 0 : slide + 1);
+
+        setCounter((prev) => prev + 1);
+      }, 5000);
+
+      return () => clearInterval(interval);
+    }
+
+  }, [slide, totalSlides])
+
+
   return (
     <div className="carousel">
       <ArrowBigLeftDash fill="white" stroke="white" size={30} className="arrow arrow-left" onClick={prevSlide} />
@@ -73,6 +92,7 @@ function ProjectSlider({ data }) {
           return <button key={idx} onClick={() => setSlide(idx)} className={slide === idx ? "indicator" : "indicator-inactive"}></button>
         })}
       </span>
+
     </div >
   );
 }
