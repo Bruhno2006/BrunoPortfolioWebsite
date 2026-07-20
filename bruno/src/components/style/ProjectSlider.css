@@ -58,6 +58,7 @@
   z-index: 3;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
   opacity: 1;
+  pointer-events: auto;
 }
 
 .slide-hidden {
@@ -71,36 +72,40 @@
   z-index: 2;
   left: 575px;
   opacity: 0.9;
+  pointer-events: none;
 }
 
 .slide-left2 {
   z-index: 1;
   left: 450px;
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .slide-right {
   z-index: 2;
   right: 575px;
   opacity: 0.9;
+  pointer-events: none;
 }
 
 .slide-right2 {
   z-index: 1;
   right: 450px;
   opacity: 0.5;
+  pointer-events: none;
 }
 
 .slide-container-active {
   width: 100%;
   align-items: center;
   justify-content: center;
-  transition: all 0.1s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .slide-container-hidden {
   display: none;
-  transition: all 0.1s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .slide-title {
