@@ -1,10 +1,10 @@
 html,
 body {
+  background-color: black;
   width: 100%;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
   font-family: Georgia, 'Times New Roman', Times, serif;
   scroll-behavior: smooth;
 }

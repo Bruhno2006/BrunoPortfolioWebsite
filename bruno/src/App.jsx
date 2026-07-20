@@ -30,7 +30,7 @@ function App() {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </section>
-        <section className="image-with-text-reverse" id='about-us'>
+        <section className="image-with-text-reverse" id='about-me'>
           <div className="about-me-photo">
             <img src="https://picsum.photos/700/500?random=2" />
           </div>

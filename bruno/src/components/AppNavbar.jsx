@@ -13,7 +13,6 @@ function AppNavbar() {
 
   return (
     <div className="top">
-      <div className="black-square" />
       <section className="titlearea">
         <h1 className="website-title">Bruno Amadi</h1>
         <p className="website-subtitle">Future Software Developer</p>
@@ -42,6 +41,7 @@ function AppNavbar() {
           })}
         </ul>
       </nav>
+      <div className="black-square" />
     </div>
   );
 }

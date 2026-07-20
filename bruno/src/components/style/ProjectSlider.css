@@ -1,9 +1,3 @@
-html,
-body {
-  color: white;
-  background-color: #111;
-}
-
 @media (max-width: 1400px) {
   .slide-left {
     display: none;

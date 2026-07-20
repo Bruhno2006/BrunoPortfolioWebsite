@@ -22,6 +22,7 @@
     position: relative;
     background: transparent;
     bottom: 50px;
+    font-family: fantasy;
   }
 
   .hamburger-nav-links {
@@ -39,6 +40,7 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
+    font-weight: 900;
   }
 }
 
@@ -100,23 +102,39 @@
   }
 }
 
+@keyframes select {
+  from {
+    font-size: 20px;
+  }
+
+  to {
+    font-size: 30px;
+  }
+}
+
 .top {
+  anchor-name: --nav-bar-container;
   margin: 0;
   background-image: url("src/assets/space-background.jpg");
   background-size: 2000px 550px;
   background-repeat: no-repeat;
   margin-bottom: 50px;
+  border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 25%;
 }
 
 .black-square {
   position: absolute;
   width: 0%;
-  height: 260px;
+  height: calc(anchor-size(--nav-bar-container height) + 10px);
   min-width: 0;
   min-height: 0;
+  top: -10px;
   background: black;
   animation-name: door-opening-animation;
   animation-duration: 2.5s;
+  /* border-bottom-right-radius: 25%;
+  border-bottom-left-radius: 25%; */
 }
 
 .titlearea {
@@ -162,11 +180,11 @@
 }
 
 .nav-links {
-  font-family: fantasy;  
+  font-family: fantasy;
   list-style-type: none;
   display: flex;
   margin: 0;
-  padding: 0;  
+  padding: 0;
   justify-content: center;
   gap: 30px;
 }
@@ -203,5 +221,6 @@
 
 .hamburger-menu {
   display: none;
-  font-family: fantasy;
+  animation: 0.25s ease-in 0s 1 select;
+  animation-fill-mode: forwards;
 }
