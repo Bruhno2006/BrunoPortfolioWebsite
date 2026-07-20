@@ -1,12 +1,23 @@
+:root {
+  --title_delay: 0.25s;
+  --title_duration: 2s;
+  --subtitle_delay: 0.15s;
+  --subtitle_duration: 1.5s;
+  --delay: 1.2s;
+  --duration: 1.5s;
+}
+
 @media (max-width: 800px) {
   .website-title {
     text-align: center !important;
     font-size: 20vm;
+    animation-play-state: paused !important;
   }
 
   .website-subtitle {
     text-align: center !important;
     font-size: 1em !important;
+    animation-play-state: paused !important;
   }
 
   .navbar {
@@ -98,7 +109,7 @@
   }
 
   100% {
-    transform: scale(1.25, 1.25);
+    transform: scale(1.2, 1.2);
   }
 }
 
@@ -133,8 +144,6 @@
   background: black;
   animation-name: door-opening-animation;
   animation-duration: 2.5s;
-  /* border-bottom-right-radius: 25%;
-  border-bottom-left-radius: 25%; */
 }
 
 .titlearea {
@@ -147,6 +156,9 @@
 }
 
 .website-title {
+  animation: var(--title_duration) ease-in var(--title_delay) infinite float;
+  animation-fill-mode: forwards;
+
   text-align: start;
   font-family: "Frijole", system-ui;
   font-weight: 400;
@@ -157,6 +169,9 @@
 }
 
 .website-subtitle {
+  animation: var(--subtitle_duration) ease-in var(--subtitle_delay) infinite float;
+  animation-fill-mode: forwards;
+
   font-size: 1vw;
   font-family: "Geist Pixel", sans-serif;
   text-align: start;
@@ -186,7 +201,7 @@
   margin: 0;
   padding: 0;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .nav-links {
@@ -201,9 +216,6 @@
 }
 
 .navbar-center .nav-links a {
-  --delay: 1.2s;
-  --duration: 1.5s;
-
   animation: var(--duration) ease-in calc(var(--rand) * var(--delay)) infinite float;
 
   position: relative;
