@@ -4,11 +4,11 @@ import './style/AppNavbar.css';
 function AppNavbar() {
   const NAV_LINKS = [
     { label: "Introduction", to: "#introduction" },
-    { label: "About Me", to: "#about-me" },
-    { label: "Projects", to: "#projects" },
-    { label: "Contact Information", to: "#contacts" },
+    { label: "About Me", to: "#about-me" },    
     { label: "Education", to: "#education" },
-    { label: "Achievements", to: "#achievements" }
+    { label: "Achievements", to: "#achievements" },
+    { label: "Contact Information", to: "#contacts" },
+    { label: "Projects", to: "#projects" },
   ];
 
   return (
