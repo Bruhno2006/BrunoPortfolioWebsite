@@ -192,6 +192,10 @@ body {
   height: auto;
 }
 
+.projects-content {
+  color: white;
+}
+
 .projects-header {
   position: relative;
   top: 0px;
@@ -201,4 +205,21 @@ body {
   text-align: center;
   animation-name: content-rise-below;
   animation-duration: 3.0s;
+}
+
+.education-content {
+  color: white;
+}
+
+.education-header {
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.achievements-content {
+  color: white;
+}
+
+.contacts-content {
+  color: white;
 }

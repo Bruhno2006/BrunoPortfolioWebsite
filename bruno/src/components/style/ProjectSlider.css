@@ -14,11 +14,13 @@
 
 @media (max-width: 1600px) {
   .slide-right {
-    right: 190px !important;
+    opacity: 0.9;
+    right: 390px !important;
   }
 
   .slide-left {
-    left: 190px !important;
+    opacity: 0.9;
+    left: 390px !important;
   }
 
   .slide-left2 {
@@ -45,7 +47,7 @@
 
 .carousel div {
   position: absolute;
-  transition: right 0.1s linear, left 0.1s linear;
+  transition: right 0.5s linear, left 0.5s linear;
   object-fit: cover;
   border-radius: 0.5rem;
   align-items: center;
@@ -53,7 +55,7 @@
 }
 
 .slide-active {
-  z-index: 2;
+  z-index: 3;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
   opacity: 1;
 }
@@ -66,27 +68,27 @@
 }
 
 .slide-left {
-  z-index: 1;
-  left: 375px;
-  opacity: 0.5;
+  z-index: 2;
+  left: 575px;
+  opacity: 0.9;
 }
 
 .slide-left2 {
   z-index: 1;
-  left: 0;
-  opacity: 0.25;
+  left: 450px;
+  opacity: 0.5;
 }
 
 .slide-right {
-  z-index: 1;
-  right: 375px;
-  opacity: 0.5;
+  z-index: 2;
+  right: 575px;
+  opacity: 0.9;
 }
 
 .slide-right2 {
   z-index: 1;
-  right: 0;
-  opacity: 0.25;
+  right: 450px;
+  opacity: 0.5;
 }
 
 .slide-container-active {
@@ -120,23 +122,23 @@
   width: 2.5rem;
   height: 2.5rem;
   filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.7));
-  z-index: 3;
+  z-index: 4;
   cursor: pointer;
 }
 
 .arrow-left {
-  left: 2rem;
+  left: 20em;
 }
 
 .arrow-right {
-  right: 2rem;
+  right: 20em;
 }
 
 .indicators {
   display: flex;
   position: absolute;
   top: 3.5rem;
-  z-index: 3;
+  z-index: 4;
 }
 
 .indicator {

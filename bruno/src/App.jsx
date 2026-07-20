@@ -15,11 +15,11 @@ function App() {
 
   return (
     <>
-      <AppNavbar/>
+      <AppNavbar />
       <div className="main-content">
         <section className="image-with-text" id='introduction'>
           <div className="introduction-photo">
-            <img src="https://picsum.photos/700/500?random=1"/>
+            <img src="https://picsum.photos/700/500?random=1" />
           </div>
           <div className="introduction-content">
             <h2 className="introduction-header">Introduction</h2>
@@ -42,9 +42,39 @@ function App() {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </section>
+        <section id="education">
+          <div className="education-content">
+            <h2 className="education-header">Education</h2>
+            <p className="education-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </section>
+        <section id="achievements">
+          <div className="achievements-content">
+            <h2 className="achievements-header">Achievements</h2>
+            <p className="acheievements-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </section>
+        <section id="contacts">
+          <div className="contacts-content">
+            <h2 className="contacts-header">Contact Information</h2>
+            <p className="contacts-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+
+        </section>
         <section id="projects">
-          <h2 className="projects-header">Current Projects</h2>
-          <ProjectSlider data={slides}/>
+          <div className="projects-content">
+            <h2 className="projects-header">Current Projects</h2>
+            <ProjectSlider data={slides} />
+          </div>
         </section>
       </div>
       <AppFooter />

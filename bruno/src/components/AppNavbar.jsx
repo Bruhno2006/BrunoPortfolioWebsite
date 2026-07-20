@@ -6,7 +6,7 @@ function AppNavbar() {
     { label: "Introduction", to: "#introduction" },
     { label: "About Me", to: "#about-me" },
     { label: "Projects", to: "#projects" },
-    { label: "Contact Information", to: "#contact-information" },
+    { label: "Contact Information", to: "#contacts" },
     { label: "Education", to: "#education" },
     { label: "Achievements", to: "#achievements" }
   ];
