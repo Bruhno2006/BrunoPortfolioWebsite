@@ -116,6 +116,8 @@
 .slide-description {
   text-align: center;
   color: white;
+  overflow: scroll;
+  max-height: 150px;
 }
 
 .slide-container:hover {

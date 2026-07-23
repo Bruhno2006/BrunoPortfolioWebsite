@@ -212,7 +212,7 @@ body {
 }
 
 .education-header {
-  text-align: right;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -222,4 +222,8 @@ body {
 
 .contacts-content {
   color: white;
+}
+
+.education-content {
+  display: grid;
 }
