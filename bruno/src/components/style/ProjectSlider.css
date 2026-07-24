@@ -32,7 +32,7 @@
   }
 }
 
-.carousel {
+.slide-carousel {
   position: relative;
   display: flex;
   justify-content: center;
@@ -45,7 +45,7 @@
   margin-bottom: 100px;
 }
 
-.carousel div {
+.slide-carousel div {
   position: absolute;
   transition: right 0.5s linear, left 0.5s linear;
   object-fit: cover;

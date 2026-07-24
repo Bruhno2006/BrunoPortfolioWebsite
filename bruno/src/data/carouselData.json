@@ -1,60 +1,60 @@
 {
-    "slides": [
-        {
-            "src": "https://picsum.photos/250?random=3",
-            "title": "GODOT Card Game Project",
-            "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-            "alt": "Picture 1",
-            "link": "https://github.com/Bruhno2006/GodotSummerProject"
-        },
-        {
-            "src": "https://picsum.photos/250?random=4",
-            "title": "What makes [Superhero] Cinematic Universes Successful?",
-            "description": "My article for Reelhouse Article 4. In this article, I delve into what makes most superhero cinematic universes (MCU, DCU, etc.) so successful, especially within individual superhero movies.",
-            "alt": "Reelhouse Issue 4 Article",
-            "link": ""
-        },
-        {
-            "src": "https://picsum.photos/250?random=5",
-            "title": "GODOT Card Game Project",
-            "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa. Taciti sociosqu ad litora torquent per conubia nostra. Ridiculus mus donec rhoncus eros lobortis nulla molestie. Mauris pharetra vestibulum fusce dictum risus blandit quis. Finibus facilisis dapibus etiam interdum tortor ligula congue. Justo lectus commodo augue arcu dignissim velit aliquam. Primis vulputate ornare sagittis vehicula praesent dui felis. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Quisque faucibus ex sapien vitae pellentesque sem placerat.",
-            "alt": "Picture 1",
-            "link": "https://github.com/Bruhno2006/GodotSummerProject"
-        },
-        {
-            "src": "https://picsum.photos/250?random=6",
-            "title": "GODOT Card Game Project",
-            "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-            "alt": "Picture 1",
-            "link": "https://github.com/Bruhno2006/GodotSummerProject"
-        },
-        {
-            "src": "https://picsum.photos/250?random=7",
-            "title": "GODOT Card Game Project",
-            "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-            "alt": "Picture 1",
-            "link": "https://github.com/Bruhno2006/GodotSummerProject"
-        },
-        {
-            "src": "https://picsum.photos/250?random=8",
-            "title": "GODOT Card Game Project",
-            "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-            "alt": "Picture 1",
-            "link": "https://github.com/Bruhno2006/GodotSummerProject"
-        },
-        {
-            "src": "https://picsum.photos/250?random=9",
-            "title": "GODOT Card Game Project",
-            "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-            "alt": "Picture 1",
-            "link": "https://github.com/Bruhno2006/GodotSummerProject"
-        },
-        {
-            "src": "https://picsum.photos/250?random=10",
-            "title": "GODOT Card Game Project",
-            "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-            "alt": "Picture 1",
-            "link": "https://github.com/Bruhno2006/GodotSummerProject"
-        }
-    ]
+  "slides": [
+    {
+      "src": "https://picsum.photos/250?random=3",
+      "title": "GODOT Card Game Project",
+      "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
+      "alt": "Picture 1",
+      "link": "https://github.com/Bruhno2006/GodotSummerProject"
+    },
+    {
+      "src": "https://picsum.photos/250?random=4",
+      "title": "What makes [Superhero] Cinematic Universes Successful?",
+      "description": "My article for Reelhouse Article 4. In this article, I delve into what makes most superhero cinematic universes (MCU, DCU, etc.) so successful, especially within individual superhero movies.",
+      "alt": "Reelhouse Issue 4 Article",
+      "link": ""
+    },
+    {
+      "src": "https://picsum.photos/250?random=5",
+      "title": "GODOT Card Game Project",
+      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa. Taciti sociosqu ad litora torquent per conubia nostra. Ridiculus mus donec rhoncus eros lobortis nulla molestie. Mauris pharetra vestibulum fusce dictum risus blandit quis. Finibus facilisis dapibus etiam interdum tortor ligula congue. Justo lectus commodo augue arcu dignissim velit aliquam. Primis vulputate ornare sagittis vehicula praesent dui felis. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Quisque faucibus ex sapien vitae pellentesque sem placerat.",
+      "alt": "Picture 1",
+      "link": "https://github.com/Bruhno2006/GodotSummerProject"
+    },
+    {
+      "src": "https://picsum.photos/250?random=6",
+      "title": "GODOT Card Game Project",
+      "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
+      "alt": "Picture 1",
+      "link": "https://github.com/Bruhno2006/GodotSummerProject"
+    },
+    {
+      "src": "https://picsum.photos/250?random=7",
+      "title": "GODOT Card Game Project",
+      "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
+      "alt": "Picture 1",
+      "link": "https://github.com/Bruhno2006/GodotSummerProject"
+    },
+    {
+      "src": "https://picsum.photos/250?random=8",
+      "title": "GODOT Card Game Project",
+      "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
+      "alt": "Picture 1",
+      "link": "https://github.com/Bruhno2006/GodotSummerProject"
+    },
+    {
+      "src": "https://picsum.photos/250?random=9",
+      "title": "GODOT Card Game Project",
+      "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
+      "alt": "Picture 1",
+      "link": "https://github.com/Bruhno2006/GodotSummerProject"
+    },
+    {
+      "src": "https://picsum.photos/250?random=10",
+      "title": "GODOT Card Game Project",
+      "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
+      "alt": "Picture 1",
+      "link": "https://github.com/Bruhno2006/GodotSummerProject"
+    }
+  ]
 }

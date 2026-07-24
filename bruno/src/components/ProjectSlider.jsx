@@ -73,7 +73,7 @@ function ProjectSlider({ data }) {
 
 
   return (
-    <div className="carousel">
+    <div className="slide-carousel">
       <ArrowBigLeftDash fill="white" stroke="white" size={30} className="arrow arrow-left" onClick={prevSlide} />
       {data.map((item, idx) => {
         return (
