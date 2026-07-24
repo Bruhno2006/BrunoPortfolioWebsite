@@ -1,14 +1,22 @@
 {
-    "schools": [
-        {
-            "name": "Royal Holloway - University of London",
-            "course": "Computer Science: Software Engineering (Masters)",
-            "duration": "4 Year Duration (2024 - 2028)"
-        },
-        {
-            "name": "West Herts College - Hemel Hempstead Campus",
-            "course": "Level 3 National Extended Diploma in IT",
-            "duration": "2 Year Duration (2022 - 2024)"
-        }
-    ]
+  "schools": [
+    {
+      "name": "Royal Holloway - University of London",
+      "course": "Computer Science: Software Engineering (Masters)",
+      "duration": "4 Year Duration (2024 - 2028)",
+      "results": [{
+        "year_1": "90",
+        "year_2": "80"
+      }]
+    },
+    {
+      "name": "West Herts College - Hemel Hempstead Campus",
+      "course": "Level 3 National Extended Diploma in IT",
+      "duration": "2 Year Duration (2022 - 2024)",
+      "results": [{
+        "year_1": "Distinction (D)",
+        "year_2": "Distinction (D)"
+      }]
+    }
+  ]
 }
