@@ -1,0 +1,61 @@
+@keyframes go-visible {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes go-invisible {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.content-carousel {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  width: 100%;
+  max-width: 2000px;
+  height: 400px;
+  margin-right: auto;
+}
+
+.content-container-active {
+  width: 100%;
+  align-items: left;
+  justify-content: left;
+  animation-name: go-visible;
+  animation-duration: 3s;
+}
+
+.content-container-hidden {
+  display: none;
+  animation-name: go-invisible;
+  animation-duration: 3s;
+}
+
+.content-active {
+  display: contents;
+}
+
+.content-hidden {
+  display: none;
+}
+
+.results-overview {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  font-size: 20px;
+  text-transform: lowercase;
+  font-family: 'Oswald', system-ui;
+}
