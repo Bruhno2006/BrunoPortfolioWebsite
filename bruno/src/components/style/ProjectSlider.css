@@ -70,28 +70,28 @@
 
 .slide-left {
   z-index: 2;
-  left: 575px;
+  left: 35%;
   opacity: 0.9;
   pointer-events: none;
 }
 
 .slide-left2 {
   z-index: 1;
-  left: 450px;
+  left: 30%;
   opacity: 0.5;
   pointer-events: none;
 }
 
 .slide-right {
   z-index: 2;
-  right: 575px;
+  right: 35%;
   opacity: 0.9;
   pointer-events: none;
 }
 
 .slide-right2 {
   z-index: 1;
-  right: 450px;
+  right: 30%;
   opacity: 0.5;
   pointer-events: none;
 }
