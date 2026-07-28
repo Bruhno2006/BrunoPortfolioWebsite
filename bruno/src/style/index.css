@@ -1,3 +1,14 @@
+:root {
+  --title_delay: 0.25s;
+  --title_duration: 2s;
+  --subtitle_delay: 0.15s;
+  --subtitle_duration: 1.5s;
+  --delay: 1.2s;
+  --duration: 1.5s;
+  --max_width: 0;
+  --max_height: 0;
+}
+
 html,
 body {
   background-color: black;

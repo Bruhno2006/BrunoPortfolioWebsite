@@ -13,6 +13,15 @@ function App() {
     console.log(query);
   };
 
+  function windowSize() {
+    var root = document.querySelector(':root');
+
+    root.style.setProperty('--max_width', window.innerWidth + "px");
+    root.style.setProperty('--max_height', window.innerHeight + "px");
+  }
+
+  windowSize();
+
   return (
     <>
       <AppNavbar />
