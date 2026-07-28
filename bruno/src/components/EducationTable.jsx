@@ -50,10 +50,18 @@ function EducationTable() {
               <h1>{item.name}</h1>
               <h2>{item.course}</h2>
               <h2>{item.duration}</h2>
+              <div className="results-overview">
+                {item.results.map((result, idx) => {
+                  return (
+                    <div key={idx}>
+                      <p>Year {idx + 1}: {result}</p>
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         );
-
       })}
     </div>
   );
