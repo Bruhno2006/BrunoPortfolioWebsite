@@ -1,3 +1,43 @@
+:root {
+  --current-background-colour: rgb(0, 0, 0);
+  --previous-background-colour: rgb(0, 0, 0);
+}
+
+@media (max-width: 1000px) {
+  .content-carousel {
+    display: none !important;
+  }
+
+  .short-overview-carousel {
+    text-align: center !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-container-active {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  .education-information h1 {
+    font-size: 15px;
+  }
+
+  .education-information h2 {
+    font-size: 12px;
+  }
+
+  .education-information h3 {
+    font-size: 9px;
+  }
+
+  .school-logo {
+    width: 30vw !important;
+    height: 30vw !important;
+  }
+}
+
 @keyframes go-visible {
   from {
     opacity: 0;
@@ -18,23 +58,33 @@
   }
 }
 
+.school-logo {
+  width: 400px;
+  height: 400px;
+}
+
 .content-carousel {
   position: relative;
   display: flex;
   justify-content: left;
   align-items: left;
   width: 100%;
-  max-width: 2000px;
   height: 400px;
   margin-right: auto;
+  background-color: var(--current-background-colour);
+}
+
+.short-overview-carousel {
+  display: none;
 }
 
 .content-container-active {
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  align-items: left;
-  justify-content: left;
   animation-name: go-visible;
   animation-duration: 3s;
+  gap: 100px;
 }
 
 .content-container-hidden {
@@ -58,4 +108,8 @@
   font-size: 20px;
   text-transform: lowercase;
   font-family: 'Oswald', system-ui;
+}
+
+.education-information {
+  width: 100%;
 }
