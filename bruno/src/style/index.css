@@ -44,6 +44,10 @@ body {
     flex-wrap: wrap;
   }
 
+  .text-in-center {
+    flex-direction: column !important;
+  }
+
   .about-me-photo img {
     align-items: center;
     justify-content: center;
@@ -82,6 +86,20 @@ body {
   .education-content {
     text-align: center !important;
     text-align-last: center !important;
+  }
+
+  .contacts-header {
+    text-align: center !important;
+    text-align-last: center !important;
+  }
+
+  .contact-list {
+    flex-direction: column !important;
+  }
+
+  .contact-link {
+    display: flex !important;
+    flex-direction: column !important;
   }
 }
 
@@ -176,6 +194,14 @@ body {
   padding: 5px;
 }
 
+.text-in-center {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 .about-me-content {
   color: white;
   flex-wrap: wrap;
@@ -241,6 +267,49 @@ body {
   color: white;
 }
 
+.contacts-header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .contacts-content {
   color: white;
+}
+
+.contacts-description {
+  font-size: 25px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 20px;
+  gap: 40px;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 15px;
+}
+
+.contact-link-icon {
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+
+.contact-link-name {
+  line-height: 1.5;
+}
+
+.contact-link-name a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-link-name a:visited {
+  color: rgb(87, 85, 85);
+  font-weight: bolder;
 }
