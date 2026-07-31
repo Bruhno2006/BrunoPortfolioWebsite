@@ -41,20 +41,24 @@
 @keyframes go-visible {
   from {
     opacity: 0;
+    background-color: var(--previous-background-colour);
   }
 
   to {
     opacity: 1;
+    background-color: var(--current-background-colour);
   }
 }
 
 @keyframes go-invisible {
   from {
     opacity: 1;
+    background-color: var(--current-background-colour);
   }
 
   to {
     opacity: 0;
+    background-color: var(--previous-background-colour);
   }
 }
 
@@ -71,7 +75,6 @@
   width: 100%;
   height: 400px;
   margin-right: auto;
-  background-color: var(--current-background-colour);
 }
 
 .short-overview-carousel {
@@ -85,12 +88,15 @@
   animation-name: go-visible;
   animation-duration: 3s;
   gap: 100px;
+  background-color: var(--current-background-colour);
 }
 
 .content-container-hidden {
   display: none;
   animation-name: go-invisible;
   animation-duration: 3s;
+  background-color: var(--previous-background-colour);
+  animation-delay: 2s;
 }
 
 .content-active {
