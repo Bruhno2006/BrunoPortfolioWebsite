@@ -95,6 +95,7 @@ body {
 
   .contact-list {
     flex-direction: column !important;
+    gap: 5px !important;
   }
 
   .contact-link {
@@ -136,11 +137,12 @@ body {
 }
 
 .main-content {
-  display: flex;
-  gap: 40px;
+  display: flex;  
+  flex-direction: column;
+  gap: 100px;
   margin-left: 50px;
   margin-right: 50px;
-  flex-direction: column;
+
 }
 
 .image-with-text {
@@ -200,6 +202,7 @@ body {
   text-align: center;
   align-items: center;
   justify-content: center;
+  padding: 5px;
 }
 
 .about-me-content {
@@ -277,14 +280,14 @@ body {
 }
 
 .contacts-description {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .contact-list {
   display: flex;
   flex-direction: row;
   list-style: none;
-  font-size: 20px;
+  font-size: 15px;
   gap: 40px;
 }
 

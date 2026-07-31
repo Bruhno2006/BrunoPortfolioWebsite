@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { GitBranchIcon, Heart, Mail, Phone } from 'lucide-react';
+import { GitBranchIcon, Heart, Link, Mail, Phone } from 'lucide-react';
 import './style/App.css';
 import AppFooter from './components/AppFooter.jsx';
 import ProjectSlider from './components/ProjectSlider.jsx';
 import { slides } from "./data/carouselData.json";
 import AppNavbar from './components/AppNavbar.jsx';
 import EducationTable from './components/EducationTable.jsx';
+import { SiGithub, SiInstagram } from '@icons-pack/react-simple-icons';
 
 function App() {
   const [query, setQuery] = useState("");
@@ -68,16 +69,23 @@ function App() {
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </section>
+        <section id="projects">
+          <div className="projects-content">
+            <h2 className="projects-header">Current Projects</h2>
+            <ProjectSlider data={slides} />
+          </div>
+        </section>
         <section className="text-in-center" id="contacts">
           <div className="contacts-content">
             <h2 className="contacts-header">Contact Information</h2>
             <p className="contacts-description">Feeling interested? Either contact me or look into my other socials!</p>
             <li className="contact-list">
               {[
-                { icon: <Mail size={30} stroke="white" />, text: "brunoamadibusiness@gmail.com", link: "mailto:brunoamadibusiness@gmail.com" },
-                { icon: <Phone size={30} stroke="white" />, text: "(+44) 7400199297", link: "tel:+447400199297" },
-                { icon: <GitBranchIcon size={30} stroke="white" />, text: "GitHub", link: "https://github.com/Bruhno2006" },
-                { icon: <Heart size={30} stroke="white" />, text: "Instagram", link: "https://www.instagram.com/brunkus7767/" },
+                { icon: <Mail size={30} color="white" />, text: "brunoamadibusiness@gmail.com", link: "mailto:brunoamadibusiness@gmail.com" },
+                { icon: <Phone size={30} color="white" />, text: "(+44) 7400199297", link: "tel:+447400199297" },
+                { icon: <SiGithub size={30} color="white" />, text: "GitHub", link: "https://github.com/Bruhno2006" },
+                { icon: <SiInstagram size={30} color="white" />, text: "Instagram", link: "https://www.instagram.com/brunkus7767/" },
+                { icon: <Link size={30} color='white' />, text: "LinkedIn", link: "www.linkedin.com/in/bruno-amadi" }
               ].map(({ icon, text, link }, i) => {
                 return (
                   <ul key={i} className="contact-link">
@@ -87,12 +95,6 @@ function App() {
                 );
               })}
             </li>
-          </div>
-        </section>
-        <section id="projects">
-          <div className="projects-content">
-            <h2 className="projects-header">Current Projects</h2>
-            <ProjectSlider data={slides} />
           </div>
         </section>
       </div>
