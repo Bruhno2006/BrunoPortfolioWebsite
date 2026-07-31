@@ -44,6 +44,10 @@ body {
     flex-wrap: wrap;
   }
 
+  .text-in-center {
+    flex-direction: column !important;
+  }
+
   .about-me-photo img {
     align-items: center;
     justify-content: center;
@@ -83,6 +87,21 @@ body {
     text-align: center !important;
     text-align-last: center !important;
   }
+
+  .contacts-header {
+    text-align: center !important;
+    text-align-last: center !important;
+  }
+
+  .contact-list {
+    flex-direction: column !important;
+    gap: 5px !important;
+  }
+
+  .contact-link {
+    display: flex !important;
+    flex-direction: column !important;
+  }
 }
 
 @keyframes content-shift-left {
@@ -118,11 +137,12 @@ body {
 }
 
 .main-content {
-  display: flex;
-  gap: 40px;
+  display: flex;  
+  flex-direction: column;
+  gap: 100px;
   margin-left: 50px;
   margin-right: 50px;
-  flex-direction: column;
+
 }
 
 .image-with-text {
@@ -173,6 +193,15 @@ body {
   display: flex;
   gap: 40px;
   flex-direction: row-reverse;
+  padding: 5px;
+}
+
+.text-in-center {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   padding: 5px;
 }
 
@@ -241,6 +270,49 @@ body {
   color: white;
 }
 
+.contacts-header {
+  text-align: center;
+  text-transform: uppercase;
+}
+
 .contacts-content {
   color: white;
+}
+
+.contacts-description {
+  font-size: 20px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  font-size: 15px;
+  gap: 40px;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 15px;
+}
+
+.contact-link-icon {
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+
+.contact-link-name {
+  line-height: 1.5;
+}
+
+.contact-link-name a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-link-name a:visited {
+  color: rgb(87, 85, 85);
+  font-weight: bolder;
 }
