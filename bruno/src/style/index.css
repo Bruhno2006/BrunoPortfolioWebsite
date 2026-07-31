@@ -296,6 +296,7 @@ body {
   flex-direction: row;
   padding: 0;
   gap: 15px;
+  align-items: center;
 }
 
 .contact-link-icon {
