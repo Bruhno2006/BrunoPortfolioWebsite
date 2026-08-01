@@ -76,7 +76,7 @@ function App() {
                 { icon: <Phone size={30} color="white" />, text: "(+44) 7400199297", link: "tel:+447400199297" },
                 { icon: <SiGithub size={30} color="white" />, text: "GitHub", link: "https://github.com/Bruhno2006" },
                 { icon: <SiInstagram size={30} color="white" />, text: "Instagram", link: "https://www.instagram.com/brunkus7767/" },
-                { icon: <Link size={30} color='white' />, text: "LinkedIn", link: "www.linkedin.com/in/bruno-amadi" }
+                { icon: <Link size={30} color='white' />, text: "LinkedIn", link: "https://www.linkedin.com/in/bruno-amadi/" },
               ].map(({ icon, text, link }, i) => {
                 return (
                   <ul key={i} className="contact-link">
