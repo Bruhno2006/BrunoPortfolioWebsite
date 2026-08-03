@@ -8,9 +8,10 @@
       "course": "Computer Science: Software Engineering (Masters)",
       "duration": "4 Year Duration (2024 - 2028)",
       "results": [
-        "90",
-        "50"
-      ]
+        "70%",
+        "50%"
+      ],
+      "finished": "false"
     },
     {
       "logo": "src/assets/school-logos/west-herts-college.png",
@@ -22,7 +23,24 @@
       "results": [
         "Distinction (D)",
         "Distinction (D)"
-      ]
+      ],
+      "finished": "true"
+    },
+    {
+      "logo": "src/assets/school-logos/john-f-kennedy-catholic-school.png",
+      "alt": "John F Kennedy Catholic School",
+      "main_colour": "#D0474A",
+      "name": "John F Kennedy Catholic School",
+      "course": "GCSEs",
+      "duration": "5 Year Duration (2017 - 2022)",
+      "results" : [
+        "Level 7",
+        "Level 5",
+        "Level 7",
+        "Level 7",
+        "Level 6"
+      ],
+      "finished": "true"
     }
   ]
 }

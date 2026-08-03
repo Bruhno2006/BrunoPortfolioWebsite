@@ -2,6 +2,22 @@ import React, { useState, useEffect } from "react";
 import { schools } from "../data/educationData.json";
 import "./style/EducationTable.css"
 
+function FinishedEducation() {
+  return <h4>FINISHED</h4>;
+}
+
+function CurrentEducation() {
+  return <h4>Currently Enrolling</h4>;
+}
+
+function EducationStatus({ finished }) {
+  if (finished === "false" || !finished) {
+    return <CurrentEducation />;
+  } else {
+    return <FinishedEducation />;
+  }
+}
+
 function EducationTable() {
   const [contentIndex, setContentIndex] = useState(0);
   const totalContents = schools.length;
@@ -76,6 +92,9 @@ function EducationTable() {
                   <h1>{item.name}</h1>
                   <h2>{item.course}</h2>
                   <h2>{item.duration}</h2>
+                  <div>
+                    <EducationStatus finished={item.finished} />
+                  </div>
                   <div className="results-overview">
                     {item.results.map((result, idx) => {
                       return (
