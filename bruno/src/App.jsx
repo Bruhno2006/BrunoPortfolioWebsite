@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { GitBranchIcon, Heart, Link, Mail, Phone } from 'lucide-react';
 import './style/App.css';
-import AppFooter from './components/AppFooter.jsx';
 import ProjectSlider from './components/ProjectSlider.jsx';
 import { slides } from "./data/carouselData.json";
 import AppNavbar from './components/AppNavbar.jsx';

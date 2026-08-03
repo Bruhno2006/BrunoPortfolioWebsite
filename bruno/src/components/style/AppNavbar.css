@@ -125,6 +125,8 @@
   margin-bottom: 50px;
   border-bottom-right-radius: 25%;
   border-bottom-left-radius: 25%;
+  border: 5px solid white;
+  box-sizing: border-box;
 }
 
 .black-square {
