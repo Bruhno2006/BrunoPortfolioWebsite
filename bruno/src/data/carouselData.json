@@ -4,57 +4,50 @@
       "src": "https://picsum.photos/250?random=3",
       "title": "GODOT Card Game Project",
       "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-      "alt": "Picture 1",
+      "alt": "GODOT Card Game Project Repository",
       "link": "https://github.com/Bruhno2006/GodotSummerProject"
     },
     {
       "src": "https://picsum.photos/250?random=4",
       "title": "What makes [Superhero] Cinematic Universes Successful?",
-      "description": "My article for Reelhouse Article 4. In this article, I delve into what makes most superhero cinematic universes (MCU, DCU, etc.) so successful, especially within individual superhero movies.",
+      "description": "My article for Reelhouse Issue 4. In this article, I delve into what makes most superhero cinematic universes (MCU, DCU, etc.) so successful, especially within individual superhero movies.",
       "alt": "Reelhouse Issue 4 Article",
       "link": ""
     },
     {
-      "src": "https://picsum.photos/250?random=5",
-      "title": "GODOT Card Game Project",
-      "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Pretium tellus duis convallis tempus leo eu aenean. Iaculis massa nisl malesuada lacinia integer nunc posuere. Conubia nostra inceptos himenaeos orci varius natoque penatibus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Blandit quis suspendisse aliquet nisi sodales consequat magna. Ligula congue sollicitudin erat viverra ac tincidunt nam. Velit aliquam imperdiet mollis nullam volutpat porttitor ullamcorper. Dui felis venenatis ultrices proin libero feugiat tristique. Cubilia curae hac habitasse platea dictumst lorem ipsum. Sem placerat in id cursus mi pretium tellus. Fringilla lacus nec metus bibendum egestas iaculis massa. Taciti sociosqu ad litora torquent per conubia nostra. Ridiculus mus donec rhoncus eros lobortis nulla molestie. Mauris pharetra vestibulum fusce dictum risus blandit quis. Finibus facilisis dapibus etiam interdum tortor ligula congue. Justo lectus commodo augue arcu dignissim velit aliquam. Primis vulputate ornare sagittis vehicula praesent dui felis. Senectus netus suscipit auctor curabitur facilisi cubilia curae. Quisque faucibus ex sapien vitae pellentesque sem placerat.",
-      "alt": "Picture 1",
-      "link": "https://github.com/Bruhno2006/GodotSummerProject"
-    },
-    {
-      "src": "https://picsum.photos/250?random=6",
-      "title": "GODOT Card Game Project",
-      "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-      "alt": "Picture 1",
-      "link": "https://github.com/Bruhno2006/GodotSummerProject"
-    },
-    {
-      "src": "https://picsum.photos/250?random=7",
-      "title": "GODOT Card Game Project",
-      "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-      "alt": "Picture 1",
-      "link": "https://github.com/Bruhno2006/GodotSummerProject"
-    },
-    {
       "src": "https://picsum.photos/250?random=8",
-      "title": "GODOT Card Game Project",
-      "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-      "alt": "Picture 1",
-      "link": "https://github.com/Bruhno2006/GodotSummerProject"
+      "title": "What would be the worst place to survive in? Zombie Apocalypse vs. Robot Uprising",
+      "description": "In my article for Reelhouse Issue 5, I aim to solve a question the greatest film philosophers in history have pondered, and could not solve! Which would be harder to survive - robot uprising or zombie outbreak?",
+      "alt": "Reelhouse Issue 5 Article",
+      "link": ""
     },
     {
       "src": "https://picsum.photos/250?random=9",
-      "title": "GODOT Card Game Project",
-      "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-      "alt": "Picture 1",
-      "link": "https://github.com/Bruhno2006/GodotSummerProject"
+      "title": "Reelhouse Issue 6 Article",
+      "description": "My article for Reelhouse Issue 6 tries to explore why the concept of 4th instalments are so disliked by most audiences despite being a sequel to their favourite series.",
+      "alt": "Reelhouse Issue 6 Article",
+      "link": ""
     },
     {
-      "src": "https://picsum.photos/250?random=10",
-      "title": "GODOT Card Game Project",
-      "description": "For the Summer holiday, I attempted to make a functioning card game UI via the GODOT game engine",
-      "alt": "Picture 1",
-      "link": "https://github.com/Bruhno2006/GodotSummerProject"
+      "src": "https://picsum.photos/250?random=6",
+      "title": "Brawl-Out Revamp",
+      "description": "A revamped rendition of my first terminal-based game done in Python. BRAWL-OUT is a text-based multiplayer card game where players aim to be the last one standing by using various weapons, effects, and more to reduce their health to 0.",
+      "alt": "Brawl-Out Revamp Repository",
+      "link": "https://github.com/Bruhno2006/BrawlOutRevamp"
+    },
+    {
+      "src": "https://picsum.photos/250?random=5",
+      "title": "C File-System",
+      "description": "A terminal-based file system done fully in the C programming language",
+      "alt": "C File-System Repository",
+      "link": "https://github.com/Bruhno2006/CProject-FileSystem"
+    },
+    {
+      "src": "https://picsum.photos/250?random=7",
+      "title": "JUMPER MAN",
+      "description": "Pygame assignment for my time at West Herts College. This involves controlling a character to jump on trampolines to get the most points possible.",
+      "alt": "JUMPER MAN",
+      "link": ""
     }
   ]
 }
