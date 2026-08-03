@@ -94,8 +94,9 @@ body {
   }
 
   .contact-list {
-    flex-direction: column !important;
-    gap: 5px !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
   }
 
   .contact-link {
@@ -137,7 +138,7 @@ body {
 }
 
 .main-content {
-  display: flex;  
+  display: flex;
   flex-direction: column;
   gap: 100px;
   margin-left: 50px;
@@ -292,27 +293,30 @@ body {
 
 .contact-link {
   display: flex;
-  flex-direction: row;
-  padding: 0;
-  gap: 15px;
-  align-items: center;
+  flex-direction: row; 
+  color: white;
+  text-decoration: none;
 }
 
-.contact-link-icon {
-  margin-top: 1px;
-  flex-shrink: 0;
+.contact-link ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 0;
 }
+
+.contact-link:visited {
+  color: rgb(87, 85, 85);
+  font-weight: bolder;
+}
+
 
 .contact-link-name {
   line-height: 1.5;
 }
 
-.contact-link-name a {
-  color: white;
-  text-decoration: none;
-}
-
-.contact-link-name a:visited {
-  color: rgb(87, 85, 85);
-  font-weight: bolder;
+.contact-link-icon {
+  margin-top: 1px;
+  flex-shrink: 0;
 }

@@ -78,10 +78,12 @@ function App() {
                 { icon: <Link size={30} color='white' />, text: "LinkedIn", link: "https://www.linkedin.com/in/bruno-amadi/" },
               ].map(({ icon, text, link }, i) => {
                 return (
-                  <ul key={i} className="contact-link">
-                    <span className="contact-link-icon">{icon}</span>
-                    <span className="contact-link-name"><a href={link} target='_blank'>{text}</a></span>
-                  </ul>
+                  <a key={i} href={link} target='_blank' className="contact-link">
+                    <ul>
+                      <span className="contact-link-icon">{icon}</span>
+                      <span className="contact-link-name">{text}</span>
+                    </ul>
+                  </a>
                 );
               })}
             </li>
