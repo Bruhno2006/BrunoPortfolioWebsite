@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { GitBranchIcon, Heart, Link, Mail, Phone } from 'lucide-react';
 import './style/App.css';
 import ProjectSlider from './components/ProjectSlider.jsx';
-import { slides } from "./data/carouselData.json";
+import { slides } from "./data/projectData.json";
 import AppNavbar from './components/AppNavbar.jsx';
 import EducationTable from './components/EducationTable.jsx';
 import { SiGithub, SiInstagram } from '@icons-pack/react-simple-icons';
