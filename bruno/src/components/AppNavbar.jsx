@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import './style/AppNavbar.css';
+import { Menu } from 'lucide-react';
 
 function AppNavbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen((prevState) => !prevState);
+  };
+
   const NAV_LINKS = [
     { label: "Introduction", to: "#introduction" },
-    { label: "About Me", to: "#about-me" },    
+    { label: "About Me", to: "#about-me" },
     { label: "Education", to: "#education" },
     { label: "Projects and Achievements", to: "#projects-and-achievements" },
     { label: "Contact Information", to: "#contacts" },
@@ -30,7 +37,7 @@ function AppNavbar() {
         </div>
       </nav>
       <nav className="hamburger-menu" role="navigation">
-        <ul className="hamburger-nav-links">
+        <ul className="hamburger-nav-links" style={{ display: isOpen ? 'flex' : 'none' }}>
           {NAV_LINKS.map((link) => {
             return (
               <a key={link.to} href={link.to}>
@@ -40,6 +47,9 @@ function AppNavbar() {
           })}
         </ul>
       </nav>
+      <a className="hamburger-icon" onClick={toggleMenu}>
+        <Menu size="45px" stroke="var(--text-colour)" />
+      </a>
       <div className="black-square" />
     </div>
   );
