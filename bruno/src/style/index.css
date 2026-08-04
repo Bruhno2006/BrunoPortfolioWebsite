@@ -7,11 +7,21 @@
   --duration: 1.5s;
   --max_width: 0;
   --max_height: 0;
+
+  --navbar-background-image: url("src/assets/space-background.jpg");
+  --primary-colour: #000000;
+  --secondary-colour: #04052E;
+  --text-colour: #FFFFFF;
+  --border-colour: #FFFFFF;
+  --indicator-colour: #FFFFFF;
+  --indicator-inactive-colour: #474747;
+  --link-colour: #5930CA;
+  --link-visited-colour: #2f06b4;
 }
 
 html,
 body {
-  background-color: black;
+  background-color: var(--primary-colour);
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -20,11 +30,18 @@ body {
   scroll-behavior: smooth;
 }
 
-.site-header {
-  display: flex;
-  height: 64px;
-  gap: 100px;
-  background: #f5f5f5
+@media (prefers-color-scheme: light) {
+  :root {
+    --navbar-background-image: url("src/assets/sky-background.jpg");
+    --primary-colour: #EDF2FB;
+    --secondary-colour: #E2EAFC;
+    --text-colour: #000000;
+    --border-colour: #ABC4FF;
+    --indicator-colour: #072d85;
+    --indicator-inactive-colour: #ABC4FF;
+    --link-colour: #5184fc;
+    --link-visited-colour: #2667fd;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -153,7 +170,7 @@ body {
 }
 
 .introduction-content {
-  color: white;
+  color: var(--text-colour);
   flex-wrap: wrap;
   flex-shrink: 20;
 }
@@ -206,7 +223,7 @@ body {
 }
 
 .about-me-content {
-  color: white;
+  color: var(--text-colour);
   flex-wrap: wrap;
   flex-shrink: 20;
 }
@@ -243,7 +260,7 @@ body {
 }
 
 .projects-content {
-  color: white;
+  color: var(--text-colour);
 }
 
 .projects-header {
@@ -258,7 +275,7 @@ body {
 }
 
 .education-content {
-  color: white;
+  color: var(--text-colour);
 }
 
 .education-header {
@@ -267,7 +284,7 @@ body {
 }
 
 .achievements-content {
-  color: white;
+  color: var(--text-colour);
 }
 
 .contacts-header {
@@ -276,7 +293,7 @@ body {
 }
 
 .contacts-content {
-  color: white;
+  color: var(--text-colour);
 }
 
 .contacts-description {
@@ -294,7 +311,7 @@ body {
 .contact-link {
   display: flex;
   flex-direction: row; 
-  color: white;
+  color: var(--link-colour);
   text-decoration: none;
 }
 
@@ -307,7 +324,7 @@ body {
 }
 
 .contact-link:visited {
-  color: rgb(87, 85, 85);
+  color: var(--link-visited-colour);
   font-weight: bolder;
 }
 

@@ -74,7 +74,7 @@ function ProjectSlider({ data }) {
 
   return (
     <div className="slide-carousel">
-      <ArrowBigLeftDash fill="white" stroke="white" size={30} className="arrow arrow-left" onClick={prevSlide} />
+      <ArrowBigLeftDash fill="white" stroke={'var(--text-colour)'} size={30} className="arrow arrow-left" onClick={prevSlide} />
       {data.map((item, idx) => {
         return (
           <div className={getSlidePosition(idx)} key={idx}>
@@ -86,7 +86,7 @@ function ProjectSlider({ data }) {
           </div>
         );
       })}
-      <ArrowBigRightDash fill="white" stroke="white" size={30} className="arrow arrow-right" onClick={nextSlide} />
+      <ArrowBigRightDash fill="white" stroke={'var(--text-colour)'} color={"--text-colour"} size={30} className="arrow arrow-right" onClick={nextSlide} />
       <span className="indicators">
         {data.map((_, idx) => {
           return <button key={idx} onClick={() => setSlide(idx)} className={slide === idx ? "indicator" : "indicator-inactive"}></button>

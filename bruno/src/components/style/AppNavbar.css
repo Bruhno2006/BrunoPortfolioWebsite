@@ -42,7 +42,7 @@
     text-decoration: none;
     text-align: center;
     text-align-last: center;
-    color: white;
+    color: var(--link-colour);
     font-size: 20px;
     font-weight: 900;
   }
@@ -117,32 +117,32 @@
 }
 
 .top {
-  anchor-name: --nav-bar-container;
+  anchor-name: --navbar-container;
   margin: 0;
-  background-image: url("src/assets/space-background.jpg");
+  background-image: var(--navbar-background-image);
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 50px;
   border-bottom-right-radius: 25%;
   border-bottom-left-radius: 25%;
-  border: 5px solid white;
+  border: 5px solid var(--border-colour);
   box-sizing: border-box;
 }
 
 .black-square {
   position: absolute;
   width: 0%;
-  height: calc(anchor-size(--nav-bar-container height) + 10px);
+  height: calc(anchor-size(--navbar-container height) + 10px);
   min-width: 0;
   min-height: 0;
   top: -10px;
-  background: black;
+  background: var(--background-colour);
   animation-name: door-opening-animation;
   animation-duration: 2.5s;
 }
 
 .titlearea {
-  color: white;
+  color: var(--text-colour);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -213,7 +213,7 @@
   animation: var(--duration) ease-in calc(var(--rand) * var(--delay)) infinite float;
 
   position: relative;
-  color: white;
+  color: var(--text-colour);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 900;
