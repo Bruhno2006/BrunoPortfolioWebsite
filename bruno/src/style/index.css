@@ -34,14 +34,14 @@ body {
 
   .image-with-text {
     align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .image-with-text-reverse {
     align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .text-in-center {
@@ -91,7 +91,7 @@ body {
   .contacts-header {
     text-align: center !important;
     text-align-last: center !important;
-  }
+  } 
 
   .contact-list {
     flex-wrap: wrap;
