@@ -42,7 +42,7 @@
     text-decoration: none;
     text-align: center;
     text-align-last: center;
-    color: var(--link-colour);
+    color: var(--text-colour);
     font-size: 20px;
     font-weight: 900;
   }
