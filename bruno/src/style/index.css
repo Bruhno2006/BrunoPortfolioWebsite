@@ -7,16 +7,6 @@
   --duration: 1.5s;
   --max_width: 0;
   --max_height: 0;
-
-  --navbar-background-image: url("src/assets/space-background.jpg");
-  --primary-colour: #000000;
-  --secondary-colour: #04052E;
-  --text-colour: #FFFFFF;
-  --border-colour: #FFFFFF;
-  --indicator-colour: #FFFFFF;
-  --indicator-inactive-colour: #474747;
-  --link-colour: #5930CA;
-  --link-visited-colour: #2f06b4;
 }
 
 html,
@@ -30,6 +20,30 @@ body {
   scroll-behavior: smooth;
 }
 
+.dark {
+  --navbar-background-image: url("src/assets/space-background.jpg");
+  --primary-colour: #000000;
+  --secondary-colour: #04052E;
+  --text-colour: #FFFFFF;
+  --border-colour: #FFFFFF;
+  --indicator-colour: #FFFFFF;
+  --indicator-inactive-colour: #474747;
+  --link-colour: #5930CA;
+  --link-visited-colour: #2f06b4;
+}
+
+.light {
+  --navbar-background-image: url("src/assets/sky-background.jpg");
+  --primary-colour: #EDF2FB;
+  --secondary-colour: #E2EAFC;
+  --text-colour: #000000;
+  --border-colour: #ABC4FF;
+  --indicator-colour: #072d85;
+  --indicator-inactive-colour: #ABC4FF;
+  --link-colour: #5184fc;
+  --link-visited-colour: #2667fd;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --navbar-background-image: url("src/assets/sky-background.jpg");
@@ -41,6 +55,20 @@ body {
     --indicator-inactive-colour: #ABC4FF;
     --link-colour: #5184fc;
     --link-visited-colour: #2667fd;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --navbar-background-image: url("src/assets/space-background.jpg");
+    --primary-colour: #000000;
+    --secondary-colour: #04052E;
+    --text-colour: #FFFFFF;
+    --border-colour: #FFFFFF;
+    --indicator-colour: #FFFFFF;
+    --indicator-inactive-colour: #474747;
+    --link-colour: #5930CA;
+    --link-visited-colour: #2f06b4;
   }
 }
 
@@ -108,7 +136,7 @@ body {
   .contacts-header {
     text-align: center !important;
     text-align-last: center !important;
-  } 
+  }
 
   .contact-list {
     flex-wrap: wrap;
@@ -310,7 +338,7 @@ body {
 
 .contact-link {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
   color: var(--link-colour);
   text-decoration: none;
 }

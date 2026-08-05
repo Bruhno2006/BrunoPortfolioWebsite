@@ -6,6 +6,7 @@ import { slides } from "./data/projectData.json";
 import AppNavbar from './components/AppNavbar.jsx';
 import EducationTable from './components/EducationTable.jsx';
 import { SiGithub, SiInstagram } from '@icons-pack/react-simple-icons';
+import AppearanceToggle from './components/AppearanceToggle.jsx';
 
 function App() {
   const [query, setQuery] = useState("");
@@ -27,6 +28,7 @@ function App() {
   return (
     <>
       <AppNavbar />
+      <AppearanceToggle />
       <div className="main-content">
         <section className="image-with-text" id='introduction'>
           <div className="introduction-photo">
