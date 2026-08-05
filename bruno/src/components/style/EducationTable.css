@@ -35,6 +35,7 @@
   .school-logo {
     width: 30vw !important;
     height: 30vw !important;
+    border-right: none !important;
   }
 }
 
