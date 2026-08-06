@@ -42,6 +42,15 @@
     color: var(--text-colour);
     font-size: 20px;
     font-weight: 900;
+    display: inline-block;
+
+    transform: scale(1);
+
+    transition: transform 0.25s ease-in;
+  }
+
+  .hamburger-nav-links a:hover {
+    transform: scale(1.2);
   }
 
   .hamburger-icon {
@@ -78,45 +87,13 @@
   }
 }
 
-@keyframes shake {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  25% {
-    transform: rotate(-1.5deg);
-  }
-
-  50% {
-    transform: rotate(0deg);
-  }
-
-  75% {
-    transform: rotate(1.5deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-}
-
 @keyframes float-select {
   0% {
-    transform: scale(1, 1);
+    transform: scale(1);
   }
 
   100% {
-    transform: scale(1.1, 1.1);
-  }
-}
-
-@keyframes select {
-  from {
-    font-size: 20px;
-  }
-
-  to {
-    font-size: 30px;
+    transform: scale(1.1);
   }
 }
 
@@ -231,8 +208,6 @@
 
 .hamburger-menu {
   display: none;
-  animation: 0.25s ease-in 0s 1 select;
-  animation-fill-mode: forwards;
 }
 
 .hamburger-icon {
