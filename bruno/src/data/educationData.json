@@ -25,22 +25,6 @@
         "Distinction (D)"
       ],
       "finished": "true"
-    },
-    {
-      "logo": "src/assets/school-logos/john-f-kennedy-catholic-school.png",
-      "alt": "John F Kennedy Catholic School",
-      "main_colour": "#D0474A",
-      "name": "John F Kennedy Catholic School",
-      "course": "GCSEs",
-      "duration": "5 Year Duration (2017 - 2022)",
-      "results" : [
-        "Level 7",
-        "Level 5",
-        "Level 7",
-        "Level 7",
-        "Level 6"
-      ],
-      "finished": "true"
     }
   ]
 }
