@@ -1,4 +1,4 @@
-import { ToggleLeftIcon, ToggleRightIcon } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import "./style/AppearanceToggle.css"
 
@@ -28,12 +28,12 @@ export default function AppearanceToggle() {
   return (
     <div>
       <div className={isDark ? "toggle-dark" : "toggle-light"}>
-        <h4 className="light-mode" onClick={() => switchModes("light")} aria-label="Light Mode Toggle">
-          Light
-        </h4>
-        <h4 className="dark-mode" onClick={() => switchModes("dark")} aria-label="Dark Mode Toggle">
-          Dark
-        </h4>
+        <div className="light-mode" onClick={() => switchModes("light")} aria-label="Light Mode Toggle">
+          <Sun />
+        </div>
+        <div className="dark-mode" onClick={() => switchModes("dark")} aria-label="Dark Mode Toggle">
+          <Moon />
+        </div>
       </div>
     </div>
   );

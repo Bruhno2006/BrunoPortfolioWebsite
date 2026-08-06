@@ -1,3 +1,10 @@
+:root {
+  --light-mode-button-colour: #EDF2FB;
+  --light-mode-buttton-icon-colour: #000000;
+  --dark-mode-button-colour: #000000;
+  --dark-mode-button-icon-colour: #FFFFFF;
+}
+
 @media (max-width: 850px) {
 
   .toggle-dark,
@@ -10,7 +17,8 @@
 
   .dark-mode,
   .light-mode {
-    font-size: 3vw m !important;
+    font-size: 3vw !important;
+    padding: 3px !important;
   }
 }
 
@@ -27,6 +35,7 @@
   right: 10px;
   z-index: 45;
   width: auto;
+  border: 2px solid var(--border-colour);
 }
 
 .toggle-dark {
@@ -40,7 +49,7 @@
 .dark-mode,
 .light-mode {
   margin: 3px;
-  padding: 3px;
+  padding: 10px;
   cursor: pointer;
   border-radius: 4px;
   text-align: center;
@@ -48,11 +57,11 @@
 }
 
 .dark-mode {
-  background-color: var(--primary-colour);
-  color: var(--text-colour);
+  background-color: var(--dark-mode-button-colour);
+  color: var(--dark-mode-button-icon-colour);
 }
 
 .light-mode {
-  background-color: var(--text-colour);
-  color: var(--primary-colour);
+  background-color: var(--light-mode-button-colour);
+  color: var(--light-mode-buttton-icon-colour);
 }
