@@ -23,7 +23,20 @@ function App() {
     root.style.setProperty('--max_height', window.innerHeight + "px");
   }
 
+  function resetHistory() {
+    const cleanUrl = () => {
+      if (window.location.hash) {
+        history.replaceState(null, "", window.location.pathname + window.location.search);
+      }
+    };
+
+    cleanUrl();
+    
+    window.addEventListener('hashchange', cleanUrl);
+  }
+
   windowSize();
+  resetHistory();
 
   return (
     <>
