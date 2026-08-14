@@ -12,21 +12,21 @@
       "title": "What makes [Superhero] Cinematic Universes Successful?",
       "description": "My article for Reelhouse Issue 4. In this article, I delve into what makes most superhero cinematic universes (MCU, DCU, etc.) so successful, especially within individual superhero movies.",
       "alt": "Reelhouse Issue 4 Article",
-      "link": ""
+      "link": "src/data/pdf-documents/What Makes Superhero Cinematic Universes Successful Article.pdf"
     },
     {
       "src": "https://picsum.photos/250?random=8",
       "title": "What would be the worst place to survive in? Zombie Apocalypse vs. Robot Uprising",
       "description": "In my article for Reelhouse Issue 5, I aim to solve a question the greatest film philosophers in history have pondered, and could not solve! Which would be harder to survive - robot uprising or zombie outbreak?",
       "alt": "Reelhouse Issue 5 Article",
-      "link": ""
+      "link": "src/data/pdf-documents/Zombie Apocalypse vs Robot Uprising Article.pdf"
     },
     {
       "src": "https://picsum.photos/250?random=9",
       "title": "The Infamous 4: What made the idea of 4th Instalments so disliked?",
       "description": "My article for Reelhouse Issue 6 tries to explore why the concept of 4th instalments are so disliked by most audiences despite being a sequel to their favourite series.",
       "alt": "Reelhouse Issue 6 Article",
-      "link": ""
+      "link": "src/data/pdf-documents/The Infamous 4 Article.pdf"
     },
     {
       "src": "https://picsum.photos/250?random=6",
@@ -41,6 +41,13 @@
       "description": "A terminal-based file system done fully in the C programming language",
       "alt": "C File-System Repository",
       "link": "https://github.com/Bruhno2006/CProject-FileSystem"
+    },
+    {
+      "src": "https://picsum.photos/250?random=10",
+      "title": "Bruno Amadi Website",
+      "description": "An ePortfolio website about Bruno Amadi, THIS VERY WEBSITE! Created with React, NodeJS, and hosted online",
+      "alt": "Bruno Amadi Website",
+      "link": "https://github.com/Bruhno2006/BrunoPortfolioWebsite"
     },
     {
       "src": "https://picsum.photos/250?random=7",
