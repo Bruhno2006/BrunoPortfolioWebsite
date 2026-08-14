@@ -19,7 +19,7 @@ function App() {
   };
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 3300)
+    setTimeout(() => setLoading(false), 5000)
   }, []);
 
   function windowSize() {
