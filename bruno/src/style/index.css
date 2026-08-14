@@ -30,6 +30,7 @@ body {
   --indicator-inactive-colour: #474747;
   --link-colour: #5930CA;
   --link-visited-colour: #2f06b4;
+  --shadow-colour: #ffffffb0;
 }
 
 .light {
@@ -42,6 +43,7 @@ body {
   --indicator-inactive-colour: #ABC4FF;
   --link-colour: #5184fc;
   --link-visited-colour: #2667fd;
+  --shadow-colour: #000000b0;
 }
 
 @media (prefers-color-scheme: light) {
@@ -73,10 +75,6 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .main-content {
-    flex-direction: column;
-  }
-
   .image-with-text {
     align-items: center;
     flex-wrap: wrap;
@@ -185,7 +183,7 @@ body {
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 80px;
   margin-left: 50px;
   margin-right: 50px;
 }
