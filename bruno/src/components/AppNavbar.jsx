@@ -21,7 +21,7 @@ function AppNavbar() {
     <div className="top">
       <section className="titlearea">
         <h1 className="website-title">Bruno Amadi</h1>
-        <p className="website-subtitle">Future Software Developer</p>
+        <p className="website-subtitle">The Greatest Software Engineer that has ever lived!</p>
       </section>
       <nav className="navbar" role="navigation">
         <div className="navbar-center">

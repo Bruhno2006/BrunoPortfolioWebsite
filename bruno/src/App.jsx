@@ -10,6 +10,8 @@ import { SiGithub, SiInstagram } from '@icons-pack/react-simple-icons';
 import AppearanceToggle from './components/AppearanceToggle.jsx';
 
 function App() {
+  const date = new Date().getFullYear();
+
   const [query, setQuery] = useState("");
   const [loading, setLoading] = useState(true);
 
@@ -60,11 +62,15 @@ function App() {
             </div>
             <div className="introduction-content">
               <h2 className="introduction-header">Introduction</h2>
-              <p className="introduction-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p className="introduction-description">
+                My name is Bruno Amadi. I am a {date - 2006} year old who's striving on becoming a great software engineer that is able to create websites, software, and 
+                programs.<br/><br/>
+                Originally a side-project, I have made my website not only as a portfolio, but to document my progress in my software engineering journey and list all my past and
+                upcoming projects. These projects range from functional software, viewable websites, playable games, and external fun side-projects and hobbies.<br/><br/> 
+                
+                It would be like a large <strong>Bruno</strong> archive!!!<br/><br/>
+                
+                <strong><em>SO AWESOME!</em></strong></p>
             </div>
           </section>
           <section className="image-with-text-reverse" id='about-me'>
