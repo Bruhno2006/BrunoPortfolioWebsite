@@ -1,0 +1,48 @@
+.footer-layout {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  padding: 5px;
+  color: var(--text-colour);
+  list-style: none;
+  gap: 32px;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 15px;
+}
+
+.contact-link {
+  display: flex;
+  flex-direction: row;
+  color: var(--link-colour);
+  text-decoration: none;
+}
+
+.contact-link ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 0;
+}
+
+.contact-link:visited {
+  color: var(--link-visited-colour);
+  font-weight: bolder;
+}
+
+.contact-link-name {
+  line-height: 1.5;
+}
+
+.contact-link-icon {
+  margin-top: 1px;
+  flex-shrink: 0;
+}
