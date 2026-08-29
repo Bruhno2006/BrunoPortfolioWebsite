@@ -78,7 +78,8 @@ function ProjectSlider({ data }) {
       {data.map((item, idx) => {
         return (
           <div className={getSlidePosition(idx)} key={idx}>
-            <a href={item.link} target="_blank"><img src={item.src} alt={item.alt} /></a>
+            <img src={item.src} alt={item.alt} />
+            <a href={item.link} target="_blank"/>
             <div className={getContainerVisibility(getSlidePosition(idx))}>
               <h4 className="slide-title">{item.title}</h4>
               <p className="slide-description">{item.description}</p>
