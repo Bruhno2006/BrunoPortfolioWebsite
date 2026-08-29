@@ -1,21 +1,23 @@
-.footer-layout {
+footer {
   display: flex;
   flex-direction: row;
-  text-align: center;
   align-items: flex-start;
-  justify-content: space-evenly;
-  padding: 5px;
+  justify-content: flex-start;
   color: var(--text-colour);
   list-style: none;
-  gap: 32px;
   width: 100%;
+  border-top: 1px solid var(--text-colour);
+  font-size: 15px;
 }
 
-.list {
+.footer-row {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.footer-col {
   list-style: none;
-  font-size: 15px;
 }
 
 .contact-link {

@@ -75,6 +75,23 @@ body {
 }
 
 @media (max-width: 1000px) {
+  .main-content {
+    margin: 0px 50px 0px !important;
+  }
+
+  .image-with-text {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* .description {
+    text-align: center !important;
+    text-align-last: center !important;
+  } */
+}
+
+/* @media (max-width: 1000px) {
   .image-with-text {
     align-items: center;
     flex-wrap: wrap;
@@ -146,7 +163,7 @@ body {
     display: flex !important;
     flex-direction: column !important;
   }
-}
+} */
 
 @keyframes content-shift-left {
   from {
