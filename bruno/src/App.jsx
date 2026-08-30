@@ -57,12 +57,11 @@ function App() {
       <AppearanceToggle />
       <div className="main-content">
         <section className="image-with-text" id="about-me">
-          <div>
-            {/* <img src="https://picsum.photos/1700/200?random=1" /> */}
-          </div>
+          <img src="src/assets/about-me-images/Bruno-Was-Here.png" />
           <p className="description">
             My name is Bruno Amadi. I am a {date - 2006} year old who's striving on becoming a great software engineer that is able to create websites, software, and
-            programs.<br /><br />
+            programs. I became inspired to begin this programming journey after playing various videogames, seeing various cool websites and software. They were so cool that
+            I wanted to make something like that myself as well.<br /><br />
             Originally a side-project, I have made my website not only as a portfolio, but to document my progress in my software engineering journey and list all my past and
             upcoming projects. These projects range from functional software, viewable websites, playable games, and external fun side-projects and hobbies.<br /><br />
 
@@ -70,6 +69,7 @@ function App() {
 
             <strong><em>SO AWESOME!</em></strong>
           </p>
+          <img src="src/assets/about-me-images/Bruno-Was-Here.png" />
         </section>
         <section id="education">
           <EducationTable />
@@ -77,10 +77,8 @@ function App() {
         <section id="projects-and-achievements">
           <ProjectSlider data={slides} />
         </section>
-        <section id="footer">
-          <AppFooter />
-        </section>
       </div>
+      <AppFooter />
     </>
   );
 }

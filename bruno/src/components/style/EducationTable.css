@@ -3,7 +3,7 @@
   --previous-background-colour: rgb(0, 0, 0);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1450px) {
   .content-carousel {
     display: none !important;
   }
@@ -81,6 +81,10 @@
   }
 }
 
+.education-container {
+  margin: 0px 150px 0;
+}
+
 .school-logo {
   width: 400px;
   height: 400px;
@@ -129,10 +133,11 @@
 .results-overview {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 10px;
   font-size: 1.5vw;
   text-transform: lowercase;
   font-family: 'Oswald', system-ui;
+  flex-wrap: wrap;
 }
 
 .education-information {

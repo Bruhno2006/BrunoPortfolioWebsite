@@ -10,11 +10,9 @@ function AppNavbar() {
   };
 
   const NAV_LINKS = [
-    { label: "Introduction", to: "#introduction" },
-    { label: "About Me", to: "#about-me" },
-    { label: "Education", to: "#education" },
-    { label: "Projects and Achievements", to: "#projects-and-achievements" },
-    { label: "Contact Information", to: "#contacts" },
+    {label: "About", to: "#about-me"},
+    {label: "Blog", to: "#blog"},
+    {label: "Projects", to: "#projects"},
   ];
 
   return (

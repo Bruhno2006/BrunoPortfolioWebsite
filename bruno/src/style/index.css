@@ -1,10 +1,10 @@
 :root {
   --title_delay: 0.25s;
-  --title_duration: 2s;
+  --title_duration: 3s;
   --subtitle_delay: 0.15s;
-  --subtitle_duration: 1.5s;
+  --subtitle_duration: 2.5s;
   --delay: 1.2s;
-  --duration: 1.5s;
+  --duration: 3s;
   --max_width: 0;
   --max_height: 0;
 }
@@ -84,86 +84,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
-
-  /* .description {
-    text-align: center !important;
-    text-align-last: center !important;
-  } */
 }
-
-/* @media (max-width: 1000px) {
-  .image-with-text {
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .image-with-text-reverse {
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .text-in-center {
-    flex-direction: column !important;
-  }
-
-  .about-me-photo img {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .introduction-photo img {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .introduction-header {
-    text-align: center !important;
-    text-align-last: center !important;
-  }
-
-  .introduction-description {
-    text-align: center !important;
-    text-align-last: center !important;
-  }
-
-  .about-me-header {
-    text-align: center !important;
-    text-align-last: center !important;
-  }
-
-  .about-me-description {
-    text-align: center !important;
-    text-align-last: center !important;
-  }
-
-  .education-header {
-    text-align: center !important;
-    text-align-last: center !important;
-  }
-
-  .education-content {
-    text-align: center !important;
-    text-align-last: center !important;
-  }
-
-  .contacts-header {
-    text-align: center !important;
-    text-align-last: center !important;
-  }
-
-  .contact-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0;
-  }
-
-  .contact-link {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-} */
 
 @keyframes content-shift-left {
   from {
@@ -200,12 +121,14 @@ body {
 .main-content {
   display: flex;
   flex-direction: column;
-  gap: 80px;
-  margin: 0px 150px 0px;
+  gap: 50px;
+  margin: 0px 50px 0px;
 }
 
 #about-me img {
+  display: block;
   width: 100%;
+  outline: var(--border-colour) solid 5px;
 }
 
 .description {

@@ -1,3 +1,7 @@
+.footer-container {
+  margin: 80px 50px 0px;
+}
+
 footer {
   display: flex;
   flex-direction: row;
@@ -6,8 +10,8 @@ footer {
   color: var(--text-colour);
   list-style: none;
   width: 100%;
-  border-top: 1px solid var(--text-colour);
   font-size: 15px;
+  border-top: 1px solid var(--border-colour);
 }
 
 .footer-row {
