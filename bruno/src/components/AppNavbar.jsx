@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './style/AppNavbar.css';
 import { Menu } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 function AppNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +11,9 @@ function AppNavbar() {
   };
 
   const NAV_LINKS = [
-    {label: "About", to: "#about-me"},
-    {label: "Blog", to: "#blog"},
-    {label: "Projects", to: "#projects"},
+    { label: "About", to: "/" },
+    { label: "Blog", to: "/blog" },
+    { label: "Projects", to: "/projects" },
   ];
 
   return (
@@ -24,11 +25,11 @@ function AppNavbar() {
       <nav className="navbar" role="navigation">
         <div className="navbar-center">
           <ul className="nav-links">
-            {NAV_LINKS.map((link, idx) => {
+            {NAV_LINKS.map((link) => {
               return (
-                <a key={link.to} href={link.to} style={{ '--rand': Math.random() }}>
+                <Link to={link.to} style={{ '--rand': Math.random() }}>
                   {link.label}
-                </a>
+                </Link>
               );
             })}
           </ul>
@@ -38,9 +39,9 @@ function AppNavbar() {
         <ul className="hamburger-nav-links" style={{ display: isOpen ? 'flex' : 'none' }}>
           {NAV_LINKS.map((link) => {
             return (
-              <a key={link.to} href={link.to}>
+              <Link key={link.to} to={link.to}>
                 {link.label}
-              </a>
+              </Link>
             );
           })}
         </ul>
