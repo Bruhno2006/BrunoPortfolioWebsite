@@ -1,6 +1,20 @@
+import { useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import './style/Loader.css'
 
-const Loader = () => {
+
+
+export default function Loader() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigate('/about', { replace: true });
+    }, 10000);
+
+    return () => clearTimeout(timer);
+  }, [navigate]);
+
   return (
     <div className="loader-container">
       <div className="loader">
@@ -23,5 +37,3 @@ const Loader = () => {
     </div>
   )
 }
-
-export default Loader;

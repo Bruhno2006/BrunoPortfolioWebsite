@@ -12,16 +12,11 @@ function About() {
   const date = new Date().getFullYear();
 
   const [query, setQuery] = useState("");
-  const [loading, setLoading] = useState(true);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(query);
   };
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 5000)
-  }, []);
 
   function windowSize() {
     var root = document.querySelector(':root');
@@ -44,12 +39,6 @@ function About() {
 
   windowSize();
   resetHistory();
-
-  if (loading) {
-    return (
-      <Loader />
-    );
-  }
 
   return (
     <>
