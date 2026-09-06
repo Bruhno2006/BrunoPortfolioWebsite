@@ -18,6 +18,7 @@ body {
   box-sizing: border-box;
   font-family: Georgia, 'Times New Roman', Times, serif;
   scroll-behavior: smooth;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 .dark {
@@ -75,10 +76,6 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .main-content {
-    margin: 0px 50px 0px !important;
-  }
-
   .image-with-text {
     align-items: center;
     flex-wrap: wrap;
@@ -118,17 +115,32 @@ body {
   }
 }
 
-.main-content {
+main {
   display: flex;
   flex-direction: column;
-  gap: 50px;
-  margin: 0px 50px 0px;
+  margin: auto;
+  max-width: 100rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+h1 {
+  color: var(--text-colour);
+  text-transform: uppercase;
+}
+
+main img {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #about-me img {
   display: block;
-  width: 100%;
+  position: relative;
+  max-width: 100%;
   outline: var(--border-colour) solid 5px;
+  animation-name: content-shift-left;
+  animation-duration: 2s;
 }
 
 .description {
@@ -138,5 +150,6 @@ body {
   text-align-last: left;
   animation-name: content-shift-left;
   animation-duration: 2s;
-  font-size: 18px;
+  font-size: 17px;
+  word-break: keep-all;
 }

@@ -55,13 +55,15 @@ function About() {
     <>
       <AppNavbar />
       <AppearanceToggle />
-      <div className="main-content">
+      <main>
+        <h1>About Me</h1>
         <section className="image-with-text" id="about-me">
-          <img src="src/assets/about-me-images/Bruno-Was-Here.png" />
           <p className="description">
-            My name is Bruno Amadi. I am a {date - 2006} year old who's striving on becoming a great software engineer that is able to create websites, software, and
+            My name is Bruno Amadi. I am a {date - 2006} year old student who's striving on becoming a great software engineer that is able to create websites, software, and
             programs. I became inspired to begin this programming journey after playing various videogames, seeing various cool websites and software. They were so cool that
             I wanted to make something like that myself as well.<br /><br />
+            I am confident in using various programming languages; my favourite examples include React (HTML + CSS) and JavaScript for front-end, Python, SQL, and Java for back-end
+            applications. Even with huge knowledge in programming, I'm still wanting to widen my scope by learning other computer languages and software.<br /><br />
             Originally a side-project, I have made my website not only as a portfolio, but to document my progress in my software engineering journey and list all my past and
             upcoming projects. These projects range from functional software, viewable websites, playable games, and external fun side-projects and hobbies.<br /><br />
 
@@ -69,15 +71,10 @@ function About() {
 
             <strong><em>SO AWESOME!</em></strong>
           </p>
-          <img src="src/assets/about-me-images/Bruno-Was-Here.png" />
+          <img src="src/assets/about-me-images/head-out-of-box.jpeg" />
+          <p className="description">Ignore the image above, I didn't have any other image to use instead.</p>
         </section>
-        <section id="education">
-          <EducationTable />
-        </section>
-        <section id="projects-and-achievements">
-          <ProjectSlider data={slides} />
-        </section>
-      </div>
+      </main>
       <AppFooter />
     </>
   );
