@@ -17,40 +17,37 @@ function AppNavbar() {
   ];
 
   return (
-    <div className="top">
-      <section className="titlearea">
-        <h1 className="website-title">Bruno Amadi</h1>
-        <p className="website-subtitle">The Greatest Software Engineer that has ever lived!</p>
-      </section>
-      <nav className="navbar" role="navigation">
-        <div className="navbar-center">
+    <>
+      <div className="top">
+        <nav className="top-menu" role="navigation">
+          <h1 className="website-title">Bruno</h1>
           <ul className="nav-links">
             {NAV_LINKS.map((link) => {
               return (
-                <Link to={link.to} style={{ '--rand': Math.random() }}>
+                <Link to={link.to}>
                   {link.label}
                 </Link>
               );
             })}
           </ul>
-        </div>
-      </nav>
-      <nav className="hamburger-menu" role="navigation">
-        <ul className="hamburger-nav-links" style={{ display: isOpen ? 'flex' : 'none' }}>
-          {NAV_LINKS.map((link) => {
-            return (
-              <Link key={link.to} to={link.to}>
-                {link.label}
-              </Link>
-            );
-          })}
-        </ul>
-      </nav>
-      <a className="hamburger-icon" onClick={toggleMenu}>
-        <Menu size="45px" stroke="var(--text-colour)" />
-      </a>
-      <div className="black-square" />
-    </div>
+        </nav>
+        <nav className="hamburger-menu" role="navigation">
+          <h1 className="website-title">Bruno</h1>
+          <ul className="hamburger-nav-links" style={{ display: isOpen ? 'flex' : 'none' }}>
+            {NAV_LINKS.map((link) => {
+              return (
+                <Link key={link.to} to={link.to}>
+                  {link.label}
+                </Link>
+              );
+            })}
+          </ul>
+        </nav>
+        <a className="hamburger-icon" onClick={toggleMenu}>
+          <Menu size="45px" stroke="var(--text-colour)" />
+        </a>
+      </div>
+    </>
   );
 }
 
