@@ -95,6 +95,7 @@
 .website-title {
   color: var(--text-colour);
   text-transform: uppercase;
+  border: none;
 }
 
 .nav-links {

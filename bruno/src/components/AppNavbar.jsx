@@ -11,7 +11,7 @@ function AppNavbar() {
   };
 
   const NAV_LINKS = [
-    { label: "About", to: "/" },
+    { label: "About Me", to: "/" },
     { label: "Blog", to: "/blog" },
     { label: "Projects", to: "/projects" },
   ];
@@ -20,7 +20,7 @@ function AppNavbar() {
     <>
       <div className="top">
         <nav className="top-menu" role="navigation">
-          <h1 className="website-title">Bruno</h1>
+          <h1 className="website-title">Bruno Amadi</h1>
           <ul className="nav-links">
             {NAV_LINKS.map((link) => {
               return (
