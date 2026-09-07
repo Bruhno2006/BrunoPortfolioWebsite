@@ -4,12 +4,12 @@ import './style/Loader.css'
 
 
 
-export default function Loader() {
+export default function Loader({nextPath = '/'}) {
   const navigate = useNavigate();
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      navigate('/about', { replace: true });
+      navigate(nextPath, { replace: true });
     }, 10000);
 
     return () => clearTimeout(timer);
