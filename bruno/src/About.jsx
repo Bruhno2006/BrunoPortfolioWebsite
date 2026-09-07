@@ -1,11 +1,7 @@
 import { useEffect, useState } from 'react';
 import './style/App.css';
-import Loader from './components/Loader.jsx';
-import ProjectSlider from './components/ProjectSlider.jsx';
 import AppNavbar from './components/AppNavbar.jsx';
-import EducationTable from './components/EducationTable.jsx';
 import AppearanceToggle from './components/AppearanceToggle.jsx';
-import { slides } from "./data/projectData.json";
 import AppFooter from './components/AppFooter.jsx';
 
 function About() {
