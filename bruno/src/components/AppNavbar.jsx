@@ -11,7 +11,7 @@ function AppNavbar() {
   };
 
   const NAV_LINKS = [
-    { label: "About Me", to: "/" },
+    { label: "About Me", to: "/about" },
     { label: "Blog", to: "/blog" },
     { label: "Projects", to: "/projects" },
   ];
