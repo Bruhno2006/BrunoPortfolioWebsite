@@ -8,33 +8,6 @@ function About() {
 
   const [query, setQuery] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(query);
-  };
-
-  function windowSize() {
-    var root = document.querySelector(':root');
-
-    root.style.setProperty('--max_width', window.innerWidth + "px");
-    root.style.setProperty('--max_height', window.innerHeight + "px");
-  }
-
-  function resetHistory() {
-    const cleanUrl = () => {
-      if (window.location.hash) {
-        history.replaceState(null, "", window.location.pathname + window.location.search);
-      }
-    };
-
-    cleanUrl();
-
-    window.addEventListener('hashchange', cleanUrl);
-  }
-
-  windowSize();
-  resetHistory();
-
   return (
     <>
       <AppNavbar />

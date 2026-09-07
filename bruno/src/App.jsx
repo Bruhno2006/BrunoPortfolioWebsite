@@ -5,14 +5,13 @@ import Projects from "./Projects";
 import ThemeProvider from "./components/ThemeContext";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import AppearanceToggle from "./components/AppearanceToggle";
 
 function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Loader />} />
+          <Route path="/" element={<Loader nextPath='/about' />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/projects" element={<Projects />} />
