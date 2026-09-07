@@ -7,21 +7,22 @@
   --duration: 3s;
   --max_width: 0;
   --max_height: 0;
-}
 
-html,
-body {
+  --navbar-background-image: url("src/assets/sky-background.jpg");
+  --primary-colour: #EDF2FB;
+  --secondary-colour: #E2EAFC;
+  --text-colour: #000000;
+  --border-colour: #ABC4FF;
+  --indicator-colour: #072d85;
+  --indicator-inactive-colour: #ABC4FF;
+  --link-colour: #5184fc;
+  --link-visited-colour: #2667fd;
+  --shadow-colour: #000000b0;
+
   background-color: var(--primary-colour);
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  scroll-behavior: smooth;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-.dark {
+body.dark {
   --navbar-background-image: url("src/assets/space-background.jpg");
   --primary-colour: #000000;
   --secondary-colour: #04052E;
@@ -34,7 +35,7 @@ body {
   --shadow-colour: #ffffffb0;
 }
 
-.light {
+body.light {
   --navbar-background-image: url("src/assets/sky-background.jpg");
   --primary-colour: #EDF2FB;
   --secondary-colour: #E2EAFC;
@@ -47,32 +48,17 @@ body {
   --shadow-colour: #000000b0;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --navbar-background-image: url("src/assets/sky-background.jpg");
-    --primary-colour: #EDF2FB;
-    --secondary-colour: #E2EAFC;
-    --text-colour: #000000;
-    --border-colour: #ABC4FF;
-    --indicator-colour: #072d85;
-    --indicator-inactive-colour: #ABC4FF;
-    --link-colour: #5184fc;
-    --link-visited-colour: #2667fd;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --navbar-background-image: url("src/assets/space-background.jpg");
-    --primary-colour: #000000;
-    --secondary-colour: #04052E;
-    --text-colour: #FFFFFF;
-    --border-colour: #FFFFFF;
-    --indicator-colour: #FFFFFF;
-    --indicator-inactive-colour: #474747;
-    --link-colour: #5930CA;
-    --link-visited-colour: #2f06b4;
-  }
+html,
+body {
+  background-color: var(--primary-colour);
+  color: var(--text-colour);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  scroll-behavior: smooth;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 @media (max-width: 1000px) {
@@ -140,7 +126,7 @@ main img {
   max-width: 100%;
   outline: var(--border-colour) solid 5px;
   animation-name: content-shift-left;
-  animation-duration: 2s; 
+  animation-duration: 2s;
 }
 
 .description {
