@@ -9,17 +9,17 @@
   --max_height: 0;
 
   --navbar-background-image: url("src/assets/sky-background.jpg");
-  --primary-colour: #EDF2FB;
-  --secondary-colour: #E2EAFC;
-  --text-colour: #000000;
-  --border-colour: #ABC4FF;
-  --indicator-colour: #072d85;
-  --indicator-inactive-colour: #ABC4FF;
-  --link-colour: #5184fc;
-  --link-visited-colour: #2667fd;
-  --shadow-colour: #000000b0;
-
-  background-color: var(--primary-colour);
+  --primary-colour: unset;
+  --secondary-colour: unset;
+  --text-colour: unset;
+  --border-colour: unset;
+  --indicator-colour: unset;
+  --indicator-inactive-colour: unset;
+  --link-colour: unset;
+  --link-visited-colour: unset;
+  --shadow-colour: unset;
+  --loader-dot-colour: unset;
+  --loader-dot-text-colour: unset;
 }
 
 body.dark {
@@ -33,6 +33,8 @@ body.dark {
   --link-colour: #5930CA;
   --link-visited-colour: #2f06b4;
   --shadow-colour: #ffffffb0;
+  --loader-dot-colour: #FFFFFF;
+  --loader-dot-text-colour: #000000;
 }
 
 body.light {
@@ -46,6 +48,8 @@ body.light {
   --link-colour: #5184fc;
   --link-visited-colour: #2667fd;
   --shadow-colour: #000000b0;
+  --loader-dot-colour: #ABC4FF;
+  --loader-dot-text-colour: #000000;
 }
 
 html,

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import './style/App.css';
 import AppNavbar from './components/AppNavbar.jsx';
 import AppearanceToggle from './components/AppearanceToggle.jsx';
 import AppFooter from './components/AppFooter.jsx';

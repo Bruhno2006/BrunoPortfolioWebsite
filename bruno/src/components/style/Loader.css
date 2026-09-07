@@ -9,6 +9,10 @@
   }
 }
 
+body {
+  background-color: var(--primary-colour);
+}
+
 .loader-container {
   margin: 0;
   position: absolute;
@@ -29,15 +33,16 @@
   align-items: center;
   width: 50px;
   height: 50px;
-  background-color: var(--border-colour);
   border-radius: 100%;
   animation: bounce 0.5s infinite alternate;
+  background-color: var(--loader-dot-colour);
 }
 
 .dot p {
   font-size: 30px;
   font-weight: 800;
   text-align: center;
+  color: var(--loader-dot-text-colour);
 }
 
 .loader .dot:nth-child(2) {
