@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import fm from 'front-matter';
 import { useParams } from 'react-router-dom';
+import MarkdownIt from 'markdown-it';
+import markdownItAttrs from 'markdown-it-attrs';
 import AppNavbar from './components/AppNavbar';
 import AppearanceToggle from './components/AppearanceToggle';
 import AppFooter from './components/AppFooter';
@@ -11,6 +13,11 @@ const Post = () => {
   const [meta, setMeta] = useState({});
 
   const { postName } = useParams();
+
+  const md = new MarkdownIt({
+    html: true,
+    linkify: true,
+  }).use(markdownItAttrs);
 
   useEffect(() => {
     if (!postName) return;
@@ -26,7 +33,9 @@ const Post = () => {
       .then((fileContent) => {
         const { attributes, body } = fm(fileContent);
         setMeta(attributes || {});
-        setContent(body);
+
+        const htmlContent = md.render(body);
+        setContent(htmlContent);
       })
       .catch((err) => console.error(err));
   }, [postName]);
@@ -39,7 +48,7 @@ const Post = () => {
         <h1>{meta?.title}</h1>
         <p>{meta?.date}</p>
         <br />
-        <ReactMarkdown>{content}</ReactMarkdown>
+        <div dangerouslySetInnerHTML={{ __html: content }} />
       </main>
       <AppFooter />
     </>
