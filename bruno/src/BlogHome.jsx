@@ -11,12 +11,13 @@ const BlogHome = () => {
     <>
       <AppNavbar />
       <AppearanceToggle />
-      <main>
+      <main className="blog-home-main">
         <div className="grid-container">
           {posts.map((post) => (
-            <Link to={`/blog/${post.slug}`} className="blog-button">
+            <Link to={`/blog/${post.slug}`} className="blog-button" key={post.title}>
               <img src={post.image} className="no-animation" />
-              <h3>{post.title}</h3>
+              <p className="blog-title">{post.title}</p>
+              <p className="blog-date">{post.date}</p>
             </Link>
           ))}
         </div>
