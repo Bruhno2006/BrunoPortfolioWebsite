@@ -1,5 +1,5 @@
 ---
-title: "My First Post"
+title: "My Second Post"
 date: "2026-09-07"
 frontImage: "http://placebear.com/1000/1000"
 ---

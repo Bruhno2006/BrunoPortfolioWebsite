@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
 import fm from 'front-matter';
 import { useParams } from 'react-router-dom';
 import MarkdownIt from 'markdown-it';
@@ -33,7 +32,7 @@ const Post = () => {
       .then((fileContent) => {
         const { attributes, body } = fm(fileContent);
         setMeta(attributes || {});
-
+        
         const htmlContent = md.render(body);
         setContent(htmlContent);
       })
@@ -47,6 +46,7 @@ const Post = () => {
       <main>
         <h1>{meta?.title}</h1>
         <p>{meta?.date}</p>
+        <img src={meta?.frontImage} alt="bear" />
         <br />
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </main>

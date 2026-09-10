@@ -40,15 +40,9 @@
     display: block !important;
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 20px;
   }
 }
-
-/* @media (max-width: 1536px) {
-  .top-menu {
-    max-width: 1700px !important;
-  }
-} */
 
 @keyframes door-opening {
   from {

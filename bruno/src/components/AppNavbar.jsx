@@ -24,7 +24,7 @@ function AppNavbar() {
           <ul className="nav-links">
             {NAV_LINKS.map((link) => {
               return (
-                <Link to={link.to}>
+                <Link key={link.to} to={link.to}>
                   {link.label}
                 </Link>
               );
@@ -32,7 +32,7 @@ function AppNavbar() {
           </ul>
         </nav>
         <nav className="hamburger-menu" role="navigation">
-          <h1 className="website-title">Bruno</h1>
+          <h1 className="website-title">Bruno Amadi</h1>
           <ul className="hamburger-nav-links" style={{ display: isOpen ? 'flex' : 'none' }}>
             {NAV_LINKS.map((link) => {
               return (

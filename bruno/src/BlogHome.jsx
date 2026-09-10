@@ -4,6 +4,7 @@ import posts from './data/postsData.js';
 import AppNavbar from './components/AppNavbar';
 import AppearanceToggle from './components/AppearanceToggle';
 import AppFooter from './components/AppFooter.jsx';
+import './style/BlogHome.css'
 
 const BlogHome = () => {
   return (
@@ -11,14 +12,14 @@ const BlogHome = () => {
       <AppNavbar />
       <AppearanceToggle />
       <main>
-        <h1>My Blog</h1>
-        <ul>
+        <div className="grid-container">
           {posts.map((post) => (
-            <li key={post.slug}>
-              <Link to={`/blog/${post.slug}`}>{post.title}</Link>
-            </li>
+            <Link to={`/blog/${post.slug}`} className="blog-button">
+              <img src={post.image} className="no-animation" />
+              <h3>{post.title}</h3>
+            </Link>
           ))}
-        </ul>
+        </div>
       </main>
       <AppFooter />
     </>
