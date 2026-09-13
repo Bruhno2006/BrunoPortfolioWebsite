@@ -39,9 +39,11 @@
 }
 
 .blog-card .blog-description {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
 }
 
 .blog-card p {
