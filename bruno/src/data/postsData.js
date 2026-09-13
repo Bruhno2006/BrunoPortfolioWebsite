@@ -1,7 +1,25 @@
-const posts = [
-  { slug: "first-blog-post", title: "First Blog Post", image: `https://picsum.photos/500/200?random=${1}`, date: "2026-09-07" },
-  { slug: "second-blog-post", title: "Second Blog Post", image: `https://picsum.photos/500/200?random=${2}`, date: "2026-09-07" },
-  { slug: "third-blog-post", title: "Third Blog Post", image: `https://picsum.photos/500/200?random=${3}`, date: "2026-09-07" },
-];
+import fm from 'front-matter';
+
+const markdownFiles = import.meta.glob('/src/posts/*.md', { query: '?raw', eager: true });
+
+const posts = Object.keys(markdownFiles).map((filePath) => {
+  const rawString = markdownFiles[filePath].default;
+
+  const slug = filePath.split('/').pop().replace('.md', '');
+
+  const parsed = fm(rawString);
+
+  const data = parsed.attributes;
+  const content = parsed.body
+
+  return {
+    id: slug,
+    slug: data.slug || slug,
+    title: data.title || "Untitled Blog",
+    date: data.date || '',
+    image: data.image || '',
+    content: content,
+  };
+}).sort((a, b) => new Date(b.date) - new Date(a.date));
 
 export default posts;

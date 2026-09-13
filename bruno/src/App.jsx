@@ -14,7 +14,7 @@ function App() {
           <Route path="/" element={<Loader nextPath='/about' />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<BlogHome />} />
-          <Route path="/blog/:postName" element={<Post />} />
+          <Route path="/blog/:slug" element={<Post />} />
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </BrowserRouter>
