@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-.blog-button {
+.blog-card {
   display: grid;
   grid-template-columns: auto;
   text-align: left;
@@ -17,9 +17,10 @@
   text-decoration: none;
   margin: 0;
   gap: 10px;
+  color: var(--text-colour);
 }
 
-.blog-button img {
+.blog-card img {
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
@@ -28,18 +29,22 @@
   border-radius: 20px;
 }
 
-.blog-button .blog-title {
-  color: var(--text-colour);
+.blog-card .blog-title {
   font-size: 30px;
 }
 
-.blog-button .blog-date {
-  color: var(--text-colour);
+.blog-card .blog-date {
   font-size: 20px;
   font-style: italic;
 }
 
-.blog-button p {
+.blog-card .blog-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.blog-card p {
   margin: 0;
 }
 
