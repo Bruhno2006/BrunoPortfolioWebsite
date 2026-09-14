@@ -12,7 +12,7 @@ function About() {
     <>
       <AppNavbar />
       <AppearanceToggle />
-      <main>
+      <main className="content-rise-below">
         <h1>About Me</h1>
         <section className="image-with-text" id="about-me">
           <p className="description">
