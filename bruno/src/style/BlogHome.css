@@ -1,3 +1,13 @@
+@media (max-width: 1000px) {
+  .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1rem)) !important;
+  }
+
+  .blog-card {
+    text-align: center !important;
+  }
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1rem));

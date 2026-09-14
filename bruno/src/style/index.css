@@ -71,6 +71,10 @@ body {
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .blog-main {
+    align-items: center;
+  }
 }
 
 @keyframes content-shift-left {
@@ -171,5 +175,4 @@ main img {
   display: flex;
   flex-direction: column;
   max-width: 200rem;
-  align-items: center;
 }

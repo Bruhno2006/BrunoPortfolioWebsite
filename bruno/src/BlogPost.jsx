@@ -32,7 +32,7 @@ const Post = () => {
     <>
       <AppNavbar />
       <AppearanceToggle />
-      <main className="blog-main">
+      <main className="blog-main content-rise-below">
         <div className="article-grid-format">
           <div className="article-header">
             <div className="article-name">
