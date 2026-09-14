@@ -12,7 +12,7 @@ const BlogHome = () => {
     <>
       <AppNavbar />
       <AppearanceToggle />
-      <main className="blog-home-main">
+      <main className="blog-main">
         <div className="grid-container">
           {posts.map((post) => (
             <BlogCard key={post.id} {...post} />

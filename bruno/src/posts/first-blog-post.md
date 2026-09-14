@@ -7,4 +7,4 @@ intro: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 
 ## Welcome to My Blog
 
-This is a description. {.description}
+This is a description.

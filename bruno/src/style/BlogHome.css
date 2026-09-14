@@ -49,11 +49,3 @@
 .blog-card p {
   margin: 0;
 }
-
-.no-animation {
-  animation: none;
-}
-
-.blog-home-main {
-  max-width: 100rem;
-}
