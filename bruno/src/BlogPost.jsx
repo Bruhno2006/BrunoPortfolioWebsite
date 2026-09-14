@@ -6,6 +6,7 @@ import AppNavbar from './components/AppNavbar';
 import AppearanceToggle from './components/AppearanceToggle';
 import AppFooter from './components/AppFooter';
 import posts from './data/postsData';
+import { full as emoji, full } from 'markdown-it-emoji';
 import './style/BlogPost.css';
 import './style/custom-post-style.css';
 
@@ -14,14 +15,8 @@ const Post = () => {
 
   const md = new MarkdownIt({
     html: true,
-    linkify: true,
-  })
-
-  md.use(markdownItAttrs, {
-    leftDelimiter: '{',
-    rightDelimiter: '}',
-    allowedAttributes: []
-  });
+    linkify: true
+  }).use(emoji, full);
 
   if (!slug) return;
 
