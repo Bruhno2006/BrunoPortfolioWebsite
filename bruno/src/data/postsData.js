@@ -19,6 +19,7 @@ const posts = Object.keys(markdownFiles).map((filePath) => {
     date: data.date || '',
     image: data.image || '',
     intro: data.intro || '',
+    subtitle: data.subtitle || '',
     content: content,
   };
 }).sort((a, b) => new Date(b.date) - new Date(a.date));

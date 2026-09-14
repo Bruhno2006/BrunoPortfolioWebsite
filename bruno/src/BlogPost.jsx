@@ -7,6 +7,7 @@ import AppearanceToggle from './components/AppearanceToggle';
 import AppFooter from './components/AppFooter';
 import posts from './data/postsData';
 import './style/BlogPost.css';
+import './style/custom-post-style.css';
 
 const Post = () => {
   const { slug } = useParams();
@@ -14,7 +15,13 @@ const Post = () => {
   const md = new MarkdownIt({
     html: true,
     linkify: true,
-  }).use(markdownItAttrs);
+  })
+
+  md.use(markdownItAttrs, {
+    leftDelimiter: '{',
+    rightDelimiter: '}',
+    allowedAttributes: []
+  });
 
   if (!slug) return;
 
@@ -37,7 +44,7 @@ const Post = () => {
           <div className="article-header">
             <div className="article-name">
               <h1 className="article-title">{postData.title}</h1>
-              <p className="article-subheading">Subtitle Example</p>
+              <p className="article-subheading">{postData.subtitle}</p>
             </div>
             <p>{postData.date}</p>
           </div>
