@@ -34,5 +34,5 @@
 }
 
 .page-item:hover:not(.active) {
-  background-color: lightgrey;
+  background-color: var(--pagination-hover-colour);
 }

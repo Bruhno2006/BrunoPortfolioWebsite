@@ -23,6 +23,7 @@
   --pagination-background-colour: unset;
   --pagination-text-colour: unset;
   --pagination-border-colour: unset;
+  --pagination-hover-colour: unset;
   --pagination-active-background-colour: unset;
   --pagingation-active-text-colour: unset;
   --pagination-active-border-colour: unset;
@@ -44,6 +45,7 @@ body.dark {
   --pagination-background-colour: #000000;
   --pagination-text-colour: #FFFFFF;
   --pagination-border-colour: #5930CA;
+  --pagination-hover-colour: #DBD9D9;
   --pagination-active-background-colour: #FFFFFF;
   --pagingation-active-text-colour: #000000;
   --pagination-active-border-colour: #2f06b4;
@@ -65,6 +67,7 @@ body.light {
   --pagination-background-colour: #EDF2FB;
   --pagination-text-colour: #000000;
   --pagination-border-colour: #5184fc;
+  --pagination-hover-colour: #a4bdf8;
   --pagination-active-background-colour: #072d85;
   --pagingation-active-text-colour: #EDF2FB;
   --pagination-active-border-colour: #2667fd;
