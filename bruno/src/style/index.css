@@ -20,6 +20,12 @@
   --shadow-colour: unset;
   --loader-dot-colour: unset;
   --loader-dot-text-colour: unset;
+  --pagination-background-colour: unset;
+  --pagination-text-colour: unset;
+  --pagination-border-colour: unset;
+  --pagination-active-background-colour: unset;
+  --pagingation-active-text-colour: unset;
+  --pagination-active-border-colour: unset;
 }
 
 body.dark {
@@ -35,6 +41,12 @@ body.dark {
   --shadow-colour: #ffffffb0;
   --loader-dot-colour: #FFFFFF;
   --loader-dot-text-colour: #000000;
+  --pagination-background-colour: #000000;
+  --pagination-text-colour: #FFFFFF;
+  --pagination-border-colour: #5930CA;
+  --pagination-active-background-colour: #FFFFFF;
+  --pagingation-active-text-colour: #000000;
+  --pagination-active-border-colour: #2f06b4;
 }
 
 body.light {
@@ -50,6 +62,12 @@ body.light {
   --shadow-colour: #000000b0;
   --loader-dot-colour: #ABC4FF;
   --loader-dot-text-colour: #000000;
+  --pagination-background-colour: #EDF2FB;
+  --pagination-text-colour: #000000;
+  --pagination-border-colour: #5184fc;
+  --pagination-active-background-colour: #072d85;
+  --pagingation-active-text-colour: #EDF2FB;
+  --pagination-active-border-colour: #2667fd;
 }
 
 html,
