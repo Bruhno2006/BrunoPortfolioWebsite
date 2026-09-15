@@ -1,5 +1,8 @@
 .footer-container {
-  margin: 80px 50px 0px;
+  margin: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 60rem;
 }
 
 footer {

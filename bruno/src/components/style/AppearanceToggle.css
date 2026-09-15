@@ -5,7 +5,7 @@
   --dark-mode-button-icon-colour: #FFFFFF;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1000px) {
 
   .toggle-dark,
   .toggle-light {

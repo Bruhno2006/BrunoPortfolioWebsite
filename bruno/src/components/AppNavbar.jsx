@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './style/AppNavbar.css';
 import { Menu } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 function AppNavbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,46 +11,43 @@ function AppNavbar() {
   };
 
   const NAV_LINKS = [
-    {label: "About", to: "#about-me"},
-    {label: "Blog", to: "#blog"},
-    {label: "Projects", to: "#projects"},
+    { label: "About Me", to: "/about" },
+    { label: "Blog", to: "/blog" },
+    { label: "Projects", to: "/projects" },
   ];
 
   return (
-    <div className="top">
-      <section className="titlearea">
-        <h1 className="website-title">Bruno Amadi</h1>
-        <p className="website-subtitle">The Greatest Software Engineer that has ever lived!</p>
-      </section>
-      <nav className="navbar" role="navigation">
-        <div className="navbar-center">
+    <>
+      <div className="top">
+        <nav className="top-menu" role="navigation">
+          <h1 className="website-title">Bruno Amadi</h1>
           <ul className="nav-links">
-            {NAV_LINKS.map((link, idx) => {
+            {NAV_LINKS.map((link) => {
               return (
-                <a key={link.to} href={link.to} style={{ '--rand': Math.random() }}>
+                <Link key={link.to} to={link.to}>
                   {link.label}
-                </a>
+                </Link>
               );
             })}
           </ul>
-        </div>
-      </nav>
-      <nav className="hamburger-menu" role="navigation">
-        <ul className="hamburger-nav-links" style={{ display: isOpen ? 'flex' : 'none' }}>
-          {NAV_LINKS.map((link) => {
-            return (
-              <a key={link.to} href={link.to}>
-                {link.label}
-              </a>
-            );
-          })}
-        </ul>
-      </nav>
-      <a className="hamburger-icon" onClick={toggleMenu}>
-        <Menu size="45px" stroke="var(--text-colour)" />
-      </a>
-      <div className="black-square" />
-    </div>
+        </nav>
+        <nav className="hamburger-menu" role="navigation">
+          <h1 className="website-title">Bruno Amadi</h1>
+          <ul className="hamburger-nav-links" style={{ display: isOpen ? 'flex' : 'none' }}>
+            {NAV_LINKS.map((link) => {
+              return (
+                <Link key={link.to} to={link.to}>
+                  {link.label}
+                </Link>
+              );
+            })}
+          </ul>
+        </nav>
+        <a className="hamburger-icon" onClick={toggleMenu}>
+          <Menu size="45px" stroke="var(--text-colour)" />
+        </a>
+      </div>
+    </>
   );
 }
 
