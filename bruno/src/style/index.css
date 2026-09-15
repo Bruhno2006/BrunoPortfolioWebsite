@@ -133,14 +133,6 @@ body {
 main {
   display: flex;
   flex-direction: column;
-<<<<<<< HEAD
-  gap: 50px;
-  margin: 0px 100px 0px;
-}
-
-#about-me {
-  margin: 0 10px 0;
-=======
   margin: auto;
   max-width: 60rem;
   padding-left: 2rem;
@@ -148,7 +140,6 @@ main {
   padding-top: 5rem;
   padding-bottom: 5rem;
   gap: 1rem;
->>>>>>> react-router
 }
 
 main h1 {
@@ -162,12 +153,11 @@ main h1 {
 main img {
   display: block;
   position: relative;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   outline: var(--border-colour) solid 5px;
+  margin: 2rem auto 2rem auto;
 }
 
 .description {
