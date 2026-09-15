@@ -8,6 +8,12 @@
   }
 }
 
+.blog-main h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1rem));

@@ -10,6 +10,22 @@ function AppFooter() {
         <div>
           <section className="footer-row">
             <li className="footer-col">
+              <h3>Look Around</h3>
+              {[
+                { text: "About ", link: "/about" },
+                { text: "Blog", link: "/blog" },
+                { text: "Projects", link: "/projects" },
+              ].map(({ text, link }, i) => {
+                return (
+                  <a key={i} href={link} target='_parent' className="contact-link">
+                    <ul>
+                      <span className="contact-link-name">{text}</span>
+                    </ul>
+                  </a>
+                );
+              })}
+            </li>
+            <li className="footer-col">
               <h3>Contact Me!</h3>
               {[
                 { icon: <Mail size={30} color="var(--link-colour)" />, text: "brunoamadibusiness@gmail.com", link: "mailto:brunoamadibusiness@gmail.com" },
