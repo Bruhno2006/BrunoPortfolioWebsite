@@ -96,6 +96,10 @@ body {
   .blog-main {
     align-items: center;
   }
+
+  .project-main {
+    align-items: center;
+  }
 }
 
 @keyframes content-shift-left {
@@ -192,6 +196,12 @@ main img {
 }
 
 .blog-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 200rem;
+}
+
+.project-main {
   display: flex;
   flex-direction: column;
   max-width: 200rem;

@@ -12,6 +12,13 @@
   }
 }
 
+@container name (min-width: 501px) {
+  .article-name .article-title {
+    border: 2px solid maroon;
+    background-color: salmon;
+  }
+}
+
 .article-grid-format {
   display: grid;
   grid-template: 'left header right' 'left content right';
@@ -25,21 +32,24 @@
   grid-area: header;
   justify-content: space-between;
   align-items: last baseline;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   border-bottom: 1px solid var(--border-colour);
 }
 
+/* Need work on getting the sizing of the header working for both blog and project posts */
 .article-name {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  container-name: name;
+  container-type: inline-size;
 }
 
 .article-name .article-title {
-  font-size: 3.4rem;;
+  font-size: 3.4em;
   color: var(--text-colour);
   text-transform: uppercase;
-  border: none;  
+  border: none;
   margin: 0;
 }
 

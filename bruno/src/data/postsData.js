@@ -1,8 +1,8 @@
 import fm from 'front-matter';
 
-const markdownFiles = import.meta.glob('/src/posts/*.md', { query: '?raw', eager: true });
+const markdownFiles = import.meta.glob('/src/posts/blogs/*.md', { query: '?raw', eager: true });
 
-const posts = Object.keys(markdownFiles).map((filePath) => {
+const blogposts = Object.keys(markdownFiles).map((filePath) => {
   const rawString = markdownFiles[filePath].default;
 
   const slug = filePath.split('/').pop().replace('.md', '');
@@ -10,7 +10,7 @@ const posts = Object.keys(markdownFiles).map((filePath) => {
   const parsed = fm(rawString);
 
   const data = parsed.attributes;
-  const content = parsed.body
+  const content = parsed.body;
 
   return {
     id: slug,
@@ -24,4 +24,4 @@ const posts = Object.keys(markdownFiles).map((filePath) => {
   };
 }).sort((a, b) => new Date(b.date) - new Date(a.date));
 
-export default posts;
+export default blogposts;

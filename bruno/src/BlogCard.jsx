@@ -1,14 +1,12 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
 
-function BlogCard({ title, date, image, slug, intro, content}) {
+function BlogCard({ title, date, image, slug, intro }) {
   return (
     <Link to={`/blog/${slug}`} className="blog-card">
       {image && <img src={image} alt={title} className="no-animation" />}
-      <p className="blog-title">{title}</p>
-      <p className="blog-date">{date}</p>
-      <p className="blog-description">{intro}</p>
+      <p className="card-title">{title}</p>
+      <p className="card-date">{date}</p>
+      <p className="card-description">{intro}</p>
     </Link>
   );
 }

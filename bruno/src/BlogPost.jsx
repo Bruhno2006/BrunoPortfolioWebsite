@@ -1,16 +1,14 @@
 import { useParams } from 'react-router-dom';
-import ReactMarkdown from 'react-markdown';
 import MarkdownIt from 'markdown-it';
-import markdownItAttrs from 'markdown-it-attrs';
 import AppNavbar from './components/AppNavbar';
 import AppearanceToggle from './components/AppearanceToggle';
 import AppFooter from './components/AppFooter';
-import posts from './data/postsData';
+import blogposts from './data/postsData';
 import { full as emoji, full } from 'markdown-it-emoji';
 import './style/BlogPost.css';
 import './style/custom-post-style.css';
 
-const Post = () => {
+const BlogPost = () => {
   const { slug } = useParams();
 
   const md = new MarkdownIt({
@@ -20,7 +18,7 @@ const Post = () => {
 
   if (!slug) return;
 
-  const postData = posts.find((p) => p.slug === slug);
+  const postData = blogposts.find((p) => p.slug === slug);
 
   if (!postData) {
     return (
@@ -59,4 +57,4 @@ const Post = () => {
   );
 };
 
-export default Post;
+export default BlogPost;

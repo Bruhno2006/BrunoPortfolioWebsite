@@ -8,7 +8,7 @@
   }
 }
 
-.blog-main h1 {
+.blog-main .blog-home-title {
   display: flex;
   justify-content: center;
   align-content: center;
@@ -45,16 +45,16 @@
   border-radius: 20px;
 }
 
-.blog-card .blog-title {
+.blog-card .card-title {
   font-size: 30px;
 }
 
-.blog-card .blog-date {
+.blog-card .card-date {
   font-size: 20px;
   font-style: italic;
 }
 
-.blog-card .blog-description {
+.blog-card .card-description {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;

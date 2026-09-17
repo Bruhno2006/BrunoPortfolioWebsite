@@ -5,7 +5,6 @@ image: "https://picsum.photos/500/200?random=1"
 intro: "If this is your first time pearing into my website, welcome! If this isn't, then why are you reading this? **Get your ass out of here!**"
 subtitle: "Here's to new beginnings!"
 ---
-
 If this is your first time pearing into my website, welcome! If this isn't, then why are you reading this? **Get out of here!**
 
 If you are former, hello, my name is Bruno Amadi. I aim to become a profitable, hard-working, no AI usage software engineer in the future. With this website which I was able to produce with my own two barehands, and heavy-usage of internet access (the good and bad side), I'll be recording my daily life and programming journey for you lovely readers to view. Both the good and the bad of me can be seen in the public - this won't backfire on me at all. *No sir-ey*.
