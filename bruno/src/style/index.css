@@ -202,10 +202,7 @@ main img {
 }
 
 .project-main {
-<<<<<<< Updated upstream
   display: flex;
   flex-direction: column;
-=======
->>>>>>> Stashed changes
   max-width: 200rem;
 }
