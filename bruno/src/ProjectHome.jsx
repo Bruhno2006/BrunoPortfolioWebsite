@@ -22,9 +22,15 @@ const ProjectHome = () => {
       <main className="project-main">
         <h1 className="project-home-title">Projects</h1>
         <div className="grid-container">
-          {currentPosts.map((post) => (
+          <div>
+            <p>Programming Projects</p>
+          </div>
+          <div>
+            <p>Reelhouse Articles</p>
+          </div>
+          {/* {currentPosts.map((post) => (
             <ProjectCard key={post.id} {...post} />
-          ))}
+          ))} */}
         </div>
         <Pagination postsPerPage={postsPerPage} totalPosts={projectposts.length} setCurrentPage={setCurrentPage} currentPage={currentPage} />
       </main>
