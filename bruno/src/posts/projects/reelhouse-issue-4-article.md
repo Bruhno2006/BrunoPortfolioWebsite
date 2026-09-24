@@ -6,3 +6,5 @@ intro: "As you might’ve guessed from the title, I love superheroes, and I love
 type: "reelhouse"
 subtitle: "Article for Reelhouse Issue 4"
 ---
+
+*As written in the 4th Issue of Reelhouse*

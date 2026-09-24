@@ -6,3 +6,5 @@ intro: "In most notable apocalyptic movies, characters are forced to survive in 
 type: "reelhouse"
 subtitle: "Article for Reelhouse Issue 5"
 ---
+
+*As written in the 5th Issue of Reelhouse*
