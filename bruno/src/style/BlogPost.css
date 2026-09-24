@@ -41,21 +41,33 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+<<<<<<< Updated upstream
   container-name: name;
   container-type: inline-size;
 }
 
 .article-name .article-title {
   font-size: 3.4em;
+=======
+  font-size: 100%;
+  width: 80%;
+
+}
+
+.article-name .article-title {
+  font-size: 2.5em;
+>>>>>>> Stashed changes
   color: var(--text-colour);
   text-transform: uppercase;
   border: none;
   margin: 0;
+  justify-content: left;
 }
 
 .article-name .article-subheading {
-  font-size: 1.5rem;
+  font-size: 1.5em;
   margin: 0;
+  justify-content: left;
 }
 
 .article-content {
