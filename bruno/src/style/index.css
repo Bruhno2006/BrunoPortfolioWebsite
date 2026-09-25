@@ -206,4 +206,13 @@ main img {
   display: flex;
   flex-direction: column;
   max-width: 200rem;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.project-home-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 200rem;
 }

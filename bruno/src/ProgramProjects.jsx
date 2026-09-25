@@ -21,7 +21,7 @@ const ProgramProjects = () => {
     <>
       <AppNavbar />
       <AppearanceToggle />
-      <main className="project-main">
+      <main className="project-home-main">
         <h1 className="project-page-title">Programs</h1>
         <div className="project-page-grid-container">
           {currentPosts.map((post) => (

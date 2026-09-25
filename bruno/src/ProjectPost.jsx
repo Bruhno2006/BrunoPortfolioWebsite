@@ -35,18 +35,17 @@ const ProjectPost = () => {
       <AppearanceToggle />
       <main className="project-main content-rise-below">
         <div className="project-grid-format">
-          <div className="project-header">
+          <div id="project-header" className="project-header">
+            <img className="project-header-image" src={projectData.image} alt={projectData.title} />
             <div className="project-name">
               <h1 className="project-title">{projectData.title}</h1>
               <p className="project-subheading">{projectData.subtitle}</p>
+              <p className="project-date">{projectData.date}</p>
             </div>
-            <p>{projectData.date}</p>
           </div>
           <div className="project-left">
           </div>
           <article className="project-content no-animation">
-            <img src={projectData.image} alt={projectData.title} />
-            <br />
             <div dangerouslySetInnerHTML={{ __html: projectBody }} />
           </article>
           <div className="project-right">

@@ -9,7 +9,7 @@ const ProjectHome = () => {
     <>
       <AppNavbar />
       <AppearanceToggle />
-      <main className="project-main">
+      <main className="project-home-main">
         <h1 className="project-home-title">Projects</h1>
         <div className="project-home-container">
           <Link className="program-section" to={`/projects/program`}>
