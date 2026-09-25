@@ -9,6 +9,19 @@
 
   .project-grid-format {
     grid-template: 'header header header' 'content content content' !important;
+    row-gap: 10rem !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .project-grid-format {
+    row-gap: 20rem !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .project-grid-format {
+    row-gap: 21rem !important;
   }
 }
 
@@ -19,7 +32,7 @@
   background-size: cover;
   outline: none;
   margin-top: 0;
-  opacity: 0.7;
+  opacity: 0.5;
   mask-image: linear-gradient(black 50%, transparent 100%);
 }
 
@@ -27,7 +40,7 @@
   display: grid;
   grid-template: 'header header header' 'left content right' 'left content right';
   grid-template-columns: 0.2fr 1fr 0.2fr;
-  row-gap: 4rem;
+  row-gap: 2rem;
 }
 
 .project-header {
