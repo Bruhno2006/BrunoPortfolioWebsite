@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import MarkdownIt from 'markdown-it';
+import markdownItAttrs from 'markdown-it-attrs';
 import AppNavbar from "./components/AppNavbar";
 import AppearanceToggle from "./components/AppearanceToggle";
 import AppFooter from "./components/AppFooter";
@@ -14,9 +15,9 @@ const ProjectPost = () => {
   const md = new MarkdownIt({
     html: true,
     linkify: true
-  }).use(emoji, full);
+  }).use(emoji).use(markdownItAttrs);
 
-  if (!slug) return;
+  if (!slug) return null;
 
   const projectData = projectposts.find((p) => p.slug === slug);
 

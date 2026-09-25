@@ -7,4 +7,4 @@ type: "reelhouse"
 subtitle: "Article for Reelhouse Issue 4"
 ---
 
-*As written in the 4th Issue of Reelhouse*
+*As written and edited in the 4th Issue of Reelhouse*

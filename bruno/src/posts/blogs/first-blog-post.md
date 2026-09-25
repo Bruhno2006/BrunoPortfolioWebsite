@@ -12,8 +12,8 @@ If you are former, hello, my name is Bruno Amadi. I aim to become a profitable, 
 The website may not even look like this in the future, you never know, I might become a better developer that this current style as I write this would be completely different as time passes. Or look progressively worse, who's to say. 
 
 If I were to describe my portfolio, it obviously involves programming projects ranging from software-related to even videogame demos. In my freetime, I do other side-projects including 
-**REEL**{.red-text}
-**HOUSE**{.white-text} 
+<strong class="red-text">REEL</strong>
+<strong class="white-text">HOUSE</strong>
 articles talking about topics part of my favourite past-time - **MOVIES**! There would be future non-programming projects that I would do in the future as well. You can go to the [Projects](http://localhost:5173/projects) to find all my projects listed.
 
 I hope that you'll read through this website's catalogue and enjoy what you find in there. There may be secrets, they may be inspirations for YOUR future works, or there may not be anything.
