@@ -7,7 +7,7 @@ type: "reelhouse"
 subtitle: "Article for Reelhouse Issue 6"
 ---
 
-*As written and edited in the 6th Issue of Reelhouse*
+***Final piece written and edited for REELHOUSE Issue 6***
 
 The infamous number 4! A homophone for death in East Asian cultures! Associated with various plagues and the burning of villages! No wonder Mista (from *JoJo's Bizzare Adventure: Golden Wind*) has tetraphobia. It might really come with bad luck...
 

@@ -1,4 +1,13 @@
-@media (max-width: 1000px) {}
+@media (max-width: 500px) {
+  .project-home-container {
+    flex-direction: column !important;
+  }
+
+  .project-home-container a {
+    height: 100px !important;
+    width: unset !important;
+  }
+}
 
 .project-home-main .project-home-title {
   display: flex;

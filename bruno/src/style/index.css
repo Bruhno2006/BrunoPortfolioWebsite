@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
   --title_delay: 0.25s;
   --title_duration: 3s;
@@ -27,6 +29,8 @@
   --pagination-active-background-colour: unset;
   --pagingation-active-text-colour: unset;
   --pagination-active-border-colour: unset;
+  --blockquote-colour: unset;
+  --blockquote-border-colour: unset;
 }
 
 body.dark {
@@ -49,6 +53,8 @@ body.dark {
   --pagination-active-background-colour: #FFFFFF;
   --pagingation-active-text-colour: #000000;
   --pagination-active-border-colour: #2f06b4;
+  --blockquote-colour: #474747;
+  --blockquote-border-colour: #FFFFFF;
 }
 
 body.light {
@@ -71,6 +77,8 @@ body.light {
   --pagination-active-background-colour: #072d85;
   --pagingation-active-text-colour: #EDF2FB;
   --pagination-active-border-colour: #2667fd;
+  --blockquote-colour: #ABC4FF;
+  --blockquote-border-colour: #5184fc;
 }
 
 html,
@@ -82,7 +90,7 @@ body {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Poppins', 'Arial', sans-serif;
   scroll-behavior: smooth;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
@@ -159,10 +167,51 @@ main img {
   display: block;
   position: relative;
   max-width: 100%;
-  aspect-ratio: 16 / 9;
   object-fit: cover;
   outline: var(--border-colour) solid 5px;
   margin: 2rem auto 2rem auto;
+}
+
+blockquote {
+  background-color: var(--blockquote-colour);
+  border-left: 10px solid var(--blockquote-border-colour);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}
+
+blockquote:before {
+  color: var(--blockquote-border-colour);
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+table {
+  width: 100%;
+  font-size: 100%;
+  border-collapse: collapse;
+  padding: 2px;
+}
+
+table, th, td {
+  border: 1px solid var(--border-colour);
+}
+
+th, td {
+  padding: 5px;
+}
+
+th {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 18px;
 }
 
 .description {

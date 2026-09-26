@@ -13,6 +13,20 @@
   }
 }
 
+@media (max-width: 700px) {
+  .project-name {
+    top: 60% !important;
+  }
+
+  .project-title {
+    font-size: 1.2rem !important;
+  }
+
+  .project-subheading {
+    font-size: 0.8rem !important;
+  }
+}
+
 .project-header-image {
   width: 100%;
   height: auto;
@@ -26,8 +40,8 @@
 
 .project-grid-format {
   display: grid;
-  grid-template-areas: 
-    'header header header' 
+  grid-template-areas:
+    'header header header'
     'left content right';
   grid-template-columns: minmax(0, 0.2fr) minmax(0, 1fr) minmax(0, 0.2fr);
   row-gap: 2rem;
