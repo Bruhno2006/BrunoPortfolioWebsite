@@ -12,10 +12,16 @@ const projectposts = Object.keys(markdownFiles).map((filePath) => {
   const data = parsed.attributes;
   const content = parsed.body;
 
+  let logoUrl = data.logo || '';
+  if (logoUrl && !logoUrl.startsWith('http') && !logoUrl.startsWith('/')) {
+    logoUrl = new URL(`../posts/assets/${logoUrl}`, import.meta.url).href;
+  }
+
   return {
     id: slug,
     slug: data.slug || slug,
     title: data.title || "Untitled Project",
+    logo: logoUrl,
     date: data.date || '',
     image: data.image || '',
     intro: data.intro || '',

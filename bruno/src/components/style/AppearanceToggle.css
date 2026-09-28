@@ -1,8 +1,8 @@
 :root {
-  --light-mode-button-colour: #EDF2FB;
-  --light-mode-buttton-icon-colour: #000000;
+  --light-mode-button-colour: #586B79;
+  --light-mode-buttton-icon-colour: #1E2429;
   --dark-mode-button-colour: #000000;
-  --dark-mode-button-icon-colour: #FFFFFF;
+  --dark-mode-button-icon-colour: #F4F4F6;
 }
 
 @media (max-width: 1000px) {

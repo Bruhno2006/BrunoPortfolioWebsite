@@ -9,6 +9,14 @@ import { full as emoji, full } from 'markdown-it-emoji';
 import './style/ProjectPost.css';
 import './style/custom-post-style.css';
 
+function ProjectLogo({ data }) {
+  if (!data.logo) {
+    return (<h1 className='project-title'>{data.title}</h1>);
+  }
+
+  return (<img className='project-logo' src={data.logo} alt={data.title} />);
+}
+
 const ProjectPost = () => {
   const { slug } = useParams();
 
@@ -38,7 +46,7 @@ const ProjectPost = () => {
           <div id="project-header" className="project-header">
             <img className="project-header-image" src={projectData.image} alt={projectData.title} />
             <div className="project-name">
-              <h1 className="project-title">{projectData.title}</h1>
+              <ProjectLogo data={projectData} />
               <p className="project-subheading">{projectData.subtitle}</p>
               <p className="project-date">{projectData.date}</p>
             </div>

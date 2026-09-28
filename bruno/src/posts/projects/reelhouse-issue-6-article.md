@@ -19,9 +19,13 @@ But why are 4th instalments so disliked as a rule of thumb? I can boil it down t
 
 Fans often believe that continuing what was thought of as a complete trilogy is unnecessary, especially if the final film has a satisfying conclusion. An example of an unnecessary 4th instalment, in my opinion, would be *Toy Story 4*. Despite its sequel being critically well-received, I believe that *Toy Story 3* worked a lot better as a definitive conclusion to the franchise.
 
+![Toy Story 4](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSccsdBt4al0z071hWRvzOGHaD389MchYYAtYeCNrRrsg&s=10 "Toy Story 4")
+
 *Toy Story 3* tackled themes like the transition from childhood to adulthood through the lens of toys. In the final scene, Andy, now a college student, relives his childhood while playing with Bonnie and his toys. He then decides to gift these toys to her - even his day-one best friend, Woody. Woody's final line, "So long... partner", as Andy drives away, always tugs at my heartstrings (the fire pit scene also still scars me greatly).
 
 *Toy Story 4* is a good sequel, no doubt, but for its existence to be considered necessary to the overall story, it needed to remove the full stop that the original ending put in place. Woody's sentimental ending in the third film involved him gaining a new purpose: to care for Bonnie. Developing from his one-sided rivalry with Buzz, and fear of being replaced/no longer needed by Andy, Woody came to accept his owner leaving because he understood Andy had outgrown him. When he finds a new purpose, this completes his character arc. The decision in *ToY Story 4* to have him leave the toys to be with Bo Peep undermined that original ending. By extension, for *Toy Story 5* to work, it had to undermine the *new* ending of *Toy Story 4*, which it does by bringing Woody back, despite his decision to venture off from the main group.
+
+![Back into the Future: Part 1](https://m.media-amazon.com/images/M/MV5BMjA4MzI0NzI3MF5BMl5BanBnXkFtZTcwOTc4Mzg0OQ@@._V1_.jpg "Back into the Future: Part 1")
 
 This is the same sentiment many people had towards the rumoured *Back to the Future: Part 4*. Thankfully, the creators seemingly shut the door on a sequel, stating in an interview that the *Back to the Future* trilogy is a complete, perfect story that doesn't need another sequel.
 
@@ -37,6 +41,8 @@ Either way, a 4th instalment can only be considered unnecessary if it tries to b
 
 Some 4th instalments, even within popular franchises, may not be able to meet the high expectations of fans. In this way, there's a lot of pressure on the sequel. Worse case, it's so bad that people erase it in their head canon. For example, to me, **there was never a war in Ba Sing Se** (fans of *Avatar: The Last Airbender* may sympathise).
 
+![Kung Fu Panda 4](https://cdnph.upi.com/ph/st/th/8971709703408/2024/i/17097039891823/v1.2/Movie-review-Kung-Fu-Panda-4-funny-despite-plot-issues.jpg?lg=5&=1 "Kung Fu Panda 4")
+
 One movie which didn't meet fan expectations was *Kung Fu Panda 4*. While a relative commercial success, it was a huge letdown compared to the heights of its predecessors. After finishing the 4th film, I remember feeling underwhelmed because as it didn't feel or act like a *Kung-Fu Panda* movie. The plot was inconsistent, and thin, and Po's character actually regressed, forgetting the lessons he learned in *Kung Fu Panda 3*. The Chameleon wasn't as interesting as past villains in the series, despite having unique skills and potential to be a larger threat. And speaking of past villains, I disliked how they were only included as surprise cameos.
 
 My biggest gripe with *Kung Fu Panda 4* was the decision to exclude the Furious Five - Po's teammates, who were important to his growth and featured in every other instalment. They were replaced with new characters who were pretty plain additions to the movie. The main culprit here was Zhen, Po's successor (no hate to Awkwafina).
@@ -48,6 +54,8 @@ Because the movie did not meet fan expectations, it is now the consensus among *
 ## Overreliance on Popular IP (Cash-grabs)
 
 The main reason for people's disdain for unnecessary 4th instalments is that they can sniff out the money-making. Increasingly, well-known studios are over reliant on popular media and nostalgia, and unwilling to take risks on new, original ideas. The sudden surplus of new sequels/reboots of popular IP raises questions about whether studios have a duty to care for beloved franchises. If they do, producing new instalments for profit only clearly means they fail at that duty. Often, because of cost-cutting in the production process, later sequels in a series see a decline in quality. This can lead to duller visuals, flatter plots, poor voice acting, shorter runtimes, etc. These types of releases are aptly labelled 'cash grabs' - low-effort, and solely produced for profit.
+
+![Despicable Me 4](https://sm.ign.com/t/ign_za/review/d/despicable/despicable-me-4-review_q94s.1280.jpg "Despicable Me 4")
 
 For example, due to *Despicable Me*'s success and popularity, its franchise has become the 'cash-cow' for Illumination Studios. Though the series' main purpose is increasingly to sell merchandise, each new release is assured to result in profit. *Despicable Me* and *Despicable Me 2* are my favourite instalments in the franchise because of their fun, smart, and engaging stories. Both do well balancing humour with a captivating story that both kids and adults can enjoy. 
 

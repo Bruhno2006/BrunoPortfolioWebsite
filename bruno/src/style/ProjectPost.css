@@ -70,6 +70,13 @@
   width: 80%;
 }
 
+.project-logo {
+  color: var(--text-colour);
+  outline: none;
+  margin: none;
+  border: none;
+}
+
 .project-title {
   font-size: 3.5em;
   color: var(--text-colour);
