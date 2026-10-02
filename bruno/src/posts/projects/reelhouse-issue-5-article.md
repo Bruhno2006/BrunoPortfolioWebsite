@@ -8,7 +8,7 @@ type: "reelhouse"
 subtitle: "Article for Reelhouse Issue 5"
 ---
 
-***Final piece written and edited for REELHOUSE Issue 5***
+***Final piece originally written in REELHOUSE***
 
 ![Love, Death, and Robots: Night of the Mini Dead](https://cdn.sanity.io/images/uk7b627p/production/d566f3d332b21b685e4a1308520886a3a97d79f7-2000x999.jpg?w=600&q=85&auto=format&dpr=1 "Love, Death, and Robots: Night of the Mini Dead")
 

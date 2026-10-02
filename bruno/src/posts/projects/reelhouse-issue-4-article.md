@@ -7,7 +7,7 @@ type: "reelhouse"
 subtitle: "Article for Reelhouse Issue 4"
 ---
 
-***Final piece written and edited for REELHOUSE Issue 4***
+***Final piece originally written in REELHOUSE***
 
 ![Nick Fury from The Avengers](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK1srwFT_Go9mdPCpNNu9tLUgxHeJKCDAjxyhTOmAnIA&s=10 "Nick Fury from The Avengers")
 
