@@ -2,32 +2,35 @@ import React, { createContext, useContext, useEffect, useState } from "react";
 
 const ThemeContext = createContext();
 
+const colourThemes = ["light", "cloudy", "dark"]
+
 export default function ThemeProvider({ children }) {
-  const [isDark, setIsDark] = useState(() => {
-    if (typeof window === "undefined") return false;
+  const [theme, setThemeState] = useState(() => {
+    if (typeof window === "undefined") return "dark";
     const savedTheme = localStorage.getItem("theme");
-    if (savedTheme !== null) {
-      return savedTheme === "dark";
+    if (savedTheme && colourThemes.includes(savedTheme)) {
+      return savedTheme;
     }
-    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
   });
 
   useEffect(() => {
-    if (isDark) {
-      document.body.classList.add("dark");
-      document.body.classList.remove("light");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.body.classList.add("light");
-      document.body.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [isDark]);
+    root = document.documentElement;
+
+    colourThemes.forEach((t) => {
+      root.classList.remove(t);
+      document.body.classList.remove(t);
+    });
+
+    root.classList.add(theme);
+    document.body.classList.add(theme);
+    localStorage.setItem("theme", theme)
+  }, [theme]);
 
   useEffect(() => {
     const handleStorageChange = (e) => {
-      if (e.key === "theme") {
-        setIsDark(e.newValue === "dark");
+      if (e.key === "theme" && colourThemes.includes(e.newValue)) {
+        setThemeState(e.newValue);
       }
     };
 
@@ -35,11 +38,22 @@ export default function ThemeProvider({ children }) {
     return () => window.removeEventListener("storage", handleStorageChange);
   }, []);
 
-  const toggleTheme = () => setIsDark((prev) => !prev);
-  const setTheme = (mode) => setIsDark(mode === "dark");
+  const setTheme = (newTheme) => {
+    if (colourThemes.includes(newTheme)) {
+      setThemeState(newTheme);
+    }
+  };
+
+  const cycleTheme = () => {
+    setThemeState((prevTheme) => {
+      const currentIndex = colourThemes.indexOf(prevTheme);
+      const nextIndex = (currentIndex + 1) % colourThemes.length;
+      return colourThemes[nextIndex];
+    });
+  };
 
   return (
-    <ThemeContext.Provider value={{ isDark, toggleTheme, setTheme }}>
+    <ThemeContext.Provider value={{ theme, setTheme, cycleTheme, themes: colourThemes }}>
       {children}
     </ThemeContext.Provider>
   );

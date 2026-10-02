@@ -10,9 +10,8 @@
   --max_width: 0;
   --max_height: 0;
 
-  --navbar-background-image: url("src/assets/sky-background.jpg");
+  --navbar-background-image: url("/assets/darkclouds.png");
   --primary-colour: unset;
-  --secondary-colour: unset;
   --text-colour: unset;
   --border-colour: unset;
   --indicator-colour: unset;
@@ -33,12 +32,11 @@
   --blockquote-border-colour: unset;
 }
 
-body.dark {
-  --navbar-background-image: url("src/assets/space-background.jpg");
+html.dark, body.dark {
+  --navbar-background-image: url("/assets/space-background.jpg");
   --primary-colour: #000000;
-  --secondary-colour: #66666E;
   --text-colour: #F4F4F6;
-  --border-colour: #9999A1;
+  --border-colour: #ffffff;
   --indicator-colour: #E6E6E9;
   --indicator-inactive-colour: #474747;
   --link-colour: #E6E6E9;
@@ -46,7 +44,7 @@ body.dark {
   --shadow-colour: #777792;
   --loader-dot-colour: #F4F4F6;
   --loader-dot-text-colour: #000000;
-  --pagination-background-colour: #000000;
+  --pagination-background-colour: #252525;
   --pagination-text-colour: #F4F4F6;
   --pagination-border-colour: #65657b;
   --pagination-hover-colour: #bdc006;
@@ -57,23 +55,45 @@ body.dark {
   --blockquote-border-colour: #FFFFFF;
 }
 
-body.light {
-  --navbar-background-image: url("src/assets/sky-background.jpg");
-  --primary-colour: #3f3f3f;
-  --secondary-colour: #A0AFBA;
-  --text-colour: #080808;
-  --border-colour: #D6DCE1;
+html.cloudy, body.cloudy {
+  --navbar-background-image: url("/assets/darkclouds.png");
+  --primary-colour: #2e2d2d;
+  --text-colour: #F4F4F6;
+  --border-colour: #000000;
   --indicator-colour: #4B545A;
   --indicator-inactive-colour: #F4F6F7;
-  --link-colour: #a8abad;
-  --link-visited-colour: #1E2429;
-  --shadow-colour: #F4F6F7;
-  --loader-dot-colour: #1E2429;
-  --loader-dot-text-colour: #EDF4F5;
+  --link-colour: #F4F4F6;
+  --link-visited-colour: #828283;
+  --shadow-colour: #F4F4F6;
+  --loader-dot-colour: #777792;
+  --loader-dot-text-colour: #000000;
   --pagination-background-colour: #586B79;
   --pagination-text-colour: #1E2429;
   --pagination-border-colour: #C1CCD2;
-  --pagination-hover-colour: #a4bdf8;
+  --pagination-hover-colour: #d6e1fa;
+  --pagination-active-background-colour: #3b4146;
+  --pagingation-active-text-colour: #EDF2FB;
+  --pagination-active-border-colour: #000000;
+  --blockquote-colour: #131313;
+  --blockquote-border-colour: #FFFFFF;
+}
+
+html.light, body.light {
+  --navbar-background-image: url("/assets/sky-background.jpg");
+  --primary-colour: #EDF2FB;
+  --secondary-colour: #E2EAFC;
+  --text-colour: #000000;
+  --border-colour: #ABC4FF;
+  --indicator-colour: #072d85;
+  --indicator-inactive-colour: #ABC4FF;
+  --link-colour: #5184fc;
+  --link-visited-colour: #143788;
+  --shadow-colour: #000000b0;
+  --loader-dot-colour: #ABC4FF;
+  --loader-dot-text-colour: #000000;
+  --pagination-background-colour: #EDF2FB;
+  --pagination-text-colour: #000000;
+  --pagination-border-colour: #5184fc;
   --pagination-active-background-colour: #072d85;
   --pagingation-active-text-colour: #EDF2FB;
   --pagination-active-border-colour: #2667fd;

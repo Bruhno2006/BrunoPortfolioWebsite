@@ -28,9 +28,9 @@ function AppFooter() {
             <li className="footer-col">
               <h3>Contact Me!</h3>
               {[
-                { icon: <Mail size={30} color="var(--link-colour)" />, text: "brunoamadibusiness@gmail.com", link: "mailto:brunoamadibusiness@gmail.com" },
-                { icon: <SiInstagram size={30} color="var(--link-colour)" />, text: "Instagram", link: "https://www.instagram.com/brunkus7767/" },
-                { icon: <Link size={30} color="var(--link-colour)" />, text: "LinkedIn", link: "https://www.linkedin.com/in/bruno-amadi/" },
+                { icon: <Mail size={30} />, text: "brunoamadibusiness@gmail.com", link: "mailto:brunoamadibusiness@gmail.com" },
+                { icon: <SiInstagram size={30} />, text: "Instagram", link: "https://www.instagram.com/brunkus7767/" },
+                { icon: <Link size={30} />, text: "LinkedIn", link: "https://www.linkedin.com/in/bruno-amadi/" },
               ].map(({ icon, text, link }, i) => {
                 return (
                   <a key={i} href={link} target='_blank' className="contact-link">
@@ -45,7 +45,7 @@ function AppFooter() {
             <li>
               <h3>View My Projects</h3>
               {[
-                { icon: <SiGithub size={30} color="var(--link-colour)" />, text: "GitHub", link: "https://github.com/Bruhno2006" },
+                { icon: <SiGithub size={30} />, text: "GitHub", link: "https://github.com/Bruhno2006" },
               ].map(({ icon, text, link }, i) => {
                 return (
                   <a key={i} href={link} target='_blank' className="contact-link">

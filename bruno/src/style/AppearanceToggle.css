@@ -1,14 +1,17 @@
 :root {
-  --light-mode-button-colour: #586B79;
-  --light-mode-buttton-icon-colour: #1E2429;
+  --light-mode-button-colour: #EDF2FB;
+  --light-mode-buttton-icon-colour: #eead4b;
+  --cloudy-mode-button-colour: #2e2d2d;
+  --cloudy-mode-button-icon-colour: #acafb1;
   --dark-mode-button-colour: #000000;
   --dark-mode-button-icon-colour: #F4F4F6;
 }
 
-@media (max-width: 1000px) {
-
+@media (max-width: 1100px) {
   .toggle-dark,
+  .toggle-cloudy,
   .toggle-light {
+    position: fixed;
     right: unset !important;
     top: 10px !important;
     left: 10px;
@@ -16,44 +19,71 @@
   }
 
   .dark-mode,
+  .cloudy-mode,
   .light-mode {
     font-size: 3vw !important;
     padding: 3px !important;
   }
 }
 
+.toggle-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 45;
+}
+
 .toggle-dark,
+.toggle-cloudy,
 .toggle-light {
   display: flex;
   padding: 3px;
   border-radius: 4px;
-  position: fixed;
   height: auto;
   align-items: center;
   justify-content: center;
-  top: 10px;
-  right: 10px;
-  z-index: 45;
   width: auto;
-  border: 2px solid var(--border-colour);
-}
-
-.toggle-dark {
-  background-color: var(--primary-colour);
-}
-
-.toggle-light {
+  outline: 2px solid var(--border-colour);
   background-color: var(--primary-colour);
 }
 
 .dark-mode,
+.cloudy-mode,
 .light-mode {
   margin: 3px;
   padding: 10px;
   cursor: pointer;
   border-radius: 4px;
-  text-align: center;
-  font-size: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  display: none;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+}
+
+.dark-mode.light-active,
+.dark-mode.cloudy-active,
+.dark-mode.dark-active,
+.light-mode.light-active,
+.light-mode.cloudy-active,
+.light-mode.dark-active,
+.cloudy-mode.light-active,
+.cloudy-mode.cloudy-active,
+.cloudy-mode.dark-active,
+.is-active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  display: block;
+}
+
+.toggle-container:hover .dark-mode,
+.toggle-container:hover .cloudy-mode,
+.toggle-container:hover .light-mode {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  display: block;
 }
 
 .dark-mode {
@@ -64,4 +94,9 @@
 .light-mode {
   background-color: var(--light-mode-button-colour);
   color: var(--light-mode-buttton-icon-colour);
+}
+
+.cloudy-mode {
+  background-color: var(--cloudy-mode-button-colour);
+  color: var(--cloudy-mode-button-icon-colour);
 }
