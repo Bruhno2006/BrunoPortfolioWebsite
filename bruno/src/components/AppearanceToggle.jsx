@@ -1,6 +1,6 @@
 import { Sun, Moon } from "lucide-react";
 import React, { useEffect, useState } from "react";
-import "./style/AppearanceToggle.css"
+import "../style/AppearanceToggle.css"
 import { useTheme } from "./ThemeContext";
 
 export default function AppearanceToggle() {

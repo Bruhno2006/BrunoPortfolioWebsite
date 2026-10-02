@@ -1,13 +1,13 @@
 import Loader from "./components/Loader";
-import About from "./About";
+import About from "./pages/About";
 import ThemeProvider from "./components/ThemeContext";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import BlogHome from "./BlogHome";
-import BlogPost from "./BlogPost";
-import ProjectHome from "./ProjectHome";
-import ProjectPost from "./ProjectPost";
-import ReelhouseProjects from "./ReelhouseProjects";
-import ProgramProjects from "./ProgramProjects";
+import BlogHome from "./pages/BlogHome";
+import BlogPost from "./pages/BlogPost";
+import ProjectHome from "./pages/ProjectHome";
+import ProjectPost from "./pages/ProjectPost";
+import ReelhouseProjects from "./pages/ReelhouseProjects";
+import ProgramProjects from "./pages/ProgramProjects";
 
 function App() {
   return (

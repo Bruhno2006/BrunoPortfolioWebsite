@@ -59,9 +59,9 @@ body.dark {
 
 body.light {
   --navbar-background-image: url("src/assets/sky-background.jpg");
-  --primary-colour: #586B79;
+  --primary-colour: #3f3f3f;
   --secondary-colour: #A0AFBA;
-  --text-colour: #1E2429;
+  --text-colour: #080808;
   --border-colour: #D6DCE1;
   --indicator-colour: #4B545A;
   --indicator-inactive-colour: #F4F6F7;

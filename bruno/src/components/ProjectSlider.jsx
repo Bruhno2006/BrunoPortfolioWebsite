@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import './style/ProjectSlider.css'
+import '../style/ProjectSlider.css'
 import { ArrowBigLeftDash, ArrowBigRightDash } from "lucide-react";
 
 function ProjectSlider({ data }) {

@@ -1,12 +1,12 @@
 import { useParams } from 'react-router-dom';
 import MarkdownIt from 'markdown-it';
-import AppNavbar from './components/AppNavbar';
-import AppearanceToggle from './components/AppearanceToggle';
-import AppFooter from './components/AppFooter';
-import blogposts from './data/postsData';
+import AppNavbar from '../components/AppNavbar';
+import AppearanceToggle from '../components/AppearanceToggle';
+import AppFooter from '../components/AppFooter';
+import blogposts from '../data/postsData';
 import { full as emoji, full } from 'markdown-it-emoji';
-import './style/BlogPost.css';
-import './style/custom-post-style.css';
+import '../style/BlogPost.css';
+import '../style/custom-post-style.css';
 
 const BlogPost = () => {
   const { slug } = useParams();

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import AppNavbar from './components/AppNavbar.jsx';
-import AppearanceToggle from './components/AppearanceToggle.jsx';
-import AppFooter from './components/AppFooter.jsx';
+import AppNavbar from '../components/AppNavbar.jsx';
+import AppearanceToggle from '../components/AppearanceToggle.jsx';
+import AppFooter from '../components/AppFooter.jsx';
 
 function About() {
   const date = new Date().getFullYear();

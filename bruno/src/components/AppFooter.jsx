@@ -1,4 +1,4 @@
-import './style/AppFooter.css';
+import '../style/AppFooter.css';
 import { Link, Mail, Phone } from 'lucide-react';
 import { SiGithub, SiInstagram } from '@icons-pack/react-simple-icons';
 

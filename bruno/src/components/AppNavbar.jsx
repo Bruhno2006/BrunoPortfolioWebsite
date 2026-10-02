@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './style/AppNavbar.css';
+import '../style/AppNavbar.css';
 import { Menu } from 'lucide-react';
 import { Link } from "react-router-dom";
 

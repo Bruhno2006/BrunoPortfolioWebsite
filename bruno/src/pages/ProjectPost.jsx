@@ -1,13 +1,13 @@
 import { useParams } from 'react-router-dom';
 import MarkdownIt from 'markdown-it';
 import markdownItAttrs from 'markdown-it-attrs';
-import AppNavbar from "./components/AppNavbar";
-import AppearanceToggle from "./components/AppearanceToggle";
-import AppFooter from "./components/AppFooter";
-import projectposts from "./data/projectsData";
+import AppNavbar from "../components/AppNavbar";
+import AppearanceToggle from "../components/AppearanceToggle";
+import AppFooter from "../components/AppFooter";
+import projectposts from "../data/projectsData";
 import { full as emoji, full } from 'markdown-it-emoji';
-import './style/ProjectPost.css';
-import './style/custom-post-style.css';
+import '../style/ProjectPost.css';
+import '../style/custom-post-style.css';
 
 function ProjectLogo({ data }) {
   if (!data.logo) {

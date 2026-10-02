@@ -1,7 +1,7 @@
-import AppearanceToggle from "./components/AppearanceToggle";
-import AppFooter from "./components/AppFooter";
-import AppNavbar from "./components/AppNavbar";
-import './style/ProjectHome.css';
+import AppearanceToggle from "../components/AppearanceToggle";
+import AppFooter from "../components/AppFooter";
+import AppNavbar from "../components/AppNavbar";
+import '../style/ProjectHome.css';
 import { Link } from "react-router-dom";
 
 const ProjectHome = () => {

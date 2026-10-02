@@ -1,11 +1,11 @@
 import { useState } from "react";
-import AppearanceToggle from "./components/AppearanceToggle";
-import AppFooter from "./components/AppFooter";
-import AppNavbar from "./components/AppNavbar";
-import Pagination from "./components/Pagination";
-import projectposts from "./data/projectsData.js";
-import ProjectCard from "./ProjectCard";
-import './style/ProjectPages.css';
+import AppearanceToggle from "../components/AppearanceToggle.jsx";
+import AppFooter from "../components/AppFooter.jsx";
+import AppNavbar from "../components/AppNavbar.jsx";
+import Pagination from "../components/Pagination.jsx";
+import projectposts from "../data/projectsData.js";
+import ProjectCard from "../components/ProjectCard.jsx";
+import '../style/ProjectPages.css';
 
 const ProgramProjects = () => {
   const [currentPage, setCurrentPage] = useState(1);

@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import blogposts from './data/postsData.js';
-import AppNavbar from './components/AppNavbar';
-import AppearanceToggle from './components/AppearanceToggle';
-import AppFooter from './components/AppFooter.jsx';
-import BlogCard from './BlogCard.jsx';
-import Pagination from './components/Pagination.jsx';
-import './style/BlogHome.css';
+import blogposts from '../data/postsData.js';
+import AppNavbar from '../components/AppNavbar.jsx';
+import AppearanceToggle from '../components/AppearanceToggle.jsx';
+import AppFooter from '../components/AppFooter.jsx';
+import BlogCard from '../components/BlogCard.jsx';
+import Pagination from '../components/Pagination.jsx';
+import '../style/BlogHome.css';
 
 const BlogHome = () => {
   const [currentPage, setCurrentPage] = useState(1);

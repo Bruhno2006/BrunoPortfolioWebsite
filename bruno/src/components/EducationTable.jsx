@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { schools } from "../data/educationData.json";
-import "./style/EducationTable.css"
+import "../style/EducationTable.css"
 
 function FinishedEducation() {
   return <h4>FINISHED</h4>;
