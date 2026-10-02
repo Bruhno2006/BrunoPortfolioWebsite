@@ -13,10 +13,10 @@ const ProjectHome = () => {
         <h1 className="project-home-title">Projects</h1>
         <div className="project-home-container">
           <Link className="program-section" to={`/projects/program`}>
-              <img src="src/assets/programs-logo.png" alt="Programs" />
+              <img src="/assets/programs-logo.png" alt="Programs" />
           </Link>
           <Link className="reelhouse-section" to={`/projects/reelhouse`}>
-              <img src="src/assets/REELHOUSE-brand.png" alt="Reelhouse" />
+              <img src="/assets/REELHOUSE-brand.png" alt="Reelhouse" />
           </Link>
         </div>
       </main>

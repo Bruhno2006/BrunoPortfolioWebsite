@@ -28,7 +28,7 @@ function About() {
 
             <strong><em>SO AWESOME!</em></strong>
           </p>
-          <img src="src/assets/about-me-images/head-out-of-box.jpeg" />
+          <img src="/assets/about-me-images/head-out-of-box.jpeg" />
           <p className="description">Ignore the image above, I didn't have any other image to use instead.</p>
         </section>
       </main>

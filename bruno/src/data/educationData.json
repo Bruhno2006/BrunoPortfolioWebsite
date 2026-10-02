@@ -1,7 +1,7 @@
 {
   "schools": [
     {
-      "logo": "src/assets/school-logos/royal-holloway.png",
+      "logo": "/assets/school-logos/royal-holloway.png",
       "alt": "Royal Holloway - University of London",
       "main_colour": "#EA641D",
       "name": "Royal Holloway - University of London",
@@ -14,7 +14,7 @@
       "finished": "false"
     },
     {
-      "logo": "src/assets/school-logos/west-herts-college.png",
+      "logo": "/assets/school-logos/west-herts-college.png",
       "alt": "West Herts College - Hemel Hempstead Campus",
       "main_colour": "#FCC803",
       "name": "West Herts College - Hemel Hempstead Campus",
