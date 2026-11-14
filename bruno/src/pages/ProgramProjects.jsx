@@ -22,7 +22,8 @@ const ProgramProjects = () => {
       <AppNavbar />
       <AppearanceToggle />
       <main className="project-home-main">
-        <h1 className="project-page-title">Programs</h1>
+        <h1 className="top-heading project-page-title">Programs</h1>
+        <p className="project-page-title">All the programs, applications, and software I created and produced</p>
         <div className="project-page-grid-container">
           {currentPosts.map((post) => (
             post.type === 'program' ? <ProjectCard key={post.id} {...post} /> : null

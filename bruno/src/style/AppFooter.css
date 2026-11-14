@@ -42,11 +42,6 @@ footer {
   padding: 0;
 }
 
-.contact-link:visited {
-  color: var(--link-visited-colour);
-  font-weight: bolder;
-}
-
 .contact-link-name {
   line-height: 1.5;
 }

@@ -24,8 +24,8 @@
 
 .project-home-main .project-page-title {
   display: flex;
-  justify-content: center;
-  align-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .project-page-grid-container {

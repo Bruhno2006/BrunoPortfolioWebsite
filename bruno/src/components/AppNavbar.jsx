@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import '../style/AppNavbar.css';
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { Link } from "react-router-dom";
 
 function AppNavbar() {
@@ -44,7 +44,8 @@ function AppNavbar() {
           </ul>
         </nav>
         <a className="hamburger-icon" onClick={toggleMenu}>
-          <Menu size="45px" stroke="var(--text-colour)" />
+          <Menu size="45px" stroke="var(--text-colour)" style={{ display: isOpen ? 'none' : 'block' }} />
+          <X size="45px" stroke="var(--text-colour)" style={{ display: isOpen ? 'block' : 'none' }} />
         </a>
       </div>
     </>

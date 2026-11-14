@@ -8,6 +8,7 @@
 }
 
 @media (max-width: 1100px) {
+
   .toggle-dark,
   .toggle-cloudy,
   .toggle-light {
@@ -84,6 +85,30 @@
   visibility: visible;
   pointer-events: auto;
   display: block;
+}
+
+@media (pointer: coarse) {
+  .dark-mode,
+  .cloudy-mode,
+  .light-mode {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block;
+  }
+
+  .dark-mode.light-active,
+  .dark-mode.cloudy-active,
+  .dark-mode.dark-active,
+  .light-mode.light-active,
+  .light-mode.cloudy-active,
+  .light-mode.dark-active,
+  .cloudy-mode.light-active,
+  .cloudy-mode.cloudy-active,
+  .cloudy-mode.dark-active,
+  .is-active {
+    display: block !important;
+    pointer-events: none !important;
+  }
 }
 
 .dark-mode {

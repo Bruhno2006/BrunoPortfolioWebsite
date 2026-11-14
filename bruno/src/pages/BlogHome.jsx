@@ -20,7 +20,7 @@ const BlogHome = () => {
       <AppNavbar />
       <AppearanceToggle />
       <main className="blog-main">
-        <h1 className="blog-home-title">Blog</h1>
+        <h1 className="top-heading blog-home-title">Blog</h1>
         <div className="grid-container">
           {currentPosts.map((post) => (
             <BlogCard key={post.id} {...post} />

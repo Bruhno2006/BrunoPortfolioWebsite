@@ -13,7 +13,7 @@ function About() {
       <AppNavbar />
       <AppearanceToggle />
       <main className="content-rise-below">
-        <h1>About Me</h1>
+        <h1 className="top-heading">About Me</h1>
         <section className="image-with-text" id="about-me">
           <p className="description">
             My name is Bruno Amadi. I am a {date - 2006} year old student who's striving on becoming a great software engineer that is able to create websites, software, and
@@ -28,8 +28,8 @@ function About() {
 
             <strong><em>SO AWESOME!</em></strong>
           </p>
-          <img src="/assets/about-me-images/head-out-of-box.jpeg" />
-          <p className="description">Ignore the image above, I didn't have any other image to use instead.</p>
+          <img src="/assets/about-me-images/pc-setup.jpg" />
+          <p className="description">W PC-setup, 10/10</p>
         </section>
       </main>
       <AppFooter />

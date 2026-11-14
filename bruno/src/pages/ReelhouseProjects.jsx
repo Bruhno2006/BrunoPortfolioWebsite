@@ -22,7 +22,8 @@ const ReelhouseProjects = () => {
       <AppNavbar />
       <AppearanceToggle />
       <main className="project-home-main">
-        <h1 className="project-page-title">Reelhouse</h1>
+        <h1 className="top-heading project-page-title">Reelhouse</h1>
+        <p className="project-page-title">All the articles I've pitched and wrote for REELHOUSE, UK's student film and TV magazine!</p>
         <div className="project-page-grid-container">
           {currentPosts.map((post) => (
             <ProjectCard key={post.id} {...post} />
