@@ -1,7 +1,7 @@
 ---
 title: "University Frenzy"
 date: "03 October 2026"
-image: "https://picsum.photos/500/200?random=2098"
+image: "https://placehold.co/500x200"
 intro: "Even with the beginning of university, everything is getting a *bit* out of hand"
 subtitle: "Starting my 3rd University Year"
 ---

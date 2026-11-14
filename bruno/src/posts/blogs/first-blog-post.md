@@ -1,7 +1,7 @@
 ---
 title: "First Blog Post"
 date: "14 September 2026"
-image: "https://picsum.photos/500/200?random=1"
+image: "https://placehold.co/500x200"
 intro: "If this is your first time pearing into my website, welcome! If this isn't, then why are you reading this? **Get out of here!**"
 subtitle: "Here's to new beginnings!"
 ---
