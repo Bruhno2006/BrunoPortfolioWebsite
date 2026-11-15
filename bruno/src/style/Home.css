@@ -53,8 +53,9 @@
 .home-page-opener {
   display: flex;
   align-items: center;
-  justify-items: center;
   flex-direction: column;
+  margin: 5rem;
+  margin-bottom: 14.5rem;
 }
 
 .home-page-opener h1 {
