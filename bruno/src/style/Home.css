@@ -130,3 +130,9 @@
 .blog .home-page-paragraph {
   border-right: 4px solid var(--border-colour);
 }
+
+.home-page-paragraph a {
+  text-decoration: none;
+  color: var(--text-colour);
+  font-weight: 700;
+}
