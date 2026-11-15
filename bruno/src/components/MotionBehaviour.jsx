@@ -2,15 +2,15 @@ import { motion } from "motion/react";
 
 const animationVariants = {
   "shift-left": {
-    hidden: { x: 500, opacity: 0 },
+    hidden: { x: 300, opacity: 0 },
     visible: { x: 0, opacity: 1},
   },
   "shift-right": {
-    hidden: { x: -500, opacity: 0 },
+    hidden: { x: -300, opacity: 0 },
     visible: { x: 0, opacity: 1},
   },
   "rise-below": {
-    hidden: { y: 500, opacity: 0 },
+    hidden: { y: 300, opacity: 0 },
     visible: { y: 0, opacity: 1 },
   },
 };
