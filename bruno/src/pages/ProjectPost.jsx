@@ -8,6 +8,7 @@ import projectposts from "../data/projectsData";
 import { full as emoji, full } from 'markdown-it-emoji';
 import '../style/ProjectPost.css';
 import '../style/custom-post-style.css';
+import { ScrollReveal } from '../components/MotionBehaviour';
 
 function ProjectLogo({ data }) {
   if (!data.logo) {
@@ -54,7 +55,9 @@ const ProjectPost = () => {
           <div className="project-left">
           </div>
           <article className="project-content no-animation">
-            <div dangerouslySetInnerHTML={{ __html: projectBody }} />
+            <ScrollReveal variant='rise-below' duration={1.5} amount={"some"}>
+              <div dangerouslySetInnerHTML={{ __html: projectBody }} />
+            </ScrollReveal>
           </article>
           <div className="project-right">
           </div>

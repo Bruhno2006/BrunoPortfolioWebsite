@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import AppNavbar from '../components/AppNavbar.jsx';
 import AppearanceToggle from '../components/AppearanceToggle.jsx';
 import AppFooter from '../components/AppFooter.jsx';
+import { ScrollReveal } from '../components/MotionBehaviour.jsx';
 
 function About() {
   const date = new Date().getFullYear();
@@ -12,25 +13,27 @@ function About() {
     <>
       <AppNavbar />
       <AppearanceToggle />
-      <main className="content-rise-below">
-        <h1 className="top-heading">About Me</h1>
-        <section className="image-with-text" id="about-me">
-          <p className="description">
-            My name is Bruno Amadi. I am a {date - 2006} year old student who's striving on becoming a great software engineer that is able to create websites, software, and
-            programs. I became inspired to begin this programming journey after playing various videogames, seeing various cool websites and software. They were so cool that
-            I wanted to make something like that myself as well.<br /><br />
-            I am confident in using various programming languages; my favourite examples include React (HTML + CSS) and JavaScript for front-end development, Python, SQL, and Java for back-end
-            development. Even with this huge knowledge in programming, I'm still wanting to widen my scope by learning other computer languages and software.<br /><br />
-            Originally a side-project, I have made my website not only as a portfolio, but to document my progress in my software engineering journey and list all my past and
-            upcoming projects. These projects range from functional software, viewable websites, playable games, and external fun side-projects and hobbies.<br /><br />
+      <main>
+        <ScrollReveal variant='rise-below' duration={1.0}>
+          <h1 className="top-heading">About Me</h1>
+          <section className="image-with-text" id="about-me">
+            <p className="description">
+              My name is Bruno Amadi. I am a {date - 2006} year old student who's striving on becoming a great software engineer that is able to create websites, software, and
+              programs. I became inspired to begin this programming journey after playing various videogames, seeing various cool websites and software. They were so cool that
+              I wanted to make something like that myself as well.<br /><br />
+              I am confident in using various programming languages; my favourite examples include React (HTML + CSS) and JavaScript for front-end development, Python, SQL, and Java for back-end
+              development. Even with this huge knowledge in programming, I'm still wanting to widen my scope by learning other computer languages and software.<br /><br />
+              Originally a side-project, I have made my website not only as a portfolio, but to document my progress in my software engineering journey and list all my past and
+              upcoming projects. These projects range from functional software, viewable websites, playable games, and external fun side-projects and hobbies.<br /><br />
 
-            It would be like a large <strong>Bruno</strong> archive!!!<br /><br />
+              It would be like a large <strong>Bruno</strong> archive!!!<br /><br />
 
-            <strong><em>SO AWESOME!</em></strong>
-          </p>
-          <img src="/assets/about-me-images/pc-setup.jpg" />
-          <p className="description">W PC-setup, 10/10</p>
-        </section>
+              <strong><em>SO AWESOME!</em></strong>
+            </p>
+            <img src="/assets/about-me-images/pc-setup.jpg" />
+            <p className="description">W PC-setup, 10/10</p>
+          </section>
+        </ScrollReveal>
       </main>
       <AppFooter />
     </>
