@@ -64,14 +64,11 @@ export default function Home() {
             <p>But seriously, I am planning on updating this website regularly with my daily life, entertaining rants, and behind the scene updates on
               future projects.
             </p>
-            <p>You interested?</p>
-            <p>If you are, visit <Link to={"/blog"}>Blog</Link>!</p>
+            <p>You interested? If you are, visit <Link to={"/blog"}>Blog</Link>!</p>
           </div>
         </section>
       </main>
-      <AppFooter />
     </>
   )
-
 };
 

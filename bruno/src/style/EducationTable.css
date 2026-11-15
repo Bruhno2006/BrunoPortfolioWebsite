@@ -57,8 +57,8 @@
 }
 
 .school-logo {
-  height: 400px;
-  width: 500px;
+  height: 500px;
+  width: 600px;
   border-right: 5px solid var(--border-colour);
   margin: 0;
 }
@@ -107,7 +107,6 @@
   width: 100%;
 }
 
-/*
 @media (max-width: 1450px) {
   .content-carousel {
     display: none !important;
@@ -121,8 +120,13 @@
   }
 
   .content-container-active {
+    align-items: center !important;
     flex-direction: column !important;
     gap: 0 !important;
+  }
+
+  .education-information {
+    text-align: center !important;
   }
 
   .education-information h1 {
@@ -143,7 +147,3 @@
     border-right: none !important;
   }
 }
-
-
-
-*/

@@ -132,6 +132,10 @@ body {
   .project-main {
     align-items: center;
   }
+
+  .white-space {
+    display: none !important;
+  }
 }
 
 @keyframes content-shift-left {
@@ -305,5 +309,5 @@ p {
 }
 
 .white-space {
-  margin: 150px;
+  margin: 50px;
 }
