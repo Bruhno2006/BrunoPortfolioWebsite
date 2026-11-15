@@ -32,7 +32,8 @@
   --blockquote-border-colour: unset;
 }
 
-html.dark, body.dark {
+html.dark,
+body.dark {
   --navbar-background-image: url("/assets/space-background.jpg");
   --primary-colour: #000000;
   --text-colour: #F4F4F6;
@@ -55,7 +56,8 @@ html.dark, body.dark {
   --blockquote-border-colour: #FFFFFF;
 }
 
-html.cloudy, body.cloudy {
+html.cloudy,
+body.cloudy {
   --navbar-background-image: url("/assets/darkclouds.png");
   --primary-colour: #2e2d2d;
   --text-colour: #F4F4F6;
@@ -78,7 +80,8 @@ html.cloudy, body.cloudy {
   --blockquote-border-colour: #FFFFFF;
 }
 
-html.light, body.light {
+html.light,
+body.light {
   --navbar-background-image: url("/assets/sky-background.jpg");
   --primary-colour: #EDF2FB;
   --secondary-colour: #E2EAFC;
@@ -218,11 +221,14 @@ table {
   padding: 2px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid var(--border-colour);
 }
 
-th, td {
+th,
+td {
   padding: 5px;
 }
 
@@ -284,4 +290,20 @@ p {
   display: flex;
   flex-direction: column;
   max-width: 200rem;
+}
+
+.home-page-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 90rem;
+  text-align: center;
+  align-content: center;
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  gap: 10rem;
+}
+
+.white-space {
+  margin: 150px;
 }

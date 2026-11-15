@@ -20,7 +20,9 @@ function AppNavbar() {
     <>
       <div className="top">
         <nav className="top-menu" role="navigation">
-          <h1 className="website-title">Bruno Amadi</h1>
+          <Link to={"/home"} >
+            <h1 className="website-title">Bruno Amadi</h1>
+          </Link>
           <ul className="nav-links">
             {NAV_LINKS.map((link) => {
               return (

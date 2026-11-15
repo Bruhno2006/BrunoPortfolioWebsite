@@ -100,11 +100,16 @@
   margin: 0 auto;
 }
 
+.top-menu a {
+  text-decoration: none;
+}
+
 .website-title {
   color: var(--text-colour);
   text-transform: uppercase;
   border: none;
   font-size: 2rem;
+  text-decoration: none;
 }
 
 .nav-links {

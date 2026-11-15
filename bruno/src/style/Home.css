@@ -1,0 +1,57 @@
+.home-page-main .home-page-opener {
+  line-height: 0.5cm;
+  text-align: center;
+}
+
+.home-page-opener h1 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-size: 10rem;
+}
+
+.home-page-contact {
+  font-weight: 800;
+  font-display: block;
+}
+
+.home-page-main a {
+  text-transform: uppercase;
+}
+
+.home-page-main section {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  gap: 3rem;
+}
+
+.home-page-main section .home-page-section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.home-page-section-title {   
+  text-align: center; 
+  white-space: nowrap;
+  letter-spacing: 1px;
+  margin-left: 0;
+  height: 100%;
+}
+
+.home-page-paragraph {
+  text-align: inherit;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.about, .projects {
+  flex-direction: row;
+  text-align: left;
+}
+
+.education, .blog {
+  flex-direction: row-reverse;
+  text-align: right;
+}
