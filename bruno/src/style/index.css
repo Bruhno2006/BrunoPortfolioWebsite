@@ -136,6 +136,10 @@ body {
   .white-space {
     display: none !important;
   }
+
+  .home-page-main {
+    gap: 2rem !important;
+  }
 }
 
 @keyframes content-shift-left {

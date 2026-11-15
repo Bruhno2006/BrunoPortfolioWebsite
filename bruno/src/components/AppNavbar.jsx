@@ -34,7 +34,9 @@ function AppNavbar() {
           </ul>
         </nav>
         <nav className="hamburger-menu" role="navigation">
-          <h1 className="website-title">Bruno Amadi</h1>
+          <Link to={"/home"} >
+            <h1 className="website-title">Bruno Amadi</h1>
+          </Link>
           <ul className="hamburger-nav-links" style={{ display: isOpen ? 'flex' : 'none' }}>
             {NAV_LINKS.map((link) => {
               return (

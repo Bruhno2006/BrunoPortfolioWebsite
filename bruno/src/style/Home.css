@@ -1,4 +1,8 @@
 @media (max-width: 1000px) {
+  .home-page-opener {
+    margin-bottom: 7rem !important;
+  }
+
   .home-page-main section {
     flex-direction: column !important;
     align-items: center !important;
@@ -84,6 +88,8 @@
   align-items: flex-start;
   position: relative;
   gap: 1rem;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .home-page-section-title {
@@ -94,6 +100,9 @@
   letter-spacing: 1px;
   margin-left: 0;
   height: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: normal;
 }
 
 .home-page-paragraph {

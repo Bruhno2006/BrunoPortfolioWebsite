@@ -2,7 +2,7 @@
   .top-menu {
     display: none !important;
   }
-  
+
   .hamburger-menu {
     display: flex !important;
     flex-direction: column;
@@ -112,6 +112,11 @@
   text-decoration: none;
 }
 
+.website-title:hover {
+  animation: 0.25s ease-in 0s 1 hover-selection;
+  animation-fill-mode: forwards;
+}
+
 .nav-links {
   display: flex;
   overflow: hidden;
@@ -139,4 +144,8 @@
 .hamburger-menu,
 .hamburger-icon {
   display: none;
+}
+
+.hamburger-menu a {
+  text-decoration: none;
 }

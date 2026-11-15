@@ -6,21 +6,20 @@ import EducationTable from '../components/EducationTable.jsx';
 import { ScrollReveal } from '../components/MotionBehaviour.jsx';
 
 export default function Home() {
-
   return (
     <>
       <AppNavbar />
       <AppearanceToggle />
       <main className="home-page-main" style={{ overflowX: "hidden" }}>
         {/* Replace home-page-opener with a custom SVG logo*/}
-        <ScrollReveal variant='rise-below' amount={0.2}>
+        <ScrollReveal variant='rise-below' amount={0.6}>
           <div className='home-page-opener'>
             <h1>Hellow Fellows!</h1>
             <p>The name is Bruno! I aim to please everyone with my projects such as software, websites, and games!</p>
           </div>
         </ScrollReveal>
         {/* Inlcude image or gallery below here */ }
-        <ScrollReveal variant='shift-left' amount={0.2}>
+        <ScrollReveal variant='shift-left' amount={0.6}>
           <section className="about">
             <h2 className="home-page-section-title">So who the hell is this?!</h2>
             <div className="home-page-paragraph">
@@ -35,7 +34,7 @@ export default function Home() {
             </div>
           </section>
         </ScrollReveal>
-        <ScrollReveal variant='shift-right' amount={0.2}>
+        <ScrollReveal variant='shift-right' amount={0.6}>
           <section className="education">
             <h2 className="home-page-section-title">Education Journey</h2>
             <div className="home-page-paragraph">
@@ -48,7 +47,7 @@ export default function Home() {
             </div>
           </section>
         </ScrollReveal>
-        <ScrollReveal variant='shift-left' amount={0.2}>
+        <ScrollReveal variant='shift-left' amount={0.6}>
           <section className="projects">
             <h2 className="home-page-section-title">Personal Project Collection</h2>
             <div className="home-page-paragraph">
@@ -62,7 +61,7 @@ export default function Home() {
             </div>
           </section>
         </ScrollReveal>
-        <ScrollReveal variant='shift-right' amount={0.2}>
+        <ScrollReveal variant='shift-right' amount={0.6}>
           <section className="blog">
             <h2 className="home-page-section-title">Blogging Page</h2>
             <div className="home-page-paragraph">
