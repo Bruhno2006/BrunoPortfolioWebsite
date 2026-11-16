@@ -1,5 +1,6 @@
 ---
 title: "The Infamous 4: Why are so many 4th Instalments so disliked?"
+logo: "infamous-4-logo.png"
 date: "18 September 2026"
 image: "https://placehold.co/500x200"
 intro: "The infamous number 4! A hompphone for death in East Asian cultures! Associated with various plagues and the burning of villages! No wonder Mista (from JoJo's Bizzare Adventure: Golden Wind) has tetraphobia. It might really come with bad luck..."

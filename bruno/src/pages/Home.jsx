@@ -65,7 +65,7 @@ export default function Home() {
           <section className="blog">
             <h2 className="home-page-section-title">Blogging Page</h2>
             <div className="home-page-paragraph">
-              <p>You want to know more about me... personally!? Get me a drink first ;)</p>
+              <p>You want to know more about me... <strong>personally?!</strong> Get me a drink first ;)</p>
               <p>But seriously, I am planning on updating this website regularly with my daily life, entertaining rants, and behind the scene updates on
                 future projects.
               </p>

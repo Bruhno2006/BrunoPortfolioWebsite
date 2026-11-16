@@ -12,10 +12,17 @@ import { ScrollReveal } from '../components/MotionBehaviour';
 
 function ProjectLogo({ data }) {
   if (!data.logo) {
-    return (<h1 className='project-title'>{data.title}</h1>);
+    return (
+      <h1 className='project-primary-title'>{data.title}</h1>
+    );
   }
 
-  return (<img className='project-logo' src={data.logo} alt={data.title} />);
+  return (
+    <div>
+      <img className='project-logo' src={data.logo} alt={data.title} />
+      <h1 className='project-title'>{data.title}</h1>
+    </div>
+  );
 }
 
 const ProjectPost = () => {
