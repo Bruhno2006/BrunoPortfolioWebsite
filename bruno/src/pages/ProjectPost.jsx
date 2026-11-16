@@ -62,7 +62,7 @@ const ProjectPost = () => {
           <div className="project-left">
           </div>
           <article className="project-content no-animation">
-            <ScrollReveal variant='rise-below' duration={1.5} amount={"some"}>
+            <ScrollReveal variant='rise-below' duration={0.8} amount={"some"}>
               <div dangerouslySetInnerHTML={{ __html: projectBody }} />
             </ScrollReveal>
           </article>
