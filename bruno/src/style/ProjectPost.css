@@ -1,7 +1,3 @@
-@media (max-width: 1200px) {
-
-}
-
 @media (max-width: 1032px) {
   .project-title, .project-primary-title {
     font-size: 1.5rem !important;
@@ -89,6 +85,7 @@
   border: none;
   max-width: 50%;
   height: auto;
+  animation: opacity-up 1.5s 1;
 }
 
 .project-title {
@@ -98,6 +95,7 @@
   text-transform: uppercase;
   border: none;
   margin: 0;
+  animation: opacity-up 1.5s 1;
 }
 
 .project-primary-title {

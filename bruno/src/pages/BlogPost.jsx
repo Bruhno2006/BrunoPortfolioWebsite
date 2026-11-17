@@ -7,7 +7,7 @@ import blogposts from '../data/postsData';
 import { full as emoji, full } from 'markdown-it-emoji';
 import '../style/BlogPost.css';
 import '../style/custom-post-style.css';
-import { ScrollReveal } from '../components/MotionBehaviour';
+import { ScrollReveal } from '../components/ScrollBehaviour';
 
 const BlogPost = () => {
   const { slug } = useParams();

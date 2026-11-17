@@ -3,7 +3,7 @@ import AppearanceToggle from '../components/AppearanceToggle.jsx';
 import { Link } from 'react-router-dom';
 import '../style/Home.css';
 import EducationTable from '../components/EducationTable.jsx';
-import { ScrollReveal } from '../components/MotionBehaviour.jsx';
+import { ScrollReveal } from '../components/ScrollBehaviour.jsx';
 
 export default function Home() {
   return (

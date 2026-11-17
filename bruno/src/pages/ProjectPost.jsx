@@ -8,7 +8,7 @@ import projectposts from "../data/projectsData";
 import { full as emoji, full } from 'markdown-it-emoji';
 import '../style/ProjectPost.css';
 import '../style/custom-post-style.css';
-import { ScrollReveal } from '../components/MotionBehaviour';
+import { ScrollReveal } from '../components/ScrollBehaviour';
 
 function ProjectLogo({ data }) {
   if (!data.logo) {

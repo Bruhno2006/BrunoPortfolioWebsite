@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import AppNavbar from '../components/AppNavbar.jsx';
 import AppearanceToggle from '../components/AppearanceToggle.jsx';
 import AppFooter from '../components/AppFooter.jsx';
-import { ScrollReveal } from '../components/MotionBehaviour.jsx';
+import { ScrollReveal } from '../components/ScrollBehaviour.jsx';
 
 function About() {
   const date = new Date().getFullYear();
