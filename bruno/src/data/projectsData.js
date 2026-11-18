@@ -16,7 +16,7 @@ const projectposts = Object.keys(markdownFiles).map((filePath) => {
   if (data.logo) {
     logoUrl = data.logo.trim();
     if (!logoUrl.startsWith('http') && !logoUrl.startsWith('/')) {
-      logoUrl = `/assets/${logoUrl.replace(/^\.?\/?/, '')}`;
+      logoUrl = `/assets/project-logos/${logoUrl.replace(/^\.?\/?/, '')}`;
     }
   }
 

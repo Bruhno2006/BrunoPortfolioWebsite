@@ -1,5 +1,6 @@
 ---
 title: "JUMPER-MAN"
+logo: "jumper-man.png"
 date: "11 August 2024"
 image: "https://placehold.co/500x200"
 intro: "JUMPER MAN was created during my time at West Herts College when I was tasked to create a gaming product using Python's pygame framework. In this game, the player is tasked to maintain the highest score by jumping on trampolines in the sky before losing all their lives from hazards."
