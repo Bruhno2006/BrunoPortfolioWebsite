@@ -8,6 +8,7 @@ import { full as emoji, full } from 'markdown-it-emoji';
 import '../style/BlogPost.css';
 import '../style/custom-post-style.css';
 import { ScrollReveal } from '../components/ScrollBehaviour';
+import ErrorPage from './ErrorPage';
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -23,7 +24,7 @@ const BlogPost = () => {
 
   if (!postData) {
     return (
-      <div className="error-message">Post not found</div>
+      <ErrorPage />
     );
   }
 

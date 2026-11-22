@@ -9,6 +9,7 @@ import { full as emoji, full } from 'markdown-it-emoji';
 import '../style/ProjectPost.css';
 import '../style/custom-post-style.css';
 import { ScrollReveal } from '../components/ScrollBehaviour';
+import ErrorPage from './ErrorPage';
 
 function ProjectLogo({ data }) {
   if (!data.logo) {
@@ -39,7 +40,7 @@ const ProjectPost = () => {
 
   if (!projectData) {
     return (
-      <div className="error-message"></div>
+      <ErrorPage />
     );
   }
 
