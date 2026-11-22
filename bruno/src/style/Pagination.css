@@ -5,7 +5,9 @@
   padding: 0;
 }
 
-.pagination .page-item {
+.pagination .page-item,
+.previous-arrow,
+.next-arrow {
   display: block;
   padding: 8px 12px;
   text-decoration: none;
@@ -17,7 +19,9 @@
   transition: background-color 1s;
 }
 
-.pagination .page-item a {
+.pagination .page-item a,
+.pagination .previous-arrow a,
+.pagination .next-arrow a {
   color: var(--pagination-text-colour);
   text-decoration: none;
 }
@@ -33,6 +37,10 @@
   text-decoration: none;
 }
 
-.page-item:hover:not(.active) {
+.page-item:hover:not(.active), .previous-arrow:hover:not(.active), .next-arrow:hover:not(.active){
   background-color: var(--pagination-hover-colour);
+}
+
+.disabled {
+  display: none;
 }
