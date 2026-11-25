@@ -4,8 +4,12 @@ import { Link } from 'react-router-dom';
 import '../style/Home.css';
 import EducationTable from '../components/EducationTable.jsx';
 import { ScrollReveal } from '../components/ScrollBehaviour.jsx';
+import ProjectSlider from "../components/ProjectSlider.jsx";
+import projectposts from '../data/projectsData.js';
 
 export default function Home() {
+  const projectList = projectposts;
+
   return (
     <>
       <AppNavbar />
@@ -18,7 +22,7 @@ export default function Home() {
             <p>The name is Bruno! I aim to please everyone with my projects such as software, websites, and games!</p>
           </div>
         </ScrollReveal>
-        {/* Inlcude image or gallery below here */ }
+        {/* Inlcude image or gallery below here */}
         <ScrollReveal variant='shift-left' amount={0.6}>
           <section className="about">
             <h2 className="home-page-section-title">So who the hell is this?!</h2>
@@ -59,6 +63,11 @@ export default function Home() {
               </p>
               <p>To get a full look into my projects, visit <Link to={"/projects"}>Projects</Link>!</p>
             </div>
+          </section>
+        </ScrollReveal>
+        <ScrollReveal variant='shift-left' amount={0.6}>
+          <section className="project-slider">
+            <ProjectSlider data={projectList} />
           </section>
         </ScrollReveal>
         <ScrollReveal variant='shift-right' amount={0.6}>

@@ -27,14 +27,14 @@ footer {
   list-style: none;
 }
 
-.contact-link {
+.footer-link {
   display: flex;
   flex-direction: row;
   color: var(--link-colour);
   text-decoration: none;
 }
 
-.contact-link ul {
+.footer-link ul {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,11 +42,11 @@ footer {
   padding: 0;
 }
 
-.contact-link-name {
+.footer-link-name {
   line-height: 1.5;
 }
 
-.contact-link-icon {
+.footer-link-icon {
   margin-top: 1px;
   flex-shrink: 0;
 }

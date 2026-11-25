@@ -1,6 +1,7 @@
 import '../style/AppFooter.css';
 import { Link, Mail, Phone } from 'lucide-react';
 import { SiGithub, SiInstagram } from '@icons-pack/react-simple-icons';
+import { text } from 'motion/react-client';
 
 function AppFooter() {
   return (
@@ -17,9 +18,9 @@ function AppFooter() {
                 { text: "Projects", link: "/projects" },
               ].map(({ text, link }, i) => {
                 return (
-                  <a key={i} href={link} target='_parent' className="contact-link">
+                  <a key={i} href={link} target='_parent' className="footer-link">
                     <ul>
-                      <span className="contact-link-name">{text}</span>
+                      <span className="footer-link-name">{text}</span>
                     </ul>
                   </a>
                 );
@@ -33,10 +34,10 @@ function AppFooter() {
                 { icon: <Link size={30} />, text: "LinkedIn", link: "https://www.linkedin.com/in/bruno-amadi/" },
               ].map(({ icon, text, link }, i) => {
                 return (
-                  <a key={i} href={link} target='_blank' className="contact-link">
+                  <a key={i} href={link} target='_blank' className="footer-link">
                     <ul>
-                      <span className="contact-link-icon">{icon}</span>
-                      <span className="contact-link-name">{text}</span>
+                      <span className="footer-link-icon">{icon}</span>
+                      <span className="footer-link-name">{text}</span>
                     </ul>
                   </a>
                 );
@@ -48,10 +49,10 @@ function AppFooter() {
                 { icon: <SiGithub size={30} />, text: "GitHub", link: "https://github.com/Bruhno2006" },
               ].map(({ icon, text, link }, i) => {
                 return (
-                  <a key={i} href={link} target='_blank' className="contact-link">
+                  <a key={i} href={link} target='_blank' className="footer-link">
                     <ul>
-                      <span className="contact-link-icon">{icon}</span>
-                      <span className="contact-link-name">{text}</span>
+                      <span className="footer-link-icon">{icon}</span>
+                      <span className="footer-link-name">{text}</span>
                     </ul>
                   </a>
                 );
@@ -59,6 +60,18 @@ function AppFooter() {
             </li>
             <li>
               <h3>Current Projects</h3>
+              {[
+                {text: "Reelhouse Issue 7 Article", link: "/projects/reelhouse/reelhouse-issue-7-article"},
+                {text: "JUMPER MAN", link: "/projects/program/jumper-man-project"},
+              ].map(({ text, link }, i) => {
+                return (
+                  <a key={i} href={link} target='_parent' className="footer-link">
+                    <ul>
+                      <span className="footer-link-name">{text}</span>
+                    </ul>
+                  </a>
+                );
+              })}
             </li>
           </section>
         </div>

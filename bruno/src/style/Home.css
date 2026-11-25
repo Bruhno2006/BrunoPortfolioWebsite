@@ -118,6 +118,10 @@
   font-size: 1rem;
 }
 
+.home-page-main .project-slider {
+  margin-bottom: 2.5rem;
+}
+
 .about,
 .projects {
   flex-direction: row;

@@ -30,6 +30,19 @@
   .slide-right2 {
     display: none;
   }
+
+  .slide-active {
+    max-width: 250px;
+  }
+
+  .indicators {
+    top: 5.5rem !important;
+  }
+
+  .slide-image {
+    width: 250px !important;
+    height: 150px !important;
+  }
 }
 
 .slide-carousel {
@@ -54,6 +67,8 @@
   z-index: 3;
   opacity: 1;
   pointer-events: auto;
+  width: 100%;
+  max-width: 500px;
 }
 
 .slide-hidden {
@@ -139,7 +154,7 @@
 .indicators {
   display: flex;
   position: absolute;
-  top: 3.5rem;
+  top: 4.5rem;
   z-index: 4;
 }
 
@@ -165,4 +180,10 @@
   outline: none;
   margin: 0 0.2rem;
   cursor: pointer;
+}
+
+.slide-image {
+  max-width: 100%;
+  width: 500px;
+  height: 200px;
 }
