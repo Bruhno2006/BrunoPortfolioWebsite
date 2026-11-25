@@ -54,18 +54,6 @@
   }
 }
 
-@keyframes door-opening {
-  from {
-    width: 100%;
-    left: 0;
-  }
-
-  to {
-    width: 0%;
-    left: 100%;
-  }
-}
-
 @keyframes hover-selection {
   0% {
     transform: scale(1);

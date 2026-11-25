@@ -97,6 +97,7 @@ body.light {
   --pagination-background-colour: #EDF2FB;
   --pagination-text-colour: #000000;
   --pagination-border-colour: #5184fc;
+  --pagination-hover-colour: #9ebcf5;
   --pagination-active-background-colour: #072d85;
   --pagingation-active-text-colour: #EDF2FB;
   --pagination-active-border-colour: #2667fd;
@@ -305,6 +306,12 @@ p {
 }
 
 .project-home-main {
+  display: flex;
+  flex-direction: column;
+  max-width: 200rem;
+}
+
+.error-page-main {
   display: flex;
   flex-direction: column;
   max-width: 200rem;

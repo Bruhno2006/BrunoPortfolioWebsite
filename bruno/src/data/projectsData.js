@@ -26,7 +26,7 @@ const projectposts = Object.keys(markdownFiles).map((filePath) => {
     title: data.title || "Untitled Project",
     logo: logoUrl,
     date: data.date || '',
-    image: data.image || '',
+    image: data.image || 'https://placehold.co/500x200',
     intro: data.intro || '',
     subtitle: data.subtitle || '',
     type: data.type || '',

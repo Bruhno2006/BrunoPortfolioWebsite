@@ -1,18 +1,15 @@
 import AppearanceToggle from "../components/AppearanceToggle";
 import AppNavbar from "../components/AppNavbar";
-import { ScrollReveal } from "../components/ScrollBehaviour";
-
+import NotFound from "../components/NotFound";
+import "../style/ErrorPage.css";
+import { useLocation } from "react-router-dom";
 
 function ErrorPage() {
   return (
     <>
       <AppNavbar />
       <AppearanceToggle />
-      <main className="home-page-main">
-        <h1>404! 404! 404!</h1>
-        <p><strong>The page you're looking for doesn't exist!</strong></p>
-        <p>Return back to the Home Screen</p>
-      </main>
+      <NotFound />
     </>
   );
 }
