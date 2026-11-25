@@ -24,7 +24,7 @@ const BlogPost = () => {
 
   if (!postData) {
     return (
-      <ErrorPage />
+      console.log("ERROR!")
     );
   }
 

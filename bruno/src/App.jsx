@@ -9,12 +9,14 @@ import ProjectPost from "./pages/ProjectPost";
 import ReelhouseProjects from "./pages/ReelhouseProjects";
 import ProgramProjects from "./pages/ProgramProjects";
 import Home from "./pages/Home";
+import ErrorPage from "./pages/ErrorPage";
 
 function App() {
   return (
     <ThemeProvider>
       <BrowserRouter>
         <Routes>
+          <Route path="*" element={<ErrorPage />} />
           <Route path="/" element={<Loader nextPath='/home' />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
