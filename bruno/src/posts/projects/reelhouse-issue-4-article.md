@@ -77,3 +77,7 @@ The *MCU* was also heading towards an audience engagement decline during their *
 In summary, I believe the success of **superhero cinematic universe** franchises' stem from an engaging, expandable storyline, which can be interconnected across multiple separate films featuring fan-favourite characters. This form of storytelling allows audiences to indulge in their main narrative while also being able to enjoy the separate movies without requiring knowledge of the wider universe.
 
 The *MCU* and other superhero cinematic universes are what got me into superheroes in the first place. For that reason, even if they have been downhill, I will always appreciate them for what they are - a good pastime away from the crushing reality of life.
+
+<div class="divider" />
+
+<a href="/assets/pdf-documents/Reelhouse-4-Article-Draft.pdf" download="Reelhouse-4-Article-Draft.pdf">Download PDF Draft</a>

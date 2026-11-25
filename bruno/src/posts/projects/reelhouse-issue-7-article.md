@@ -105,3 +105,7 @@ I know I'm shifting the goalpost, but in this slasher horror, the Ghostface iden
 ![Avengers: Doomsday](https://cosmicbook.news/wp-content/uploads/2026/06/avengers-doomsday-everything-we-know.webp "Avengers: Doomsday")
 
 Another Robert Downey Jr. mention! After his 10-year run as Iron Man, Downey Jr. returns in the next upcoming *Avengers* film to play Doctor Doom. The Avengers, the Fantastic Four, the Thunderbolts, and the previous X-Men band together to stop him and save the multiverse.
+
+<div class="divider" />
+
+<a href="/assets/pdf-documents/Reelhouse-7-Article-Draft.pdf" download="Reelhouse-7-Article-Draft.pdf">Download PDF Draft</a>

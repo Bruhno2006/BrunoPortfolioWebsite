@@ -7,3 +7,7 @@ type: "program"
 subtitle: "C-based File System"
 ---
 This is a terminal-based file system done fully in C, a general-purpose language for low-level programming. With this project, I attempt to better understand this programming language.
+
+<div class="divider"></div>
+
+<a href="https://github.com/Bruhno2006/CProject-FileSystem" target="_blank">Link to the Git Repository</a>

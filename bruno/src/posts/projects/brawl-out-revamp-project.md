@@ -11,3 +11,7 @@ BRAWL-OUT is a text-based local, multiplayer game created using the Python progr
 In 2025, with my improved programming skills and better understanding of Python, I aimed to revamp my old card-game program with minimal and readable code to better manage and debug from, a fairer battle system, while still implementing new features to gameplay and player navigation.
 
 **Wish me luck!**
+
+<div class="divider"></div>
+
+<a href="https://github.com/Bruhno2006/BrawlOutRevamp" target="_blank">Link to the Git Repository</a>

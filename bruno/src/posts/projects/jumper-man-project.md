@@ -14,3 +14,7 @@ Try this game when you're bored and have free time on your hands. It's truly a t
 :cloud:
 **KEEP ON JUMPING :sunglasses:**
 :cloud:
+
+<div class="divider"></div>
+
+<a href="https://github.com/Bruhno2006/jumperMan" target="_blank">Link to the Git Repository</a>

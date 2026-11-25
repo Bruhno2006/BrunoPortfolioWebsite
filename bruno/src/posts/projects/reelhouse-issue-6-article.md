@@ -73,3 +73,7 @@ To me, these are the three reasons why 4th instalments seem cursed to be dislike
 The main takeaway is that it's not inherently wrong to continue a series past its third entry, even a decade later, if it actually adds to the series' main story, rather than undermining it. However, as Hollywood is heading into a new generation, it's now more important than ever for studios to allow opportunities for young creatives to make, fail, and succeed with new, original franchises.
 
 Without that openness, we can never receive surprise hits like *Obsession* or *Backrooms*, and indie gems like *The Amazing Digital Circus*.
+
+<div class="divider" />
+
+<a href="/assets/pdf-documents/Reelhouse-6-Article-Draft.pdf" download="Reelhouse-6-Article-Draft.pdf">Download PDF Draft</a>

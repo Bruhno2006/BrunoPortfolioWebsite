@@ -80,3 +80,7 @@ So, which apocalyptic event is the lesser evil? Based on my zombie, robot, and m
 >**Rod**: "Derived from your arguments, it has to be a zombie apocalypse!"
 
 *Sigh...*
+
+<div class="divider" />
+
+<a href="/assets/pdf-documents/Reelhouse-5-Article-Draft.pdf" download="Reelhouse-5-Article-Draft.pdf">Download PDF Draft</a>
