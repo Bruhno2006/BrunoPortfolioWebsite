@@ -1,7 +1,6 @@
 import '../style/AppFooter.css';
 import { Link, Mail, Phone } from 'lucide-react';
-import { SiGithub, SiInstagram } from '@icons-pack/react-simple-icons';
-import { text } from 'motion/react-client';
+import { SiGithub } from '@icons-pack/react-simple-icons';
 
 function AppFooter() {
   return (
@@ -30,7 +29,6 @@ function AppFooter() {
               <h3>Contact Me!</h3>
               {[
                 { icon: <Mail size={30} />, text: "brunoamadibusiness@gmail.com", link: "mailto:brunoamadibusiness@gmail.com" },
-                { icon: <SiInstagram size={30} />, text: "Instagram", link: "https://www.instagram.com/brunkus7767/" },
                 { icon: <Link size={30} />, text: "LinkedIn", link: "https://www.linkedin.com/in/bruno-amadi/" },
               ].map(({ icon, text, link }, i) => {
                 return (
