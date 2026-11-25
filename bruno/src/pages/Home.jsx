@@ -65,7 +65,7 @@ export default function Home() {
             </div>
           </section>
         </ScrollReveal>
-        <ScrollReveal variant='shift-left' amount={0.6}>
+        <ScrollReveal variant='rise-below' amount={0.6}>
           <section className="project-slider">
             <ProjectSlider data={projectList} />
           </section>
