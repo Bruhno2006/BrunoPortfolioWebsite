@@ -1,4 +1,5 @@
 import fm from 'front-matter';
+import withBase from '../components/withBase';
 
 const markdownFiles = import.meta.glob('/src/posts/projects/*.md', { query: '?raw', eager: true });
 
@@ -24,7 +25,7 @@ const projectposts = Object.keys(markdownFiles).map((filePath) => {
     id: slug,
     slug: data.slug || slug,
     title: data.title || "Untitled Project",
-    logo: logoUrl,
+    logo: withBase(logoUrl),
     date: data.date || '',
     image: data.image || 'https://placehold.co/500x200',
     intro: data.intro || '',

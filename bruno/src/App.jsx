@@ -14,7 +14,7 @@ import ErrorPage from "./pages/ErrorPage";
 function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="*" element={<ErrorPage />} />
           <Route path="/" element={<Loader nextPath='/home' />} />
@@ -24,7 +24,7 @@ function App() {
           <Route path="/blog/:slug" element={<BlogPost />} />
           <Route path="/projects" element={<ProjectHome />} />
           <Route path="/projects/program" element={<ProgramProjects />} />
-          <Route path="/projects/program/:slug" element={<ProjectPost/>} />
+          <Route path="/projects/program/:slug" element={<ProjectPost />} />
           <Route path="/projects/reelhouse" element={<ReelhouseProjects />} />
           <Route path="/projects/reelhouse/:slug" element={<ProjectPost />} />
         </Routes>

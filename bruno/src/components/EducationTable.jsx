@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { schools } from "../data/educationData.json";
 import "../style/EducationTable.css"
+import withBase from "./withBase";
+
+const base = import.meta.env.BASE_URL;
 
 function FinishedEducation() {
   return <h4>FINISHED</h4>;
@@ -86,7 +89,7 @@ function EducationTable() {
             <div className={getContainerVisibility(getVisibility(idx))} key={idx}>
               <div className={getVisibility(idx)}>
                 <div>
-                  <img className="school-logo" src={item.logo} alt={item.alt} />
+                  <img className="school-logo" src={withBase(item.logo)} alt={item.alt} />
                 </div>
                 <div className="education-information">
                   <h1>{item.name}</h1>
@@ -116,7 +119,7 @@ function EducationTable() {
             <div className={getContainerVisibility(getVisibility(idx))} key={idx}>
               <div className={getVisibility(idx)}>
                 <div>
-                  <img className="school-logo" src={item.logo} alt={item.alt} />
+                  <img className="school-logo" src={withBase(item.logo)} alt={item.alt} />
                 </div>
                 <div className="education-information">
                   <h1>{item.name}</h1>

@@ -3,6 +3,7 @@ import AppNavbar from '../components/AppNavbar.jsx';
 import AppearanceToggle from '../components/AppearanceToggle.jsx';
 import AppFooter from '../components/AppFooter.jsx';
 import { ScrollReveal } from '../components/ScrollBehaviour.jsx';
+import withBase from '../components/withBase.jsx';
 
 function About() {
   const date = new Date().getFullYear();
@@ -30,7 +31,7 @@ function About() {
 
               <strong><em>SO AWESOME!</em></strong>
             </p>
-            <img src="/assets/about-me-images/pc-setup.jpg" />
+            <img src={withBase("/assets/about-me-images/pc-setup.jpg")} />
             <p className="description">W PC-setup, 10/10</p>
           </section>
         </ScrollReveal>

@@ -10,6 +10,7 @@ import '../style/ProjectPost.css';
 import '../style/custom-post-style.css';
 import { ScrollReveal } from '../components/ScrollBehaviour';
 import ErrorPage from './ErrorPage';
+import withBase from '../components/withBase';
 
 function ProjectLogo({ data }) {
   if (!data.logo) {
@@ -20,7 +21,7 @@ function ProjectLogo({ data }) {
 
   return (
     <div>
-      <img className='project-logo' src={data.logo} alt={data.title} />
+      <img className='project-logo' src={withBase(data.logo)} alt={data.title} />
       <h1 className='project-title'>{data.title}</h1>
     </div>
   );
@@ -53,7 +54,7 @@ const ProjectPost = () => {
       <main className="project-main content-rise-below">
         <div className="project-grid-format">
           <div id="project-header" className="project-header">
-            <img className="project-header-image" src={projectData.image} alt={projectData.title} />
+            <img className="project-header-image" src={withBase(projectData.image)} alt={projectData.title} />
             <div className="project-name">
               <ProjectLogo data={projectData} />
               <p className="project-subheading">{projectData.subtitle}</p>

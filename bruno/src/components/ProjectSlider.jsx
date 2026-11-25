@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import '../style/ProjectSlider.css'
 import { ArrowBigLeftDash, ArrowBigRightDash } from "lucide-react";
+import withBase from "./withBase";
 
 function ProjectSlider({ data }) {
   const [slide, setSlide] = useState(0);
@@ -80,7 +81,7 @@ function ProjectSlider({ data }) {
         return (
           <div className={getSlidePosition(idx)} key={idx}>
             <Link to={`/projects/${item.type}/${item.slug}`}>
-              <img className="slide-image" src={item.image} alt={item.title} />
+              <img className="slide-image" src={withBase(item.image)} alt={item.title} />
             </Link>
             <div className={getContainerVisibility(getSlidePosition(idx))}>
               <h4 className="slide-title">{item.title}</h4>

@@ -9,6 +9,7 @@ import '../style/BlogPost.css';
 import '../style/custom-post-style.css';
 import { ScrollReveal } from '../components/ScrollBehaviour';
 import ErrorPage from './ErrorPage';
+import withBase from '../components/withBase';
 
 const BlogPost = () => {
   const { slug } = useParams();
@@ -47,7 +48,7 @@ const BlogPost = () => {
             <div className="article-left">
             </div>
             <article className="article-content no-animation">
-              <img src={postData.image} alt={postData.title} />
+              <img src={withBase(postData.image)} alt={postData.title} />
               <br />
               <div dangerouslySetInnerHTML={{ __html: postBody }} />
             </article>
